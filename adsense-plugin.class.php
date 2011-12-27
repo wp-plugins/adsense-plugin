@@ -553,16 +553,20 @@ class adsns
 
 	// Including scripts and stylesheets for admin interface of plugin
 	public function adsns_write_admin_head(){
-		wp_register_script( 'adsns_admin_script', plugins_url( 'js/admin.js' , __FILE__ ) );
-		wp_register_script( 'adsns_numeric_script', plugins_url( 'js/numeric.js' , __FILE__ ) );
-		wp_register_script( 'adsns_farbtastic_script', plugins_url( 'farbtastic/farbtastic.js' , __FILE__ ) );
-		
-		wp_enqueue_script( 'adsns_admin_script' );
-		wp_enqueue_script( 'adsns_numeric_script' );
-		wp_enqueue_script( 'adsns_farbtastic_script' );
-
-		echo '	<link href="'. plugins_url( 'farbtastic/farbtastic.css' , __FILE__ ) . '" rel="stylesheet" type="text/css" />
-				<link href="'. plugins_url( 'css/style.css' , __FILE__ ) . '" rel="stylesheet" type="text/css" />';
+		if( (is_admin() ) && (isset($_GET['page'])) && ($_GET['page'] == "adsense-plugin.php") ) {
+			wp_register_script( 'adsns_admin_script', plugins_url( 'js/admin.js' , __FILE__ ) );
+			wp_register_script( 'adsns_numeric_script', plugins_url( 'js/numeric.js' , __FILE__ ) );
+			wp_register_script( 'adsns_farbtastic_script', plugins_url( 'farbtastic/farbtastic.js' , __FILE__ ) );
+			
+			wp_enqueue_script( 'adsns_admin_script' );
+			wp_enqueue_script( 'adsns_numeric_script' );
+			wp_enqueue_script( 'adsns_farbtastic_script' );
+			
+			wp_register_style( 'adsnsFarbtasticStylesheet', plugins_url( 'farbtastic/farbtastic.css' , __FILE__ ) ) ;
+			wp_enqueue_style( 'adsnsFarbtasticStylesheet' );
+		}
+		wp_register_style( 'adsnsStylesheet', plugins_url( 'css/style.css' , __FILE__ ) );
+		wp_enqueue_style( 'adsnsStylesheet' );
 	}
 	
 	// Stylesheets for ads

@@ -161,10 +161,7 @@ if ( ! function_exists ( 'adsns_plugin_init' ) ) {
 
 
 add_action( 'init', 'adsns_plugin_init' );
-if( (is_admin() ) && (isset($_GET['page'])) && ($_GET['page'] == "adsense-plugin.php") )
-{
-	add_action( 'admin_init', array( $adsns_plugin, 'adsns_write_admin_head' ) );
-}
+add_action( 'admin_init', array( $adsns_plugin, 'adsns_write_admin_head' ) );
 
 // add "Settings" link to the plugin action page
 add_filter( 'plugin_action_links', array( $adsns_plugin, 'adsns_plugin_action_links'), 10, 2 );
