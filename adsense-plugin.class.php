@@ -101,8 +101,8 @@ class adsns
 	
 	// Add 'BWS Plugins' menu at the left side in administer panel
 	function adsns_add_admin_menu() {
-		add_menu_page( __('BWS Plugins'), __('BWS Plugins'), 'manage_options', 'bws_plugins', 'bws_add_menu_render', "'" . plugins_url( 'images/px.png' , __FILE__ ) . "'", 101 ); 
-		add_submenu_page( 'bws_plugins', 'AdSense Options', 'AdSense', 'manage_options', "adsense-plugin.php", array( $this, 'adsns_admin_page' ) );
+		add_menu_page( __('BWS Plugins', 'adsense'), __('BWS Plugins', 'adsense'), 'manage_options', 'bws_plugins', 'bws_add_menu_render', "'" . plugins_url( 'images/px.png' , __FILE__ ) . "'", 1001 ); 
+		add_submenu_page( 'bws_plugins', __('AdSense Options', 'adsense'), __('AdSense', 'adsense'), 'manage_options', "adsense-plugin.php", array( $this, 'adsns_admin_page' ) );
 	}
 
 	// Add a link for settings page
@@ -209,9 +209,9 @@ class adsns
 		<h2>' . $this->page_title . '</h2>
 		';
 		
-		if ( isset( $_POST['UPDATE'] ) ) { ### if click on Save Changes button
+		if ( isset( $_POST['adsns_update'] ) ) { ### if click on Save Changes button
 			if ( strlen( $_POST['client_id'] ) > 0 ) {
-				echo "<div class='updated'><p>Oplions saved.</p></div>";
+				echo "<div class='updated'><p>".__("Options saved.", 'adsense')."</p></div>";
 					
 				if ( isset( $_POST['client_id'] ) ) { ## client
 					$options['clientid'] = $_POST['client_id'];					
@@ -282,7 +282,7 @@ class adsns
 				}
 				update_option( 'adsns_sets', $options );				
 			}
-			else echo "<div class='error'><p>Please enter your Publisher ID.</p></div>";
+			else echo "<div class='error'><p>".__("Please enter your Publisher ID.", 'adsense')."</p></div>";
 		} // Click on Save Changes button end	 
 		$this->adsns_view_options_page();	 
 		echo '</div>';
@@ -305,7 +305,7 @@ class adsns
 					<input type="text" id="client_id" name="client_id" class ="positive-integer" size="20" maxlength="16" />
 					<br />
 					<div style="width: 250px; padding-left: 2px;">
-						<span class="description"><?php _e( 'Publisher  ID is the unique identifer of ', 'adsense' ); ?> <a href="https://www.google.com/adsense"><?php _e( 'your account', 'adsense' ); ?></a> <?php _e( 'at Google AdSense.', 'adsense' ); ?></span>
+						<span class="description"><?php _e( 'Publisher ID is the unique identifer of', 'adsense' ); ?> <a href="https://www.google.com/adsense"><?php _e( 'your account', 'adsense' ); ?></a> <?php _e( 'at Google AdSense.', 'adsense' ); ?></span>
 					</div>
 				</div>
 			</div>
@@ -488,7 +488,7 @@ class adsns
 				</table>
 				<br />
 				
-				<label for="pallete" class="left"><?php _e( 'Pallete:', 'adsense' ); ?></label>
+				<label for="pallete" class="left"><?php _e( 'Palette:', 'adsense' ); ?></label>
 				<div class="right">
 					<input type="hidden" id="pallete_val" value="<?php echo $options['pallete'] ?>">
 					<select id="pallete" name="pallete">
@@ -506,7 +506,7 @@ class adsns
 					</select>
 				</div>
 				<div style="width: 250px; padding-left: 2px;">
-					<span class="description"><?php _e( 'This is a standart Google color pallete.', 'adsense' ); ?></span>
+					<span class="description"><?php _e( 'This is a standard Google color palette.', 'adsense' ); ?></span>
 				</div>
 				<br />
 				
@@ -545,7 +545,7 @@ class adsns
 				<input type="button" id="generate" value="Generate!" />
 			</div>
 			<div style="margin-top: 25px;" >
-				<input type="submit" class="button-primary" name="UPDATE" id="update" value="Save Changes" />
+				<input type="submit" class="button-primary" name="adsns_update" value="<?php _e('Save Changes') ?>" />
 			</div>
 		</form>		
 	<?php		
