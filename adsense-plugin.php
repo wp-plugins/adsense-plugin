@@ -1,0 +1,190 @@
+<?php
+/*
+Plugin Name: Google AdSense Plugin
+Plugin URI:  http://bestwebsoft.com/plugin/
+Description: This plugin allows implementing Google AdSense to your website.
+Author: BestWebSoft
+Version: 1.0
+Author URI: http://bestwebsoft.com/
+License: GPLv2 or later
+*/
+
+/*  © Copyright 2011  BestWebSoft  ( admin@bestwebsoft.com )
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License, version 2, as 
+    published by the Free Software Foundation.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+include_once( 'adsense-plugin.class.php' );  // including a class which contains a plugin functions
+
+$this_adsns_plugin = plugin_basename(__FILE__);  // path to this file(from plugins dir)
+
+$adsns_plugin = new adsns();  // creating a variable with type of our class
+ 
+$adsns_plugin->page_title = __( 'AdSense Options', 'adsense'); // title for options page
+ 
+$adsns_plugin->menu_title = __( 'AdSense', 'adsense'); 	// name in menu
+
+$count = 0; 							//current number of showed ads
+$current_count = 0; 					// tmp var for storing a number of already showed ads
+$adsns_count = 0; 						// number of posts on home page
+$options = get_option( 'adsns_sets' );	// array of options
+$max_ads = $options['max_ads'];			// max number of ads
+
+// This function showing ads at the choosen position
+function adsns_show_ads() {
+	global $options;
+	global $max_ads;
+	global $count;
+	global $current_count;
+	global $adsns_count;
+	global $adsns_plugin;
+	
+	// checking in what position we should show an ads
+	if ( $options['position'] == 'postend' ) {  									// if we choose ad position after post(single page)
+		add_filter( 'the_content', array( $adsns_plugin, 'adsns_end_post_ad' ) );  	// adding ad after post
+		add_action('wp_head', array( $adsns_plugin, 'adsns_single_postviews' ) );	// count a number of ad views
+	}
+	
+	else if ( $options['position'] == 'homepostend' ) {										// if we choose ad position after post(home page)
+		add_action( 'the_content', array( $adsns_plugin, 'adsns_post_count' ) );			// get a number of posts on home page
+		add_filter ( 'the_content', array( $adsns_plugin, 'adsns_end_home_post_ad' ) );		// adding ad after post
+		add_action('wp_head', array( $adsns_plugin, 'adsns_home_postviews' ) );				// count a number of ad views
+	}
+
+	else if ( $options['position'] == 'commentform' ) {											// if we choose ad position after comment form
+		add_filter( 'comment_id_fields', array( $adsns_plugin, 'adsns_end_comment_ad' ) );		// adding ad after comment form
+		add_action('wp_head', array( $adsns_plugin, 'adsns_single_postviews' ) );				// count a number of ad views
+	}
+
+	else if ( $options['position'] == 'footer' ) {										// if we choose ad position in a footer
+		add_filter( 'get_footer', array( $adsns_plugin, 'adsns_end_footer_ad' ) );		// adding footer ad
+		add_action('wp_head', array( $adsns_plugin, 'adsns_footer_postviews' ) );		// count a number of ad views
+	}
+	// end checking
+}
+
+if( ! function_exists( 'bws_add_menu_render' ) ) {
+	function bws_add_menu_render() {  // Adding BWS plugin menu
+		global $title;
+		$active_plugins = get_option('active_plugins');
+		$all_plugins = get_plugins();
+
+		$array_activate = array();
+		$array_install = array();
+		$array_recomend = array();
+		$count_activate = $count_install = $count_recomend = 0;
+		$array_plugins = array(
+			array( 'captcha\/captcha.php', 'Captcha', 'http://wordpress.org/extend/plugins/captcha/', 'http://bestwebsoft.com/plugin/captcha-plugin/', '/wp-admin/update.php?action=install-plugin&plugin=captcha&_wpnonce=e66502ec9a' ), 
+			array( 'contact-form-plugin\/contact_form.php', 'Contact Form', 'http://wordpress.org/extend/plugins/contact-form-plugin/', 'http://bestwebsoft.com/plugin/contact-form/', '/wp-admin/update.php?action=install-plugin&plugin=contact-form-plugin&_wpnonce=47757d936f' ), 
+			array( 'facebook-button-plugin\/facebook-button-plugin.php', 'Facebook Like Button Plugin', 'http://wordpress.org/extend/plugins/facebook-button-plugin/', 'http://bestwebsoft.com/plugin/facebook-like-button-plugin/', '/wp-admin/update.php?action=install-plugin&plugin=facebook-button-plugin&_wpnonce=6eb654de19' ), 
+			array( 'twitter-plugin\/twitter.php', 'Twitter Plugin', 'http://wordpress.org/extend/plugins/twitter-plugin/', 'http://bestwebsoft.com/plugin/twitter-plugin/', '/wp-admin/update.php?action=install-plugin&plugin=twitter-plugin&_wpnonce=1612c998a5' ), 
+			array( 'portfolio\/portfolio.php', 'Portfolio', 'http://wordpress.org/extend/plugins/portfolio/', 'http://bestwebsoft.com/plugin/portfolio-plugin/', '/wp-admin/update.php?action=install-plugin&plugin=portfolio&_wpnonce=488af7391d' ),
+			array( 'gallery-plugin\/gallery-plugin.php', 'Gallery', 'http://wordpress.org/extend/plugins/gallery-plugin/', 'http://bestwebsoft.com/plugin/gallery-plugin/', '/wp-admin/update.php?action=install-plugin&plugin=gallery-plugin&_wpnonce=f82ce8c1ad' ),
+			array( 'adsense-plugin\/adsense-plugin.php', 'Google AdSense Plugin', 'http://wordpress.org/extend/plugins/adsense-plugin/', 'http://bestwebsoft.com/plugin/google-adsense-plugin/', '/wp-admin/update.php?action=install-plugin&plugin=adsense-plugin&_wpnonce=e6e85756de' )
+		);
+		foreach($array_plugins as $plugins)
+		{
+			if( 0 < count( preg_grep( "/".$plugins[0]."/", $active_plugins ) ) )
+			{
+				$array_activate[$count_activate]['title'] = $plugins[1];
+				$array_activate[$count_activate]['link'] = $plugins[2];
+				$array_activate[$count_activate]['href'] = $plugins[3];
+				$count_activate++;
+			}
+			else if( array_key_exists(str_replace("\\", "", $plugins[0]), $all_plugins) )
+			{
+				$array_install[$count_install]['title'] = $plugins[1];
+				$array_install[$count_install]['link'] = $plugins[2];
+				$array_install[$count_install]['href'] = $plugins[3];
+				$count_install++;
+			}
+			else
+			{
+				$array_recomend[$count_recomend]['title'] = $plugins[1];
+				$array_recomend[$count_recomend]['link'] = $plugins[2];
+				$array_recomend[$count_recomend]['href'] = $plugins[3];
+				$array_recomend[$count_recomend]['slug'] = $plugins[4];
+				$count_recomend++;
+			}
+		}
+		?>
+		<div class="wrap">
+			<div class="icon32 icon32-bws" id="icon-options-general"></div>
+			<h2><?php echo $title;?></h2>
+			<?php if($count_activate > 0) { ?>
+			<div>
+				<h3><?php echo __( "Activated plugins", 'adsense'); ?></h3>
+				<?php foreach($array_activate as $activate_plugin) { ?>
+				<div style="float:left; width:200px;"><?php echo $activate_plugin['title']; ?></div> <p><a href="<?php echo $activate_plugin['link']; ?>"><?php echo __( "Read more", 'adsense'); ?></a></p>
+				<?php } ?>
+			</div>
+			<?php } ?>
+			<?php if($count_install > 0) { ?>
+			<div>
+				<h3><?php echo __( "Installed plugins", 'adsense'); ?></h3>
+				<?php foreach($array_install as $install_plugin) { ?>
+				<div style="float:left; width:200px;"><?php echo $install_plugin['title']; ?></div> <p><a href="<?php echo $install_plugin['link']; ?>"><?php echo __( "Read more", 'adsense'); ?></a></p>
+				<?php } ?>
+			</div>
+			<?php } ?>
+			<?php if($count_recomend > 0) { ?>
+			<div>
+				<h3><?php echo __( "Recommended plugins", 'adsense'); ?></h3>
+				<?php foreach($array_recomend as $recomend_plugin) { ?>
+				<div style="float:left; width:200px;"><?php echo $recomend_plugin['title']; ?></div> <p><a href="<?php echo $recomend_plugin['link']; ?>"><?php echo __( "Read more", 'adsense'); ?></a> <a href="<?php echo $recomend_plugin['href']; ?>"><?php echo __( "Download", 'adsense'); ?></a> <a class="install-now" href="<?php echo get_bloginfo("url") . $recomend_plugin['slug']; ?>" title="<?php esc_attr( sprintf( __( 'Install %s' ), $recomend_plugin['title'] ) ) ?>"><?php echo __( 'Install Now' ) ?></a></p>
+				<?php } ?>
+				<span style="color: rgb(136, 136, 136); font-size: 10px;"><?php echo __( "If you have any questions, please contact us via plugin@bestwebsoft.com or fill in our contact form on our site", 'adsense'); ?> <a href="http://bestwebsoft.com/contact/">http://bestwebsoft.com/contact/</a></span>
+			</div>
+			<?php } ?>
+		</div>
+		<?php
+	}
+}
+
+if ( ! function_exists ( 'adsns_plugin_init' ) ) {
+	function adsns_plugin_init() {
+		// Internationalization
+		load_plugin_textdomain( 'adsense', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+	}
+}
+
+
+add_action( 'init', 'adsns_plugin_init' );
+if( (is_admin() ) && (isset($_GET['page'])) && ($_GET['page'] == "adsense-plugin.php") )
+{
+	add_action( 'admin_init', array( $adsns_plugin, 'adsns_write_admin_head' ) );
+}
+
+// add "Settings" link to the plugin action page
+add_filter( 'plugin_action_links', array( $adsns_plugin, 'adsns_plugin_action_links'), 10, 2 );
+
+// Additional links on the plugin page
+add_filter( 'plugin_row_meta', array( $adsns_plugin, 'adsns_register_plugin_links'), 10, 2 );
+
+// Action for adsns_show_ads
+add_action( 'after_setup_theme', 'adsns_show_ads' );
+
+// Adding ads stylesheets
+add_action( 'wp_head', array( $adsns_plugin, 'adsns_head' ) );
+
+// Adding 'BWS Plugins' admin menu
+add_action( 'admin_menu', array( $adsns_plugin, 'adsns_add_admin_menu' ) );
+
+// Activation hook
+register_deactivation_hook( __FILE__, array( $adsns_plugin, 'adsns_deactivate' ) );
+
+// Deactivation hook
+register_activation_hook( __FILE__, array( $adsns_plugin, 'adsns_activate' ) );
+
+?>

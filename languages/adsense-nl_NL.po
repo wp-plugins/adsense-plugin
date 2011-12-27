@@ -1,0 +1,277 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: adsense\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-12-27 16:27+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: BWS <zos@bestwebsoft.com>\n"
+"Language-Team: BestWebSoft <support@bestwebsoft.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Dutch\n"
+"X-Poedit-Country: NETHERLANDS\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: adsense-plugin.class.php:104
+msgid "BWS Plugins"
+msgstr ""
+
+#: adsense-plugin.class.php:105
+#: adsense-plugin.php:34
+msgid "AdSense Options"
+msgstr "AdSense opties"
+
+#: adsense-plugin.class.php:105
+#: adsense-plugin.php:36
+msgid "AdSense"
+msgstr "AdSense"
+
+#: adsense-plugin.class.php:112
+#: adsense-plugin.class.php:121
+msgid "Settings"
+msgstr "Восстановить настройки"
+
+#: adsense-plugin.class.php:122
+msgid "Support"
+msgstr "Ondersteuning"
+
+#: adsense-plugin.class.php:214
+msgid "Options saved."
+msgstr "Opties opgeslagen."
+
+#: adsense-plugin.class.php:285
+msgid "Please enter your Publisher ID."
+msgstr "Voer je Publisher ID."
+
+#: adsense-plugin.class.php:299
+msgid "Network"
+msgstr "У вас недостаточно полномочий для изменения этого параметра"
+
+#: adsense-plugin.class.php:302
+msgid "Publisher  ID:"
+msgstr "Uitgevers-id:"
+
+#: adsense-plugin.class.php:308
+#, fuzzy
+msgid "Publisher ID is the unique identifer of"
+msgstr "Uitgevers-id is een unieke identifier van"
+
+#: adsense-plugin.class.php:308
+msgid "your account"
+msgstr "uw account"
+
+#: adsense-plugin.class.php:308
+msgid "at Google AdSense."
+msgstr "bij Google AdSense."
+
+#: adsense-plugin.class.php:314
+msgid "Ad Type &amp; Format"
+msgstr "Ad Type &amp; formaat"
+
+#: adsense-plugin.class.php:317
+msgid "Type:"
+msgstr "Type:"
+
+#: adsense-plugin.class.php:321
+msgid "Ad unit"
+msgstr ""
+
+#: adsense-plugin.class.php:324
+msgid "Text and image ads"
+msgstr ""
+
+#: adsense-plugin.class.php:325
+msgid "Text ads only (default)"
+msgstr ""
+
+#: adsense-plugin.class.php:326
+msgid "Image ads only"
+msgstr ""
+
+#: adsense-plugin.class.php:330
+msgid "Link unit"
+msgstr ""
+
+#: adsense-plugin.class.php:334
+msgid "Format:"
+msgstr "Formaat:"
+
+#: adsense-plugin.class.php:398
+msgid "Position &amp; Numbers of Ads"
+msgstr "Positie &amp; Numbers van advertenties"
+
+#: adsense-plugin.class.php:401
+msgid "Position:"
+msgstr "Functie:"
+
+#: adsense-plugin.class.php:405
+msgid "After post text(Single page)"
+msgstr "Na het bericht tekst (Enkele pagina)"
+
+#: adsense-plugin.class.php:406
+msgid "After post text(Home page)"
+msgstr "Na het plaatsen tekst (Startpagina)"
+
+#: adsense-plugin.class.php:407
+msgid "After comment form"
+msgstr "Na commentaar formulier"
+
+#: adsense-plugin.class.php:408
+msgid "Before footer"
+msgstr "Voordat footer"
+
+#: adsense-plugin.class.php:413
+msgid "Number of Ads:"
+msgstr "Aantal advertenties:"
+
+#: adsense-plugin.class.php:423
+msgid "Number of ads after post text on your home page."
+msgstr "Aantal advertenties na post tekst op uw homepage."
+
+#: adsense-plugin.class.php:428
+msgid "Visualisation"
+msgstr "Visualisatie"
+
+#: adsense-plugin.class.php:431
+msgid "Color:"
+msgstr "Kleur:"
+
+#: adsense-plugin.class.php:441
+msgid "Border"
+msgstr "Grens"
+
+#: adsense-plugin.class.php:456
+msgid "Title"
+msgstr ""
+
+#: adsense-plugin.class.php:466
+msgid "Background"
+msgstr "Achtergrond"
+
+#: adsense-plugin.class.php:474
+msgid "Text"
+msgstr "Tekst"
+
+#: adsense-plugin.class.php:482
+msgid "URL"
+msgstr "URL"
+
+#: adsense-plugin.class.php:491
+msgid "Palette:"
+msgstr "Palet:"
+
+#: adsense-plugin.class.php:496
+msgid "Default Google pallete"
+msgstr ""
+
+#: adsense-plugin.class.php:499
+msgid "Open Air"
+msgstr ""
+
+#: adsense-plugin.class.php:500
+msgid "Seaside"
+msgstr ""
+
+#: adsense-plugin.class.php:501
+msgid "Shadow"
+msgstr ""
+
+#: adsense-plugin.class.php:502
+msgid "Blue Mix"
+msgstr ""
+
+#: adsense-plugin.class.php:503
+msgid "Ink"
+msgstr ""
+
+#: adsense-plugin.class.php:504
+msgid "Graphite"
+msgstr ""
+
+#: adsense-plugin.class.php:509
+msgid "This is a standard Google color palette."
+msgstr "Dit is een standart Google kleurenpalet."
+
+#: adsense-plugin.class.php:513
+msgid "Corner Style:"
+msgstr "Hoek Stijl:"
+
+#: adsense-plugin.class.php:517
+msgid "Select corner style"
+msgstr "Selecteer hoek stijl"
+
+#: adsense-plugin.class.php:518
+msgid "Square corners"
+msgstr ""
+
+#: adsense-plugin.class.php:519
+msgid "Slightly rounded corners"
+msgstr ""
+
+#: adsense-plugin.class.php:520
+msgid "Very rounded corners"
+msgstr ""
+
+#: adsense-plugin.class.php:524
+msgid "Corner style property will help you to make your Ad rounded corners."
+msgstr "Corner stijl pand zal u helpen om uw Ad afgeronde hoeken te maken."
+
+#: adsense-plugin.class.php:529
+msgid "Donate"
+msgstr "Schenken"
+
+#: adsense-plugin.class.php:532
+msgid "Donate us:"
+msgstr "Doneer ons:"
+
+#: adsense-plugin.class.php:537
+msgid "Support us by Donating Ad Space."
+msgstr "Steun ons door het doneren van Ad Space."
+
+#: adsense-plugin.class.php:539
+msgid "Input percentage of ad slots to share [Default: 5%]."
+msgstr "Input percentage van de advertentie slots te delen [Default: 5%]."
+
+#: adsense-plugin.class.php:548
+msgid "Save Changes"
+msgstr ""
+
+#: adsense-plugin.php:127
+msgid "Activated plugins"
+msgstr "Geactiveerd plugins"
+
+#: adsense-plugin.php:129
+#: adsense-plugin.php:137
+#: adsense-plugin.php:145
+msgid "Read more"
+msgstr "Lees meer"
+
+#: adsense-plugin.php:135
+msgid "Installed plugins"
+msgstr "Geïnstalleerde plugins"
+
+#: adsense-plugin.php:143
+msgid "Recommended plugins"
+msgstr "Aanbevolen plugins"
+
+#: adsense-plugin.php:145
+msgid "Download"
+msgstr "Download"
+
+#: adsense-plugin.php:145
+#, php-format
+msgid "Install %s"
+msgstr "Installeer %s"
+
+#: adsense-plugin.php:145
+msgid "Install Now"
+msgstr "Nu installeren"
+
+#: adsense-plugin.php:147
+msgid "If you have any questions, please contact us via plugin@bestwebsoft.com or fill in our contact form on our site"
+msgstr "Als u vragen heeft, neem dan contact met ons op via plugin@bestwebsoft.com of in ons contact formulier in te vullen op onze site"
+
