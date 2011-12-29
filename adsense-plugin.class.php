@@ -101,8 +101,8 @@ class adsns
 	
 	// Add 'BWS Plugins' menu at the left side in administer panel
 	function adsns_add_admin_menu() {
-		add_menu_page( __('BWS Plugins', 'adsense'), __('BWS Plugins', 'adsense'), 'manage_options', 'bws_plugins', 'bws_add_menu_render', "'" . plugins_url( 'images/px.png' , __FILE__ ) . "'", 1001 ); 
-		add_submenu_page( 'bws_plugins', __('AdSense Options', 'adsense'), __('AdSense', 'adsense'), 'manage_options', "adsense-plugin.php", array( $this, 'adsns_admin_page' ) );
+		add_menu_page( __( 'BWS Plugins', 'adsense' ), __( 'BWS Plugins', 'adsense' ), 'manage_options', 'bws_plugins', 'bws_add_menu_render', plugins_url( "images/px.png", __FILE__ ), 1001 ); 
+		add_submenu_page( 'bws_plugins', __( 'AdSense Options', 'adsense'), __( 'AdSense', 'adsense' ), 'manage_options', "adsense-plugin.php", array( $this, 'adsns_settings_page' ) );
 	}
 
 	// Add a link for settings page
@@ -119,6 +119,7 @@ class adsns
 		global $this_adsns_plugin;
 		if ($file == $this_adsns_plugin) {
 			$links[] = '<a href="admin.php?page=adsense-plugin.php">' . __( 'Settings', 'adsense' ) . '</a>';
+			$links[] = '<a href="http://wordpress.org/extend/plugins/adsense-plugin/faq/" target="_blank">' . __( 'FAQ', 'adsense' ) . '</a>';
 			$links[] = '<a href="Mailto:plugin@bestwebsoft.com">' . __( 'Support', 'adsense' ) . '</a>';
 		}
 		return $links;
@@ -128,7 +129,7 @@ class adsns
 	function adsns_activate()	{
 		$new_options = array(
 			'num_show' => '0',
-			'donate' => '5',
+			'donate' => '0',
 			'max_ads' => '3',
 			'max_homepostads' => '1',
 			'clientid' => '',
@@ -200,7 +201,7 @@ class adsns
 	}
 
 	// Saving settings
-	function adsns_admin_page()
+	function adsns_settings_page()
 	{
 		$options = get_option( 'adsns_sets' );
 		echo '
@@ -536,7 +537,7 @@ class adsns
 					<br />
 					<span class="description"><?php _e( 'Support us by Donating Ad Space.', 'adsense' ); ?></span>
 					<br />
-					<span class="description"><?php _e( 'Input percentage of ad slots to share [Default: 5%].', 'adsense' ); ?></span>
+					<span class="description"><?php _e( 'Input percentage of ad slots to share [Default: 0%].', 'adsense' ); ?></span>
 				</div>
 			</div>
 

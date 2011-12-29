@@ -228,7 +228,6 @@ jQuery(document).ready(function(){
 			}
 			jQuery("#pos_num").hide();
 			jQuery("#visual").hide();
-			jQuery("#donate_menu").hide();
 			jQuery(".settings_head").click(function(){
 				jQuery(this).next(".settings_body").slideToggle(500);
 				if ( jQuery(this).hasClass('arrow_up') ) {
