@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: adsense\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-12-29 21:22+0200\n"
+"POT-Creation-Date: 2011-12-30 10:08+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: BWS <zos@bestwebsoft.com>\n"
 "Language-Team: BestWebSoft <support@bestwebsoft.com>\n"
@@ -15,10 +15,6 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
-
-#: adsense-plugin.class.php:104
-msgid "BWS Plugins"
-msgstr ""
 
 #: adsense-plugin.class.php:105
 #: adsense-plugin.php:34

@@ -101,7 +101,7 @@ class adsns
 	
 	// Add 'BWS Plugins' menu at the left side in administer panel
 	function adsns_add_admin_menu() {
-		add_menu_page( __( 'BWS Plugins', 'adsense' ), __( 'BWS Plugins', 'adsense' ), 'manage_options', 'bws_plugins', 'bws_add_menu_render', plugins_url( "images/px.png", __FILE__ ), 1001 ); 
+		add_menu_page( 'BWS Plugins', 'BWS Plugins', 'manage_options', 'bws_plugins', 'bws_add_menu_render', plugins_url( "images/px.png", __FILE__ ), 1001 ); 
 		add_submenu_page( 'bws_plugins', __( 'AdSense Options', 'adsense'), __( 'AdSense', 'adsense' ), 'manage_options', "adsense-plugin.php", array( $this, 'adsns_settings_page' ) );
 	}
 
