@@ -4,7 +4,7 @@ Plugin Name: Google AdSense Plugin
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: This plugin allows implementing Google AdSense to your website.
 Author: BestWebSoft
-Version: 1.1
+Version: 1.2
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -38,7 +38,13 @@ $adsns_plugin->menu_title = __( 'AdSense', 'adsense'); 	// name in menu
 $count = 0; 							//current number of showed ads
 $current_count = 0; 					// tmp var for storing a number of already showed ads
 $adsns_count = 0; 						// number of posts on home page
-$options = get_option( 'adsns_sets' );	// array of options
+if( $options = get_option( 'adsns_sets' ) ) {
+	unset($options['code2']);
+	add_option( 'adsns_settings', $options );
+	delete_option( 'adsns_sets' );
+}
+$options = get_option( 'adsns_settings' );	// array of options
+
 $max_ads = $options['max_ads'];			// max number of ads
 
 // This function showing ads at the choosen position
@@ -67,7 +73,8 @@ function adsns_show_ads() {
 		add_action('wp_head', array( $adsns_plugin, 'adsns_single_postviews' ) );				// count a number of ad views
 	}
 
-	else if ( $options['position'] == 'footer' ) {										// if we choose ad position in a footer
+	else if ( $options['position'] == 'footer' ) {
+	// if we choose ad position in a footer
 		add_filter( 'get_footer', array( $adsns_plugin, 'adsns_end_footer_ad' ) );		// adding footer ad
 		add_action('wp_head', array( $adsns_plugin, 'adsns_footer_postviews' ) );		// count a number of ad views
 	}

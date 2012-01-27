@@ -34,7 +34,7 @@ jQuery(document).ready(function(){
 			
 			ad_script = '<script type="text/javascript"	src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>'
 			jQuery("#adtypeselect option[value='" + jQuery('#adtypesel_val').val() + "']").attr('selected', 'selected');
-			if (jQuery('#adtypesel_val').val() == 'image') {
+			if (jQuery('#adtypesel_val').val() == 'image_only') {
 				jQuery('#def').css("visibility", "hidden");
 				jQuery('#img_only').css("visibility", "visible");
 			}			
@@ -44,25 +44,28 @@ jQuery(document).ready(function(){
 			jQuery("#homeAds option[value='" + jQuery('#homeads_val').val() + "']").attr('selected', 'selected');
 			jQuery("input[type=radio][value='" + jQuery('#adtype_val').val() + "']").attr('checked', 'checked');
 			if (jQuery('#adtype_val').val() == 'linkunit') {
-					jQuery('#adtypeselect').attr('disabled', 'disabled');
-					jQuery('#def').css("visibility", "hidden");
-					jQuery('#img_only').css("visibility", "hidden");
-					jQuery('#lnk_unit').css("visibility", "visible");
-					jQuery("#link_unit option[value='" + jQuery('#link_unit_val').val() + "']").attr('selected', 'selected');
-					ad_format = jQuery('#link_unit :selected').val();		
-					index_x = ad_format.indexOf('x');
-					ad_width = ad_format.substring(0, index_x);
-					ad_height = ad_format.slice(index_x+1);	
+				jQuery('#adtypeselect').attr('disabled', 'disabled');
+				jQuery('#def').css("visibility", "hidden");
+				jQuery('#img_only').css("visibility", "hidden");
+				jQuery('#lnk_unit').css("visibility", "visible");
+				jQuery("#link_unit option[value='" + jQuery('#link_unit_val').val() + "']").attr('selected', 'selected');
+				ad_format = jQuery('#link_unit :selected').val();		
+				index_x = ad_format.indexOf('x');
+				ad_width = ad_format.substring(0, index_x);
+				ad_height = ad_format.slice(index_x+1);	
 			}
 			if (jQuery('#def').css('visibility') == 'visible') {
-				jQuery("#default option[value='" + jQuery('#default_val').val() + "']").attr('selected', 'selected');
 				ad_format = jQuery('#default_val').val();
 			}
 			
 			if (jQuery('#img_only').css('visibility') == 'visible') {
-				jQuery("#image_only option[value='" + jQuery('#image_only_val').val() + "']").attr('selected', 'selected');
 				ad_format = jQuery('#image_only_val').val();
 			}
+
+			if (jQuery('#lnk_unit').css('visibility') == 'visible') {
+				ad_format = jQuery('#link_unit_val').val();
+			}
+			
 			jQuery("#pallete option[value='" + jQuery('#pallete_val').val() + "']").attr('selected', 'selected');
 			jQuery("#position option[value='" + jQuery('#position_val').val() + "']").attr('selected', 'selected');
 			
@@ -121,7 +124,7 @@ jQuery(document).ready(function(){
 			
 			jQuery('#adtypeselect').change(function(){
 					type_ = jQuery('#adtypeselect :selected').val();
-						if ((type_ == 'text_image') || (type_ == 'text')){
+						if ( type_ == 'default' || type_ == 'default_image'){
 							jQuery('#def').css("visibility", "visible");
 							jQuery('#img_only').css("visibility", "hidden");
 							ad_type = jQuery('#adtypeselect :selected').val();
@@ -130,7 +133,7 @@ jQuery(document).ready(function(){
 							ad_width = ad_format.substring(0, index_x);
 							ad_height = ad_format.slice(index_x+1);	
 						}
-						if (type_ == 'image'){
+						if (type_ == 'image_only'){
 							jQuery('#def').css("visibility", "hidden");
 							jQuery('#img_only').css("visibility", "visible");
 							ad_type = jQuery('#adtypeselect :selected').val();		
