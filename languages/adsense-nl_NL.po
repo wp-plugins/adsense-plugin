@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: adsense\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-27 18:30+0200\n"
+"POT-Creation-Date: 2012-01-31 18:12+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: BWS <zos@bestwebsoft.com>\n"
 "Language-Team: BestWebSoft <support@bestwebsoft.com>\n"
@@ -30,11 +30,11 @@ msgstr "AdSense"
 #: adsense-plugin.class.php:110
 #: adsense-plugin.php:137
 msgid "Settings"
-msgstr "Восстановить настройки"
+msgstr "Instellingen"
 
 #: adsense-plugin.class.php:111
 msgid "FAQ"
-msgstr ""
+msgstr "Veel gestelde vragen"
 
 #: adsense-plugin.class.php:112
 msgid "Support"
@@ -50,16 +50,15 @@ msgstr "Voer je Publisher ID."
 
 #: adsense-plugin.class.php:380
 msgid "Network"
-msgstr "У вас недостаточно полномочий для изменения этого параметра"
+msgstr "Adsense publisher ID"
 
 #: adsense-plugin.class.php:383
 msgid "Publisher  ID:"
 msgstr "Uitgevers-id:"
 
 #: adsense-plugin.class.php:389
-#, fuzzy
 msgid "Publisher ID is the unique identifer of"
-msgstr "Uitgevers-id is een unieke identifier van"
+msgstr "Uitgevers-id is een unieke identificatie van"
 
 #: adsense-plugin.class.php:389
 msgid "your account"
@@ -71,7 +70,7 @@ msgstr "bij Google AdSense."
 
 #: adsense-plugin.class.php:395
 msgid "Ad Type &amp; Format"
-msgstr "Ad Type &amp; formaat"
+msgstr "Advertentie type &amp; formaat"
 
 #: adsense-plugin.class.php:398
 msgid "Type:"
@@ -79,23 +78,23 @@ msgstr "Type:"
 
 #: adsense-plugin.class.php:402
 msgid "Ad unit"
-msgstr ""
+msgstr "Advertentie eenheid"
 
 #: adsense-plugin.class.php:405
 msgid "Text and image ads"
-msgstr ""
+msgstr "Tekst en afbeelding advertenties"
 
 #: adsense-plugin.class.php:406
 msgid "Text ads only (default)"
-msgstr ""
+msgstr "Alleen tekst advertenties"
 
 #: adsense-plugin.class.php:407
 msgid "Image ads only"
-msgstr ""
+msgstr "Alleen afbeelding advertenties"
 
 #: adsense-plugin.class.php:411
 msgid "Link unit"
-msgstr ""
+msgstr "Link eenheid"
 
 #: adsense-plugin.class.php:415
 msgid "Format:"
@@ -103,27 +102,27 @@ msgstr "Formaat:"
 
 #: adsense-plugin.class.php:479
 msgid "Position &amp; Numbers of Ads"
-msgstr "Positie &amp; Numbers van advertenties"
+msgstr "Positie &amp; Aantal advertenties"
 
 #: adsense-plugin.class.php:482
 msgid "Position:"
-msgstr "Functie:"
+msgstr "Positie:"
 
 #: adsense-plugin.class.php:486
 msgid "After post text(Single page)"
-msgstr "Na het bericht tekst (Enkele pagina)"
+msgstr "Tekst na het bericht (Enkele pagina)"
 
 #: adsense-plugin.class.php:487
 msgid "After post text(Home page)"
-msgstr "Na het plaatsen tekst (Startpagina)"
+msgstr "Tekst na het bericht (Startpagina)"
 
 #: adsense-plugin.class.php:488
 msgid "After comment form"
-msgstr "Na commentaar formulier"
+msgstr "Onder de reacties"
 
 #: adsense-plugin.class.php:489
 msgid "Before footer"
-msgstr "Voordat footer"
+msgstr "Voor de voettekst"
 
 #: adsense-plugin.class.php:494
 msgid "Number of Ads:"
@@ -131,7 +130,7 @@ msgstr "Aantal advertenties:"
 
 #: adsense-plugin.class.php:504
 msgid "Number of ads after post text on your home page."
-msgstr "Aantal advertenties na post tekst op uw homepage."
+msgstr "Aantal advertenties achter de teksten op uw berichten pagina."
 
 #: adsense-plugin.class.php:509
 msgid "Visualisation"
@@ -143,11 +142,11 @@ msgstr "Kleur:"
 
 #: adsense-plugin.class.php:522
 msgid "Border"
-msgstr "Grens"
+msgstr "Rand"
 
 #: adsense-plugin.class.php:537
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 #: adsense-plugin.class.php:547
 msgid "Background"
@@ -167,35 +166,35 @@ msgstr "Palet:"
 
 #: adsense-plugin.class.php:577
 msgid "Default Google pallete"
-msgstr ""
+msgstr "Standaard Google palette"
 
 #: adsense-plugin.class.php:580
 msgid "Open Air"
-msgstr ""
+msgstr "Open lucht"
 
 #: adsense-plugin.class.php:581
 msgid "Seaside"
-msgstr ""
+msgstr "Kust"
 
 #: adsense-plugin.class.php:582
 msgid "Shadow"
-msgstr ""
+msgstr "Schaduw"
 
 #: adsense-plugin.class.php:583
 msgid "Blue Mix"
-msgstr ""
+msgstr "Blauwe mix"
 
 #: adsense-plugin.class.php:584
 msgid "Ink"
-msgstr ""
+msgstr "Inkt"
 
 #: adsense-plugin.class.php:585
 msgid "Graphite"
-msgstr ""
+msgstr "Grafiet"
 
 #: adsense-plugin.class.php:590
 msgid "This is a standard Google color palette."
-msgstr "Dit is een standart Google kleurenpalet."
+msgstr "Dit is een standaard Google kleurenpalet."
 
 #: adsense-plugin.class.php:594
 msgid "Corner Style:"
@@ -207,19 +206,19 @@ msgstr "Selecteer hoek stijl"
 
 #: adsense-plugin.class.php:599
 msgid "Square corners"
-msgstr ""
+msgstr "Rechte hoeken"
 
 #: adsense-plugin.class.php:600
 msgid "Slightly rounded corners"
-msgstr ""
+msgstr "Licht afgeronde hoeken"
 
 #: adsense-plugin.class.php:601
 msgid "Very rounded corners"
-msgstr ""
+msgstr "Sterk afgeronde hoeken"
 
 #: adsense-plugin.class.php:605
 msgid "Corner style property will help you to make your Ad rounded corners."
-msgstr "Corner stijl pand zal u helpen om uw Ad afgeronde hoeken te maken."
+msgstr "Hoekstijl instelling om afgeronde hoeken te maken."
 
 #: adsense-plugin.class.php:610
 msgid "Donate"
@@ -234,13 +233,12 @@ msgid "Support us by Donating Ad Space."
 msgstr "Steun ons door het doneren van Ad Space."
 
 #: adsense-plugin.class.php:620
-#, fuzzy
 msgid "Input percentage of ad slots to share [Default: 0%]."
-msgstr "Input percentage van de advertentie slots te delen [Default: 5%]."
+msgstr "Percentage van de advertentie voor de ontwikkelaar [Standaard: 0%]."
 
 #: adsense-plugin.class.php:629
 msgid "Save Changes"
-msgstr ""
+msgstr "Instellingen opslaan"
 
 #: adsense-plugin.php:135
 msgid "Activated plugins"
@@ -271,11 +269,11 @@ msgstr "Installeer %s"
 
 #: adsense-plugin.php:153
 msgid "Install now from wordpress.org"
-msgstr ""
+msgstr "Installeer direct van Wordpress.org"
 
 #: adsense-plugin.php:155
 msgid "If you have any questions, please contact us via plugin@bestwebsoft.com or fill in our contact form on our site"
-msgstr "Als u vragen heeft, neem dan contact met ons op via plugin@bestwebsoft.com of in ons contact formulier in te vullen op onze site"
+msgstr "Als u vragen heeft, neem dan contact met ons op via plugin@bestwebsoft.com of door ons contact formulier in te vullen op onze site"
 
 #~ msgid "Install Now"
 #~ msgstr "Nu installeren"
