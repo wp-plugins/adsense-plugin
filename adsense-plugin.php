@@ -129,27 +129,27 @@ if( ! function_exists( 'bws_add_menu_render' ) ) {
 			<h2><?php echo $title;?></h2>
 			<?php if( 0 < $count_activate ) { ?>
 			<div>
-				<h3><?php _e( 'Activated plugins', 'captcha' ); ?></h3>
+				<h3><?php _e( 'Activated plugins', 'adsense' ); ?></h3>
 				<?php foreach( $array_activate as $activate_plugin ) { ?>
-				<div style="float:left; width:200px;"><?php echo $activate_plugin['title']; ?></div> <p><a href="<?php echo $activate_plugin['link']; ?>" target="_blank"><?php echo __( "Read more", 'captcha'); ?></a> <a href="<?php echo $activate_plugin['url']; ?>"><?php echo __( "Settings", 'captcha'); ?></a></p>
+				<div style="float:left; width:200px;"><?php echo $activate_plugin['title']; ?></div> <p><a href="<?php echo $activate_plugin['link']; ?>" target="_blank"><?php echo __( "Read more", 'adsense'); ?></a> <a href="<?php echo $activate_plugin['url']; ?>"><?php echo __( "Settings", 'adsense'); ?></a></p>
 				<?php } ?>
 			</div>
 			<?php } ?>
 			<?php if( 0 < $count_install ) { ?>
 			<div>
-				<h3><?php _e( 'Installed plugins', 'captcha' ); ?></h3>
+				<h3><?php _e( 'Installed plugins', 'adsense' ); ?></h3>
 				<?php foreach($array_install as $install_plugin) { ?>
-				<div style="float:left; width:200px;"><?php echo $install_plugin['title']; ?></div> <p><a href="<?php echo $install_plugin['link']; ?>" target="_blank"><?php echo __( "Read more", 'captcha'); ?></a></p>
+				<div style="float:left; width:200px;"><?php echo $install_plugin['title']; ?></div> <p><a href="<?php echo $install_plugin['link']; ?>" target="_blank"><?php echo __( "Read more", 'adsense'); ?></a></p>
 				<?php } ?>
 			</div>
 			<?php } ?>
 			<?php if( 0 < $count_recomend ) { ?>
 			<div>
-				<h3><?php _e( 'Recommended plugins', 'captcha' ); ?></h3>
+				<h3><?php _e( 'Recommended plugins', 'adsense' ); ?></h3>
 				<?php foreach( $array_recomend as $recomend_plugin ) { ?>
-				<div style="float:left; width:200px;"><?php echo $recomend_plugin['title']; ?></div> <p><a href="<?php echo $recomend_plugin['link']; ?>" target="_blank"><?php echo __( "Read more", 'captcha'); ?></a> <a href="<?php echo $recomend_plugin['href']; ?>" target="_blank"><?php echo __( "Download", 'captcha'); ?></a> <a class="install-now" href="<?php echo get_bloginfo( "url" ) . $recomend_plugin['slug']; ?>" title="<?php esc_attr( sprintf( __( 'Install %s' ), $recomend_plugin['title'] ) ) ?>" target="_blank"><?php echo __( 'Install now from wordpress.org', 'captcha' ) ?></a></p>
+				<div style="float:left; width:200px;"><?php echo $recomend_plugin['title']; ?></div> <p><a href="<?php echo $recomend_plugin['link']; ?>" target="_blank"><?php echo __( "Read more", 'adsense'); ?></a> <a href="<?php echo $recomend_plugin['href']; ?>" target="_blank"><?php echo __( "Download", 'adsense'); ?></a> <a class="install-now" href="<?php echo get_bloginfo( "url" ) . $recomend_plugin['slug']; ?>" title="<?php esc_attr( sprintf( __( 'Install %s' ), $recomend_plugin['title'] ) ) ?>" target="_blank"><?php echo __( 'Install now from wordpress.org', 'adsense' ) ?></a></p>
 				<?php } ?>
-				<span style="color: rgb(136, 136, 136); font-size: 10px;"><?php _e( 'If you have any questions, please contact us via plugin@bestwebsoft.com or fill in our contact form on our site', 'captcha' ); ?> <a href="http://bestwebsoft.com/contact/">http://bestwebsoft.com/contact/</a></span>
+				<span style="color: rgb(136, 136, 136); font-size: 10px;"><?php _e( 'If you have any questions, please contact us via plugin@bestwebsoft.com or fill in our contact form on our site', 'adsense' ); ?> <a href="http://bestwebsoft.com/contact/">http://bestwebsoft.com/contact/</a></span>
 			</div>
 			<?php } ?>
 		</div>
