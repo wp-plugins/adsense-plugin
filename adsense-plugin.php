@@ -4,7 +4,7 @@ Plugin Name: Google AdSense Plugin
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: This plugin allows implementing Google AdSense to your website.
 Author: BestWebSoft
-Version: 1.4
+Version: 1.5
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -38,18 +38,18 @@ $adsns_plugin->menu_title = __( 'AdSense', 'adsense'); 	// name in menu
 $count = 0; 							//current number of showed ads
 $current_count = 0; 					// tmp var for storing a number of already showed ads
 $adsns_count = 0; 						// number of posts on home page
-if( $options = get_option( 'adsns_sets' ) ) {
-	unset($options['code2']);
-	add_option( 'adsns_settings', $options );
+if( $adsns_options = get_option( 'adsns_sets' ) ) {
+	unset( $adsns_options['code2'] );
+	add_option( 'adsns_settings', $adsns_options );
 	delete_option( 'adsns_sets' );
 }
-$options = get_option( 'adsns_settings' );	// array of options
+$adsns_options = get_option( 'adsns_settings' );	// array of options
 
-$max_ads = $options['max_ads'];			// max number of ads
+$max_ads = $adsns_options['max_ads'];			// max number of ads
 
 // This function showing ads at the choosen position
 function adsns_show_ads() {
-	global $options;
+	global $adsns_options;
 	global $max_ads;
 	global $count;
 	global $current_count;
@@ -57,23 +57,23 @@ function adsns_show_ads() {
 	global $adsns_plugin;
 	
 	// checking in what position we should show an ads
-	if ( $options['position'] == 'postend' ) {  									// if we choose ad position after post(single page)
+	if ( $adsns_options['position'] == 'postend' ) {  									// if we choose ad position after post(single page)
 		add_filter( 'the_content', array( $adsns_plugin, 'adsns_end_post_ad' ) );  	// adding ad after post
 		add_action('wp_head', array( $adsns_plugin, 'adsns_single_postviews' ) );	// count a number of ad views
 	}
 	
-	else if ( $options['position'] == 'homepostend' ) {										// if we choose ad position after post(home page)
+	else if ( $adsns_options['position'] == 'homepostend' ) {										// if we choose ad position after post(home page)
 		add_action( 'the_content', array( $adsns_plugin, 'adsns_post_count' ) );			// get a number of posts on home page
 		add_filter ( 'the_content', array( $adsns_plugin, 'adsns_end_home_post_ad' ) );		// adding ad after post
 		add_action('wp_head', array( $adsns_plugin, 'adsns_home_postviews' ) );				// count a number of ad views
 	}
 
-	else if ( $options['position'] == 'commentform' ) {											// if we choose ad position after comment form
+	else if ( $adsns_options['position'] == 'commentform' ) {											// if we choose ad position after comment form
 		add_filter( 'comment_id_fields', array( $adsns_plugin, 'adsns_end_comment_ad' ) );		// adding ad after comment form
 		add_action('wp_head', array( $adsns_plugin, 'adsns_single_postviews' ) );				// count a number of ad views
 	}
 
-	else if ( $options['position'] == 'footer' ) {
+	else if ( $adsns_options['position'] == 'footer' ) {
 	// if we choose ad position in a footer
 		add_filter( 'get_footer', array( $adsns_plugin, 'adsns_end_footer_ad' ) );		// adding footer ad
 		add_action('wp_head', array( $adsns_plugin, 'adsns_footer_postviews' ) );		// count a number of ad views
@@ -99,7 +99,8 @@ if( ! function_exists( 'bws_add_menu_render' ) ) {
 			array( 'portfolio\/portfolio.php', 'Portfolio', 'http://wordpress.org/extend/plugins/portfolio/', 'http://bestwebsoft.com/plugin/portfolio-plugin/', '/wp-admin/plugin-install.php?tab=search&type=term&s=Portfolio+bestwebsoft&plugin-search-input=Search+Plugins', '' ),
 			array( 'gallery-plugin\/gallery-plugin.php', 'Gallery', 'http://wordpress.org/extend/plugins/gallery-plugin/', 'http://bestwebsoft.com/plugin/gallery-plugin/', '/wp-admin/plugin-install.php?tab=search&type=term&s=Gallery+Plugin+bestwebsoft&plugin-search-input=Search+Plugins', '' ),
 			array( 'adsense-plugin\/adsense-plugin.php', 'Google AdSense Plugin', 'http://wordpress.org/extend/plugins/adsense-plugin/', 'http://bestwebsoft.com/plugin/google-adsense-plugin/', '/wp-admin/plugin-install.php?tab=search&type=term&s=Adsense+Plugin+bestwebsoft&plugin-search-input=Search+Plugins', 'admin.php?page=adsense-plugin.php' ),
-			array( 'custom-search-plugin\/custom-search-plugin.php', 'Custom Search Plugin', 'http://wordpress.org/extend/plugins/custom-search-plugin/', 'http://bestwebsoft.com/plugin/custom-search-plugin/', '/wp-admin/plugin-install.php?tab=search&type=term&s=Custom+Search+plugin+bestwebsoft&plugin-search-input=Search+Plugins', 'admin.php?page=custom_search.php' )
+			array( 'custom-search-plugin\/custom-search-plugin.php', 'Custom Search Plugin', 'http://wordpress.org/extend/plugins/custom-search-plugin/', 'http://bestwebsoft.com/plugin/custom-search-plugin/', '/wp-admin/plugin-install.php?tab=search&type=term&s=Custom+Search+plugin+bestwebsoft&plugin-search-input=Search+Plugins', 'admin.php?page=custom_search.php' ),
+			array( 'quotes_and_tips\/quotes-and-tips.php', 'Quotes and Tips', 'http://wordpress.org/extend/plugins/quotes-and-tips/', 'http://bestwebsoft.com/plugin/quotes-and-tips/', '/wp-admin/plugin-install.php?tab=search&type=term&s=Quotes+and+Tips+bestwebsoft&plugin-search-input=Search+Plugins', 'admin.php?page=quotes-and-tips.php' )
 		);
 		foreach($array_plugins as $plugins) {
 			if( 0 < count( preg_grep( "/".$plugins[0]."/", $active_plugins ) ) ) {
@@ -163,8 +164,6 @@ if ( ! function_exists ( 'adsns_plugin_init' ) ) {
 		load_plugin_textdomain( 'adsense', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 	}
 }
-
-
 
 // add "Settings" link to the plugin action page
 add_filter( 'plugin_action_links', array( $adsns_plugin, 'adsns_plugin_action_links'), 10, 2 );

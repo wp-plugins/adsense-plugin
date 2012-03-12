@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: adsense\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-24 15:38+0200\n"
+"POT-Creation-Date: 2012-03-12 19:21+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: BWS <zos@bestwebsoft.com>\n"
 "Language-Team: BestWebSoft <support@bestwebsoft.com>\n"
@@ -28,7 +28,7 @@ msgstr "AdSense"
 
 #: adsense-plugin.class.php:101
 #: adsense-plugin.class.php:110
-#: adsense-plugin.php:134
+#: adsense-plugin.php:135
 msgid "Settings"
 msgstr "Instellingen"
 
@@ -240,38 +240,38 @@ msgstr "Percentage van de advertentie voor de ontwikkelaar [Standaard: 0%]."
 msgid "Save Changes"
 msgstr "Instellingen opslaan"
 
-#: adsense-plugin.php:132
+#: adsense-plugin.php:133
 msgid "Activated plugins"
 msgstr "Geactiveerd plugins"
 
-#: adsense-plugin.php:134
-#: adsense-plugin.php:142
-#: adsense-plugin.php:150
+#: adsense-plugin.php:135
+#: adsense-plugin.php:143
+#: adsense-plugin.php:151
 msgid "Read more"
 msgstr "Lees meer"
 
-#: adsense-plugin.php:140
+#: adsense-plugin.php:141
 msgid "Installed plugins"
 msgstr "Geïnstalleerde plugins"
 
-#: adsense-plugin.php:148
+#: adsense-plugin.php:149
 msgid "Recommended plugins"
 msgstr "Aanbevolen plugins"
 
-#: adsense-plugin.php:150
+#: adsense-plugin.php:151
 msgid "Download"
 msgstr "Download"
 
-#: adsense-plugin.php:150
+#: adsense-plugin.php:151
 #, php-format
 msgid "Install %s"
 msgstr "Installeer %s"
 
-#: adsense-plugin.php:150
+#: adsense-plugin.php:151
 msgid "Install now from wordpress.org"
 msgstr "Installeer direct van Wordpress.org"
 
-#: adsense-plugin.php:152
+#: adsense-plugin.php:153
 msgid "If you have any questions, please contact us via plugin@bestwebsoft.com or fill in our contact form on our site"
 msgstr "Als u vragen heeft, neem dan contact met ons op via plugin@bestwebsoft.com of door ons contact formulier in te vullen op onze site"
 
