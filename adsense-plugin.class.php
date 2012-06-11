@@ -485,6 +485,7 @@ class adsns
 					<select name="position" id="position">
 						<option value="postend"><?php _e( 'After post text(Single page)', 'adsense' ); ?></option>
 						<option value="homepostend"><?php _e( 'After post text(Home page)', 'adsense' ); ?></option>
+						<option value="homeandpostend"><?php _e( 'After post text(Single page and Home page)', 'adsense' ); ?></option>
 						<option value="commentform"><?php _e( 'After comment form', 'adsense' ); ?></option>
 						<option value="footer"><?php _e( 'Before footer', 'adsense' ); ?></option>
 					</select>

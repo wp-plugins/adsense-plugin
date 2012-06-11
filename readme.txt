@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: google, adsense, ads, bestwebsoft, google adsense, google plugin, adsense plugin, ads plugin, gogle
 Requires at least: 2.9
-Tested up to: 3.3.1
-Stable tag: 1.5
+Tested up to: 3.3.2
+Stable tag: 1.6
 
 This plugin allows implementation of Google AdSense to your website.
 
@@ -22,6 +22,7 @@ Google AdSense Plugin allows setting of ads displaying parameters, such as forma
 
 = Translation =
 
+* Brazilian Portuguese (pt_BR) (thanks Rafael)
 * Dutch (nl_NL) (thanks to Paul Göttgens)
 * Russian (ru_RU)
 
@@ -29,7 +30,9 @@ If you create your own language pack or update an existing one, you can send <a 
 
 = Technical support =
 
-Dear users, if you have any questions or propositions regarding our plugins (current options, new options, current issues) please feel free to contact us. Please note that we accept requests in English only. All messages on another languages wouldn't be accepted. 
+Dear users, our plugins are available for free download. If you have any questions or propositions regarding functionality of our plugins (current options, new options, current issues) please feel free to contact us. Please note that we accept requests in English language only. All messages on another languages wouldn't be accepted. 
+
+Also, emails which are reporting about plugin's bugs are accepted for investigation and fixing. Your request must contain URL of the website, issues description and WordPress admin panel access. Plugin customization based on your Wordpress theme is a paid service (standard price is $10, but it could be higer and depends on the complexity of requested changes). We will analize existing issue and make necessary changes after 100% pre-payment.All these paid changes and modifications could be included to the next version of plugin and will be shared for all users like an integral part of the plugin. Free fixing services will be provided for user who send translation on their native language (this should be a new translation of a certain plugin, and you can check available translations on the official plugin page).
 
 == Installation ==
 
@@ -53,6 +56,9 @@ At the page of plugin settings open menu item 'Position & Numbers of Ads' and on
 2. All menu items at the page are unwrapped.
 
 == Changelog ==
+
+= V1.6 - 11.06.2012 =
+* NEW : Brazilian Portuguese file is added to the plugin.
 
 = V1.5 - 12.03.2012 =
 * Change :  The name of a variable for plugin options is replaced with unique name so that the name of this variable is not in common with names of variables of other plugins and wordpress.
@@ -83,6 +89,9 @@ At the page of plugin settings open menu item 'Position & Numbers of Ads' and on
 * Changed : Usability at the settings page of the plugin was improved.
 
 == Upgrade Notice ==
+
+= V1.6 =
+Brazilian Portuguese file is added to the plugin.
 
 = V1.5 =
 The name of a variable for plugin options is replaced with unique name so that the name of this variable is not in common with the names of the variables of other plugins and wordpress.
