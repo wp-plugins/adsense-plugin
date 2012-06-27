@@ -232,6 +232,9 @@ class adsns
 	// Saving settings
 	function adsns_settings_page()
 	{
+		if( ! $adsns_options = get_option( 'adsns_sets' ) )
+				$this->adsns_activate();
+
 		echo '
 		<div class="wrap">
 		<div class="icon32 icon32-bws" id="icon-options-general"></div>
@@ -572,7 +575,7 @@ class adsns
 				
 				<label for="pallete" class="left"><?php _e( 'Palette:', 'adsense' ); ?></label>
 				<div class="right">
-					<input type="hidden" id="pallete_val" value="<?php echo $this->adsns_options['pallete'] ?>">
+					<input type="hidden" id="pallete_val" value="<?php echo $this->adsns_options['palette'] ?>">
 					<select id="pallete" name="pallete">
 						<optgroup label="Default Pallete">
 							<option value="Default Google pallete" selected="selected"><?php _e( 'Default Google pallete', 'adsense' ); ?></option>
@@ -658,6 +661,7 @@ class adsns
 		.ads {
 			position: relative;
 			text-align: center;		
+			clear: both;
 		}
 		</style>
 EOF;

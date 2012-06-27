@@ -4,7 +4,7 @@ Plugin Name: Google AdSense Plugin
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: This plugin allows implementing Google AdSense to your website.
 Author: BestWebSoft
-Version: 1.6
+Version: 1.7
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -183,10 +183,10 @@ add_action( 'wp_head', array( $adsns_plugin, 'adsns_head' ) );
 // Adding 'BWS Plugins' admin menu
 add_action( 'admin_menu', array( $adsns_plugin, 'adsns_add_admin_menu' ) );
 
-// Activation hook
+// Deactivation hook
 register_deactivation_hook( __FILE__, array( $adsns_plugin, 'adsns_deactivate' ) );
 
-// Deactivation hook
+// Activation hook
 register_activation_hook( __FILE__, array( $adsns_plugin, 'adsns_activate' ) );
 
 ?>

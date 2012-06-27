@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: google, adsense, ads, bestwebsoft, google adsense, google plugin, adsense plugin, ads plugin, gogle
 Requires at least: 2.9
-Tested up to: 3.3.2
-Stable tag: 1.6
+Tested up to: 3.4
+Stable tag: 1.7
 
 This plugin allows implementation of Google AdSense to your website.
 
@@ -57,6 +57,9 @@ At the page of plugin settings open menu item 'Position & Numbers of Ads' and on
 
 == Changelog ==
 
+= V1.7 - 27.06.2012 =
+* Update : We updated all functionality for wordpress 3.4.
+
 = V1.6 - 11.06.2012 =
 * NEW : Brazilian Portuguese file is added to the plugin.
 
@@ -89,6 +92,9 @@ At the page of plugin settings open menu item 'Position & Numbers of Ads' and on
 * Changed : Usability at the settings page of the plugin was improved.
 
 == Upgrade Notice ==
+
+= V1.7 =
+We updated all functionality for wordpress 3.4.
 
 = V1.6 =
 Brazilian Portuguese file is added to the plugin.
