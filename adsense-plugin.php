@@ -4,7 +4,7 @@ Plugin Name: Google AdSense Plugin
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: This plugin allows implementing Google AdSense to your website.
 Author: BestWebSoft
-Version: 1.7
+Version: 1.8
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -59,13 +59,20 @@ function adsns_show_ads() {
 	// checking in what position we should show an ads
 	if ( $adsns_options['position'] == 'postend' ) {  									// if we choose ad position after post(single page)
 		add_filter( 'the_content', array( $adsns_plugin, 'adsns_end_post_ad' ) );  	// adding ad after post
-		add_action('wp_head', array( $adsns_plugin, 'adsns_single_postviews' ) );	// count a number of ad views
 	}
 	
 	else if ( $adsns_options['position'] == 'homepostend' ) {										// if we choose ad position after post(home page)
 		add_action( 'the_content', array( $adsns_plugin, 'adsns_post_count' ) );			// get a number of posts on home page
-		add_filter ( 'the_content', array( $adsns_plugin, 'adsns_end_home_post_ad' ) );		// adding ad after post
+		add_filter( 'the_content', array( $adsns_plugin, 'adsns_end_home_post_ad' ) );		// adding ad after post
 		add_action('wp_head', array( $adsns_plugin, 'adsns_home_postviews' ) );				// count a number of ad views
+	}
+
+	else if ( $adsns_options['position'] == 'homeandpostend' ) {										// if we choose ad position after post(home page)
+		add_action( 'the_content', array( $adsns_plugin, 'adsns_post_count' ) );			// get a number of posts on home page
+		add_filter( 'the_content', array( $adsns_plugin, 'adsns_end_home_post_ad' ) );		// adding ad after post
+		add_action( 'wp_head', array( $adsns_plugin, 'adsns_home_postviews' ) );				// count a number of ad views
+		add_filter( 'the_content', array( $adsns_plugin, 'adsns_end_post_ad' ) );  	// adding ad after post
+		add_action( 'wp_head', array( $adsns_plugin, 'adsns_single_postviews' ) );	// count a number of ad views
 	}
 
 	else if ( $adsns_options['position'] == 'commentform' ) {											// if we choose ad position after comment form

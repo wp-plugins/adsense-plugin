@@ -145,7 +145,7 @@ jQuery(document).ready(function(){
 				});
 				
 				jQuery('#position').change(function(){
-					if (jQuery('#position :selected').val() == 'homepostend') {
+					if (jQuery('#position :selected').val() == 'homepostend' || jQuery('#position :selected').val() == 'homeandpostend' ) {
 						jQuery('#homeAds').removeAttr("disabled");
 						jQuery("#homeAds option[value='" + jQuery('#homeads_val').val() + "']").attr('selected', 'selected');
 					}
@@ -154,7 +154,7 @@ jQuery(document).ready(function(){
 						jQuery("#homeAds option[value='1']").attr('selected', 'selected');
 					}
 				});
-					if (jQuery('#position :selected').val() == 'homepostend') {
+					if (jQuery('#position :selected').val() == 'homepostend' || jQuery('#position :selected').val() == 'homeandpostend' ) {
 						jQuery('#homeAds').removeAttr("disabled");
 						jQuery("#homeAds option[value='" + jQuery('#homeads_val').val() + "']").attr('selected', 'selected');
 					}
