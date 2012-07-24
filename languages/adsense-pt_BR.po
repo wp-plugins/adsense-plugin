@@ -1,0 +1,282 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: adsense\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-24 15:41+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: zos <zos@bestwebsoft.com>\n"
+"Language-Team: Rafael <rafael@hurpia.com.br>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Portuguese\n"
+"X-Poedit-Country: BRAZIL\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: adsense-plugin.class.php:94
+#: adsense-plugin.php:34
+msgid "AdSense Options"
+msgstr "Opções do AdSense"
+
+#: adsense-plugin.class.php:94
+#: adsense-plugin.php:36
+msgid "AdSense"
+msgstr "AdSense"
+
+#: adsense-plugin.class.php:101
+#: adsense-plugin.class.php:110
+#: adsense-plugin.php:142
+msgid "Settings"
+msgstr "Configurações"
+
+#: adsense-plugin.class.php:111
+msgid "FAQ"
+msgstr "FAQ"
+
+#: adsense-plugin.class.php:112
+msgid "Support"
+msgstr "Suporte"
+
+#: adsense-plugin.class.php:248
+msgid "Options saved."
+msgstr "Opções salvas."
+
+#: adsense-plugin.class.php:371
+msgid "Please enter your Publisher ID."
+msgstr "Favor, entrar com seu ID do Editor"
+
+#: adsense-plugin.class.php:387
+msgid "Network"
+msgstr "Rede"
+
+#: adsense-plugin.class.php:390
+msgid "Publisher  ID:"
+msgstr "ID do Editor:"
+
+#: adsense-plugin.class.php:396
+msgid "Publisher ID is the unique identifer of"
+msgstr "ID do Editor é o identificador único de"
+
+#: adsense-plugin.class.php:396
+msgid "your account"
+msgstr "sua conta"
+
+#: adsense-plugin.class.php:396
+msgid "at Google AdSense."
+msgstr "no Google AdSense"
+
+#: adsense-plugin.class.php:402
+msgid "Ad Type &amp; Format"
+msgstr "Tipo de Anúncio & Formato"
+
+#: adsense-plugin.class.php:405
+msgid "Type:"
+msgstr "Tipo:"
+
+#: adsense-plugin.class.php:409
+msgid "Ad unit"
+msgstr "Anúncio"
+
+#: adsense-plugin.class.php:412
+msgid "Text and image ads"
+msgstr "Anúncios de texto e imagem"
+
+#: adsense-plugin.class.php:413
+msgid "Text ads only (default)"
+msgstr "Anúncios de texto apenas (padrão)"
+
+#: adsense-plugin.class.php:414
+msgid "Image ads only"
+msgstr "Anúncios de imagem apenas"
+
+#: adsense-plugin.class.php:418
+msgid "Link unit"
+msgstr "Link"
+
+#: adsense-plugin.class.php:422
+msgid "Format:"
+msgstr "Formato:"
+
+#: adsense-plugin.class.php:486
+msgid "Position &amp; Numbers of Ads"
+msgstr "Posição e número de anúncios"
+
+#: adsense-plugin.class.php:489
+msgid "Position:"
+msgstr "Posição:"
+
+#: adsense-plugin.class.php:493
+msgid "After post text (Single page)"
+msgstr "Texto pós postagem (página única)"
+
+#: adsense-plugin.class.php:494
+msgid "After post text (Home page)"
+msgstr "Texto pós postagem (Home page)"
+
+#: adsense-plugin.class.php:495
+msgid "After post text (Single page and Home page)"
+msgstr "Texto pós postagem (Home page e página única)"
+
+#: adsense-plugin.class.php:496
+msgid "After comment form"
+msgstr "Comentário pós formulário"
+
+#: adsense-plugin.class.php:497
+msgid "Before footer"
+msgstr "Antes do rodapé"
+
+#: adsense-plugin.class.php:502
+msgid "Number of Ads:"
+msgstr "Número de anúncios:"
+
+#: adsense-plugin.class.php:512
+msgid "Number of ads after post text on your home page."
+msgstr "Número de anúncios depois do texto de sua home page."
+
+#: adsense-plugin.class.php:517
+msgid "Visualisation"
+msgstr "Visualização"
+
+#: adsense-plugin.class.php:520
+msgid "Color:"
+msgstr "Cor:"
+
+#: adsense-plugin.class.php:530
+msgid "Border"
+msgstr "Borda"
+
+#: adsense-plugin.class.php:545
+msgid "Title"
+msgstr "Título"
+
+#: adsense-plugin.class.php:555
+msgid "Background"
+msgstr "Fundo de tela"
+
+#: adsense-plugin.class.php:563
+msgid "Text"
+msgstr "Texto"
+
+#: adsense-plugin.class.php:571
+msgid "URL"
+msgstr "URL"
+
+#: adsense-plugin.class.php:580
+msgid "Palette:"
+msgstr "Paleta:"
+
+#: adsense-plugin.class.php:585
+msgid "Default Google pallete"
+msgstr "Padrão da paleta do Google"
+
+#: adsense-plugin.class.php:588
+msgid "Open Air"
+msgstr "Ar livre"
+
+#: adsense-plugin.class.php:589
+msgid "Seaside"
+msgstr "Beira mar"
+
+#: adsense-plugin.class.php:590
+msgid "Shadow"
+msgstr "Sombra"
+
+#: adsense-plugin.class.php:591
+msgid "Blue Mix"
+msgstr "Blue mix"
+
+#: adsense-plugin.class.php:592
+msgid "Ink"
+msgstr "Tinta"
+
+#: adsense-plugin.class.php:593
+msgid "Graphite"
+msgstr "Grafite"
+
+#: adsense-plugin.class.php:598
+msgid "This is a standard Google color palette."
+msgstr "Essa é uma paleta de cor padrão do Google"
+
+#: adsense-plugin.class.php:602
+msgid "Corner Style:"
+msgstr "Estilo de canto:"
+
+#: adsense-plugin.class.php:606
+msgid "Select corner style"
+msgstr "Selecione um estilo de canto"
+
+#: adsense-plugin.class.php:607
+msgid "Square corners"
+msgstr "Cantos quadrados"
+
+#: adsense-plugin.class.php:608
+msgid "Slightly rounded corners"
+msgstr "Cantos levemente arredondados"
+
+#: adsense-plugin.class.php:609
+msgid "Very rounded corners"
+msgstr "Cantos muito arredondados"
+
+#: adsense-plugin.class.php:613
+msgid "Corner style property will help you to make your Ad rounded corners."
+msgstr "Propriedade de estilo de canto irá lhe ajudar a fazer anúncio de cantos arredondados"
+
+#: adsense-plugin.class.php:618
+msgid "Donate"
+msgstr "Doação"
+
+#: adsense-plugin.class.php:621
+msgid "Donate us:"
+msgstr "Faça uma doação:"
+
+#: adsense-plugin.class.php:626
+msgid "Support us by Donating Ad Space."
+msgstr "Nos dê suporte Doando espaço de anúncio"
+
+#: adsense-plugin.class.php:628
+msgid "Input percentage of ad slots to share [Default: 0%]."
+msgstr "Entrada de porcentagem de espaços para compartilhar [Padrão: 0%]."
+
+#: adsense-plugin.class.php:637
+msgid "Save Changes"
+msgstr "Salvar mudanças"
+
+#: adsense-plugin.php:140
+msgid "Activated plugins"
+msgstr "Plugins ativados"
+
+#: adsense-plugin.php:142
+#: adsense-plugin.php:150
+#: adsense-plugin.php:158
+msgid "Read more"
+msgstr "Leia mais"
+
+#: adsense-plugin.php:148
+msgid "Installed plugins"
+msgstr "Plugins instalados"
+
+#: adsense-plugin.php:156
+msgid "Recommended plugins"
+msgstr "Plugins recomendados"
+
+#: adsense-plugin.php:158
+msgid "Download"
+msgstr "Download"
+
+#: adsense-plugin.php:158
+#, php-format
+msgid "Install %s"
+msgstr "Instalar %s"
+
+#: adsense-plugin.php:158
+msgid "Install now from wordpress.org"
+msgstr "Instalar agora do wordpress.org"
+
+#: adsense-plugin.php:160
+msgid "If you have any questions, please contact us via plugin@bestwebsoft.com or fill in our contact form on our site"
+msgstr "Se você tiver qualquer dúvida, por favor entre em contato via plugin@bestwebsoft.com ou preencha nosso formulário de contato em nosso site"
+
