@@ -232,6 +232,7 @@ class adsns
 	// Saving settings
 	function adsns_settings_page()
 	{
+		// Run once
 		if( ! $adsns_options = get_option( 'adsns_sets' ) )
 				$this->adsns_activate();
 
@@ -241,7 +242,8 @@ class adsns
 		<h2>' . $this->page_title . '</h2>
 		';
 		
-		if ( isset( $_REQUEST['adsns_update'] ) ) { ### if click on Save Changes button
+		if ( isset( $_REQUEST['adsns_update'] ) && check_admin_referer( plugin_basename(__FILE__), 'adsns_nonce_name' )  ) { ### if click on Save Changes button
+
 			if ( strlen( $_REQUEST['client_id'] ) > 0 ) {
 				echo "<div class='updated'><p>".__( "Options saved.", 'adsense' )."</p></div>";
 					
@@ -375,6 +377,8 @@ class adsns
 	// Admin interface of plugin
 	function adsns_view_options_page()
 	{
+			static $sp_nonce_flag = false;
+
 		$this->adsns_options = get_option( 'adsns_settings' );
 		?>
   	
@@ -486,9 +490,9 @@ class adsns
 				<div class="right">
 					<input type="hidden" id="position_val" value="<?php echo $this->adsns_options['position'] ?>">
 					<select name="position" id="position">
-						<option value="postend"><?php _e( 'After post text(Single page)', 'adsense' ); ?></option>
-						<option value="homepostend"><?php _e( 'After post text(Home page)', 'adsense' ); ?></option>
-						<option value="homeandpostend"><?php _e( 'After post text(Single page and Home page)', 'adsense' ); ?></option>
+						<option value="postend"><?php _e( 'After post text (Single page)', 'adsense' ); ?></option>
+						<option value="homepostend"><?php _e( 'After post text (Home page)', 'adsense' ); ?></option>
+						<option value="homeandpostend"><?php _e( 'After post text (Single page and Home page)', 'adsense' ); ?></option>
 						<option value="commentform"><?php _e( 'After comment form', 'adsense' ); ?></option>
 						<option value="footer"><?php _e( 'Before footer', 'adsense' ); ?></option>
 					</select>
@@ -632,6 +636,7 @@ class adsns
 			<div style="margin-top: 25px;" >
 				<input type="submit" class="button-primary" name="adsns_update" value="<?php _e('Save Changes') ?>" />
 			</div>
+				<?php wp_nonce_field( plugin_basename(__FILE__), 'adsns_nonce_name' ); ?>
 		</form>		
 	<?php		
 	}

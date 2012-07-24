@@ -4,7 +4,7 @@ Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10
 Tags: google, adsense, ads, bestwebsoft, google adsense, google plugin, adsense plugin, ads plugin, gogle
 Requires at least: 2.9
 Tested up to: 3.4.1
-Stable tag: 1.8
+Stable tag: 1.9
 
 This plugin allows implementation of Google AdSense to your website.
 
@@ -58,6 +58,9 @@ At the page of plugin settings open menu item 'Position & Numbers of Ads' and on
 
 == Changelog ==
 
+= V1.9 - 24.07.2012 =
+* Bugfix : Cross Site Request Forgery bug was fixed. 
+
 = V1.8 - 09.07.2012 =
 * NEW : Hebrew language file is added to the plugin.
 * Bugfix : Ads displaying on the frontend with Single page and Home page option was fixed. 
@@ -97,6 +100,9 @@ At the page of plugin settings open menu item 'Position & Numbers of Ads' and on
 * Changed : Usability at the settings page of the plugin was improved.
 
 == Upgrade Notice ==
+
+= V1.9 - 24.07.2012 =
+Cross Site Request Forgery bug was fixed. 
 
 = V1.8 =
 Hebrew language file is added to the plugin. Ads displaying on the frontend with Single page and Home page option was fixed. 
