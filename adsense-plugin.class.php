@@ -237,7 +237,7 @@ class adsns
 				$this->adsns_activate();
 
 		echo '
-		<div class="wrap">
+		<div class="wrap" id="adsns_wrap">
 		<div class="icon32 icon32-bws" id="icon-options-general"></div>
 		<h2>' . $this->page_title . '</h2>
 		';
@@ -654,9 +654,9 @@ class adsns
 			
 			wp_register_style( 'adsnsFarbtasticStylesheet', plugins_url( 'farbtastic/farbtastic.css' , __FILE__ ) ) ;
 			wp_enqueue_style( 'adsnsFarbtasticStylesheet' );
+			wp_register_style( 'adsnsStylesheet', plugins_url( 'css/style.css' , __FILE__ ) );
+			wp_enqueue_style( 'adsnsStylesheet' );
 		}
-		wp_register_style( 'adsnsStylesheet', plugins_url( 'css/style.css' , __FILE__ ) );
-		wp_enqueue_style( 'adsnsStylesheet' );
 	}
 	
 	// Stylesheets for ads
