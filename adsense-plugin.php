@@ -4,7 +4,7 @@ Plugin Name: Google AdSense Plugin
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: This plugin allows implementing Google AdSense to your website.
 Author: BestWebSoft
-Version: 1.10
+Version: 1.11
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -61,29 +61,22 @@ function adsns_show_ads() {
 		add_filter( 'the_content', array( $adsns_plugin, 'adsns_end_post_ad' ) );  	// adding ad after post
 	}
 	
-	else if ( $adsns_options['position'] == 'homepostend' ) {										// if we choose ad position after post(home page)
-		add_action( 'the_content', array( $adsns_plugin, 'adsns_post_count' ) );			// get a number of posts on home page
+	else if ( $adsns_options['position'] == 'homepostend' ) {								// if we choose ad position after post(home page)
 		add_filter( 'the_content', array( $adsns_plugin, 'adsns_end_home_post_ad' ) );		// adding ad after post
-		add_action('wp_head', array( $adsns_plugin, 'adsns_home_postviews' ) );				// count a number of ad views
 	}
 
 	else if ( $adsns_options['position'] == 'homeandpostend' ) {										// if we choose ad position after post(home page)
-		add_action( 'the_content', array( $adsns_plugin, 'adsns_post_count' ) );			// get a number of posts on home page
 		add_filter( 'the_content', array( $adsns_plugin, 'adsns_end_home_post_ad' ) );		// adding ad after post
-		add_action( 'wp_head', array( $adsns_plugin, 'adsns_home_postviews' ) );				// count a number of ad views
 		add_filter( 'the_content', array( $adsns_plugin, 'adsns_end_post_ad' ) );  	// adding ad after post
-		add_action( 'wp_head', array( $adsns_plugin, 'adsns_single_postviews' ) );	// count a number of ad views
 	}
 
 	else if ( $adsns_options['position'] == 'commentform' ) {											// if we choose ad position after comment form
 		add_filter( 'comment_id_fields', array( $adsns_plugin, 'adsns_end_comment_ad' ) );		// adding ad after comment form
-		add_action('wp_head', array( $adsns_plugin, 'adsns_single_postviews' ) );				// count a number of ad views
 	}
 
 	else if ( $adsns_options['position'] == 'footer' ) {
 	// if we choose ad position in a footer
 		add_filter( 'get_footer', array( $adsns_plugin, 'adsns_end_footer_ad' ) );		// adding footer ad
-		add_action('wp_head', array( $adsns_plugin, 'adsns_footer_postviews' ) );		// count a number of ad views
 	}
 	// end checking
 }
@@ -183,6 +176,9 @@ add_action( 'admin_init', array( $adsns_plugin, 'adsns_write_admin_head' ) );
 
 // Action for adsns_show_ads
 add_action( 'after_setup_theme', 'adsns_show_ads' );
+
+// Display the plugin widget
+add_action( 'widgets_init', array( $adsns_plugin, 'adsns_register_widget' ) );
 
 // Adding ads stylesheets
 add_action( 'wp_head', array( $adsns_plugin, 'adsns_head' ) );

@@ -8,83 +8,62 @@ class adsns
 	var $adsns_options;
 	 
 	// Constructor
-	function adsns()
-	{
+	function adsns(){
+
 		$this->adsns_options = get_option( 'adsns_settings' );
 		$this->adsns_options['code'] = stripslashes( $this->adsns_options['code'] );
+		$this->adsns_options['num_show'] = 0;
+		update_option( 'adsns_settings', $this->adsns_options );
 	}
-	
-	// Number of views ads on a home page
-	function adsns_home_postviews() {
-		/*if( is_home() ) {
-			$this->adsns_options['num_show'] += $this->adsns_options['max_homepostads'];  // Counting views
-			update_option( 'adsns_settings', $this->adsns_options );
-		}*/
-	}
-	
-	// Number of views ads on a single page
-	function adsns_single_postviews() {
-		if( is_single() ) {			
-			$this->adsns_options['num_show']++;
-			update_option( 'adsns_settings', $this->adsns_options );
-		}
-	}
-	
-	// Number of views footer ads
-	function adsns_footer_postviews() {
-		if( !is_feed() ) {			
-			$this->adsns_options['num_show']++;
-			update_option( 'adsns_settings', $this->adsns_options );
-		}
-	}
-	
-	// Number of posts on home page
-	function adsns_post_count( $content ) {
-		global $adsns_count;
-		$adsns_count++;
-		return $content;
-	}	
-	
+
 	// Show ads after post on a single page
 	function adsns_end_post_ad( $content ) {
+		global $adsns_count;
 		$this->adsns_donate();  // Calling a donate function
-		if ( ! is_feed() && is_single() ) {  // Checking if we are on a single page
+		if ( ! is_feed() && is_single() && $adsns_count < $this->adsns_options[ 'max_ads' ] && $adsns_count < $this->adsns_options['max_homepostads'] ) {  // Checking if we are on a single page
 			$content.= '<div id="end_post_ad" class="ads">' . $this->adsns_options['code'] . '</div>';  // Adding an ad code on page
+			$this->adsns_options['num_show'] ++;  // Counting views
+			update_option( 'adsns_settings', $this->adsns_options );
+			$adsns_count = $this->adsns_options['num_show'];
 		}
 		return $content;
 	}
 	
 	// Show ads after comment form
 	function adsns_end_comment_ad() {
+		global $adsns_count;
 		$this->adsns_donate();
-		if( ! is_feed() ) {
+		if( ! is_feed() && $adsns_count < $this->adsns_options[ 'max_ads' ] && $adsns_count < $this->adsns_options['max_homepostads'] ) {
 			echo '<div id="end_comment_ad" class="ads">' . $this->adsns_options['code'] . '</div>';
+			$this->adsns_options['num_show'] ++;  // Counting views
+			update_option( 'adsns_settings', $this->adsns_options );
+			$adsns_count = $this->adsns_options['num_show'];
 		}
 	}
 	
 	// Show ads after post on home page
 	function adsns_end_home_post_ad( $content ) {
 		global $adsns_count;
-		$current_count	= $adsns_count;		// backup current number of shows ads
-		while ( $adsns_count <= $this->adsns_options[ 'max_ads' ] && $adsns_count <= $this->adsns_options['max_homepostads'] ) {
-			$adsns_count		+= $this->adsns_options[ 'max_homepostads' ];	// number of shows ads
-			//$adsns_count					= $this->adsns_options[ 'max_ads' ] + 1;			// set count value out of range
-			$this->adsns_donate();		// Calling a donate function
+		if ( $adsns_count < $this->adsns_options[ 'max_ads' ] && $adsns_count < $this->adsns_options['max_homepostads'] ) {
 			if( ! is_feed() && is_home() ) {
+				$this->adsns_donate();		// Calling a donate function
 				$content .= '<div class="ads">' . $this->adsns_options['code'] . '</div>';
+				$this->adsns_options['num_show'] ++;  // Counting views
+				update_option( 'adsns_settings', $this->adsns_options );
+				$adsns_count = $this->adsns_options['num_show'];		// restore count value
 			}
 		}
-		$this->adsns_options['num_show'] ++;  // Counting views
-		update_option( 'adsns_settings', $this->adsns_options );
-		$adsns_count = $current_count;		// restore count value
 		return $content;
 	}
 	
 	// Show ads in footer
 	function adsns_end_footer_ad() {
 		$this->adsns_donate();
-		if( ! is_feed() ) {
+		if( ! is_feed() && $adsns_count < $this->adsns_options[ 'max_ads' ] && $adsns_count < $this->adsns_options['max_homepostads'] ) {
 			echo '<div id="end_footer_ad" class="ads">' . $this->adsns_options['code'] . '</div>';
+			$this->adsns_options['num_show'] ++;  // Counting views
+			update_option( 'adsns_settings', $this->adsns_options );
+			$adsns_count = $this->adsns_options['num_show'];		// restore count value
 		}
 	}
 	
@@ -149,9 +128,15 @@ class adsns
 						google_color_link = "#0000FF";
 						google_color_text = "#000000";
 						google_color_url = "#008000";
-						</script><script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>'
+						</script><input type="hidden" value="Version: 1.11" />',
+			'widget_title' => ''
 		);
-		add_option( 'adsns_settings', $new_options );
+		if( ! get_option( 'adsns_sets' ) )
+			add_option( 'adsns_sets', $new_options, '', 'yes' );
+
+		$adsns_options = get_option( 'adsns_sets' );
+		$adsns_options = array_merge( $new_options, $adsns_options );
+		update_option( 'adsns_sets', $adsns_options );
 	}
 	
 	// Donate settings
@@ -174,7 +159,7 @@ class adsns
 						google_color_link = "' .$this->adsns_options['title']. '";
 						google_color_text = "' .$this->adsns_options['text']. '";
 						google_color_url = "' .$this->adsns_options['url']. '";
-						</script><script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>';			
+						</script><script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script><input type="hidden" value="Version: 1.11" />';	
 			$this->adsns_options['code'] = $don_code;
 			update_option( 'adsns_settings', $this->adsns_options );
 		}
@@ -218,24 +203,22 @@ class adsns
 					google_color_link = "' . $this->adsns_options['title'] . '";
 					google_color_text = "' . $this->adsns_options['text'] . '";
 					google_color_url = "' . $this->adsns_options['url'] . '";
-					</script><script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>';			
+					</script><script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script><input type="hidden" value="Version: 1.11" />';			
 			$this->adsns_options['code'] = $don_code;
 			update_option( 'adsns_settings', $this->adsns_options );
 		}
 	}
 	
 	// Function fo deactivation
-	function adsns_deactivate()
-	{
+	function adsns_deactivate(){
 	}
 
 	// Saving settings
-	function adsns_settings_page()
-	{
+	function adsns_settings_page(){
 		// Run once
-		if( ! $adsns_options = get_option( 'adsns_sets' ) )
+		if( ! $adsns_options = get_option( 'adsns_sets' ) ){
 				$this->adsns_activate();
-
+		}
 		echo '
 		<div class="wrap" id="adsns_wrap">
 		<div class="icon32 icon32-bws" id="icon-options-general"></div>
@@ -364,7 +347,7 @@ class adsns
 						google_color_link = "' . $this->adsns_options['title'] . '";
 						google_color_text = "' . $this->adsns_options['text'] . '";
 						google_color_url = "' . $this->adsns_options['url'] . '";
-						</script><script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>';			
+						</script><script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script><input type="hidden" value="Version: 1.11" />';			
 				$this->adsns_options['code'] = $don_code;
 				update_option( 'adsns_settings', $this->adsns_options );				
 			}
@@ -377,7 +360,7 @@ class adsns
 	// Admin interface of plugin
 	function adsns_view_options_page()
 	{
-			static $sp_nonce_flag = false;
+		static $sp_nonce_flag = false;
 
 		$this->adsns_options = get_option( 'adsns_settings' );
 		?>
@@ -490,9 +473,9 @@ class adsns
 				<div class="right">
 					<input type="hidden" id="position_val" value="<?php echo $this->adsns_options['position'] ?>">
 					<select name="position" id="position">
-						<option value="postend"><?php _e( 'After post text (Single page)', 'adsense' ); ?></option>
+						<option value="postend"><?php _e( 'After post text (Single post page)', 'adsense' ); ?></option>
 						<option value="homepostend"><?php _e( 'After post text (Home page)', 'adsense' ); ?></option>
-						<option value="homeandpostend"><?php _e( 'After post text (Single page and Home page)', 'adsense' ); ?></option>
+						<option value="homeandpostend"><?php _e( 'After post text (Single post page and Home page)', 'adsense' ); ?></option>
 						<option value="commentform"><?php _e( 'After comment form', 'adsense' ); ?></option>
 						<option value="footer"><?php _e( 'Before footer', 'adsense' ); ?></option>
 					</select>
@@ -672,5 +655,57 @@ class adsns
 EOF;
 	}
 
+	/*
+	*displays AdSense in widget 
+	*@return array()
+	*/
+	function adsns_widget_display() {
+		global $adsns_count;
+		$this->adsns_options = get_option( 'adsns_settings' );
+		$title = $this->adsns_options['widget_title'];
+		echo '<li class="widget-container"><h3 class="widget-title">'.$title.'</h3>';
+		if( $adsns_count < $this->adsns_options[ 'max_ads' ] ){ 
+			$this->adsns_donate();
+			echo '<div class="ads">' . $this->adsns_options['code'] . '</div>';
+			$this->adsns_options['num_show']++;
+			update_option( 'adsns_settings', $this->adsns_options );
+			$adsns_count = $this->adsns_options['num_show'];
+		}
+		echo "</li>";
+	}
+
+	/*
+	*Register widget for use in sidebars. 
+	*Registers widget control callback for customizing options
+	*/
+	function adsns_register_widget() {
+		wp_register_sidebar_widget(
+			'adsns_widget',        // unique widget id
+			'AdSense',          // widget name
+			array( $this, 'adsns_widget_display' ),  // callback function
+			array(                  // options
+				'description' => 'Widget displays AdSense'
+			)
+		);
+		wp_register_widget_control(
+			'adsns_widget', // unique widget id
+			'AdSense', // widget name
+			array( $this, 'adsns_widget_control' ) // Callback function
+		); 
+	}
+
+	/*
+	*Registers widget control callback for customizing options
+	*@return array
+	*/
+	function adsns_widget_control() {
+		if( isset( $_POST["adsns-widget-submit"] ) ) {
+			$this->adsns_options['widget_title'] = strip_tags( stripslashes( $_POST["adsns-widget-title"] ) );
+			update_option( 'adsns_settings', $this->adsns_options );
+		}
+		$title = $this->adsns_options['widget_title'];
+		echo '<p><label for="adsns-widget-title">'.__( 'Title', 'adsns' ).'<input class="widefat" id="adsns-widget-title" name="adsns-widget-title" type="text" value="'.$title.'" /></label></p>';
+		echo '<input type="hidden" id="adsns-widget-submit" name="adsns-widget-submit" value="1" />';
+	}		
 } // class
 ?>

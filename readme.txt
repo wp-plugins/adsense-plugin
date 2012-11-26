@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: google, adsense, ads, bestwebsoft, google adsense, google plugin, adsense plugin, ads plugin, gogle
 Requires at least: 2.9
-Tested up to: 3.4.1
-Stable tag: 1.10
+Tested up to: 3.4.2
+Stable tag: 1.11
 
 This plugin allows implementation of Google AdSense to your website.
 
@@ -18,6 +18,7 @@ Google AdSense Plugin allows setting of ads displaying parameters, such as forma
 = Features =
 
 * Display: Ability to adjust look of the ad, choose a color scheme, layout, number of ad units per page.
+* Display: Ability to insert google ads in widget.
 * Actions: Ability to insert google ads to the website automatically.
 
 = Translation =
@@ -59,6 +60,9 @@ At the page of plugin settings open menu item 'Position & Numbers of Ads' and on
 2. All menu items at the page are unwrapped.
 
 == Changelog ==
+
+= V1.11 - 26.11.2012 =
+* NEW : The option for the displaying of google ads has been implemented using the widget.
 
 = V1.10 - 03.08.2012 =
 * NEW : Polish and Spanish languages files was added to the plugin.
@@ -105,6 +109,9 @@ At the page of plugin settings open menu item 'Position & Numbers of Ads' and on
 * Changed : Usability at the settings page of the plugin was improved.
 
 == Upgrade Notice ==
+
+= V1.11 =
+The option for the displaying of google ads has been implemented using the widget.
 
 = V1.10 =
 Polish and Spanish languages files was added to the plugin.
