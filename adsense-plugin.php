@@ -4,7 +4,7 @@ Plugin Name: Google AdSense Plugin
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: This plugin allows implementing Google AdSense to your website.
 Author: BestWebSoft
-Version: 1.11
+Version: 1.12
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -35,27 +35,11 @@ $adsns_plugin->page_title = __( 'AdSense Options', 'adsense'); // title for opti
  
 $adsns_plugin->menu_title = __( 'AdSense', 'adsense'); 	// name in menu
 
-$count = 0; 							//current number of showed ads
-$current_count = 0; 					// tmp var for storing a number of already showed ads
-$adsns_count = 0; 						// number of posts on home page
-if( $adsns_options = get_option( 'adsns_sets' ) ) {
-	unset( $adsns_options['code2'] );
-	add_option( 'adsns_settings', $adsns_options );
-	delete_option( 'adsns_sets' );
-}
-$adsns_options = get_option( 'adsns_settings' );	// array of options
-
-$max_ads = $adsns_options['max_ads'];			// max number of ads
-
 // This function showing ads at the choosen position
 function adsns_show_ads() {
-	global $adsns_options;
-	global $max_ads;
-	global $count;
-	global $current_count;
-	global $adsns_count;
-	global $adsns_plugin;
-	
+	global $adsns_options, $max_ads, $count, $current_count, $adsns_count, $adsns_plugin;
+	$adsns_plugin->adsns_activate();
+
 	// checking in what position we should show an ads
 	if ( $adsns_options['position'] == 'postend' ) {  									// if we choose ad position after post(single page)
 		add_filter( 'the_content', array( $adsns_plugin, 'adsns_end_post_ad' ) );  	// adding ad after post
@@ -172,6 +156,7 @@ add_filter( 'plugin_action_links', array( $adsns_plugin, 'adsns_plugin_action_li
 add_filter( 'plugin_row_meta', array( $adsns_plugin, 'adsns_register_plugin_links'), 10, 2 );
 
 add_action( 'init', 'adsns_plugin_init' );
+add_action( 'init', array( $adsns_plugin, 'adsns_activate' ) );
 add_action( 'admin_init', array( $adsns_plugin, 'adsns_write_admin_head' ) );
 
 // Action for adsns_show_ads
@@ -191,5 +176,6 @@ register_deactivation_hook( __FILE__, array( $adsns_plugin, 'adsns_deactivate' )
 
 // Activation hook
 register_activation_hook( __FILE__, array( $adsns_plugin, 'adsns_activate' ) );
+
 
 ?>
