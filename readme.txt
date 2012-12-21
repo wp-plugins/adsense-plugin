@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: google, adsense, ads, bestwebsoft, google adsense, google plugin, adsense plugin, ads plugin, gogle
 Requires at least: 2.9
-Tested up to: 3.4.2
-Stable tag: 1.11
+Tested up to: 3.5
+Stable tag: 1.12
 
 This plugin allows implementation of Google AdSense to your website.
 
@@ -61,6 +61,10 @@ At the page of plugin settings open menu item 'Position & Numbers of Ads' and on
 
 == Changelog ==
 
+= V1.12 - 21.12.2012 =
+* Bugfix : Ads displaying on the frontend with Single page option was fixed.
+* Update : We updated all functionality for wordpress 3.5.
+
 = V1.11 - 26.11.2012 =
 * NEW : The option for the displaying of google ads has been implemented using the widget.
 
@@ -109,6 +113,9 @@ At the page of plugin settings open menu item 'Position & Numbers of Ads' and on
 * Changed : Usability at the settings page of the plugin was improved.
 
 == Upgrade Notice ==
+
+= V1.12 =
+Ads displaying on the frontend with Single page option was fixed. We updated all functionality for wordpress 3.5.
 
 = V1.11 =
 The option for the displaying of google ads has been implemented using the widget.
