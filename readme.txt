@@ -5,6 +5,8 @@ Tags: google, adsense, ads, bestwebsoft, google adsense, google plugin, adsense 
 Requires at least: 2.9
 Tested up to: 3.5
 Stable tag: 1.12
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 This plugin allows implementation of Google AdSense to your website.
 
