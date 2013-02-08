@@ -389,12 +389,14 @@ class adsns
 				<label for="color"> <?php _e( 'Network', 'adsense' ); ?> </label>
 			</div>
 			<div class="settings_body" id="network">
-				<label for="client_id" class="left" ><?php _e( 'Publisher  ID:', 'adsense' ); ?></label>
+				<label for="client_id" class="left" ><?php _e( 'Publisher ID:', 'adsense' ); ?></label>
 				<div class="right">
-					<input type="hidden" id="client_id_val" name="client_id_val" value="<?php echo $this->adsns_options['clientid'] ?>" />
+					pub_<input type="hidden" id="client_id_val" name="client_id_val" value="<?php echo $this->adsns_options['clientid'] ?>" />
 					<input type="text" id="client_id" name="client_id" class ="positive-integer" size="20" maxlength="16" value="<?php echo $this->adsns_options['clientid'] ?>" />
 					<br />
 					<div style="width: 250px; padding-left: 2px;">
+						<span class="description"><?php _e( 'You must enter only numerals here.', 'adsense' ); ?></span><br/>
+						<span class="description"><?php _e( '(For example: 1234567891234567)', 'adsense' ); ?></span><br/>
 						<span class="description"><?php _e( 'Publisher ID is the unique identifer of', 'adsense' ); ?> <a href="https://www.google.com/adsense"><?php _e( 'your account', 'adsense' ); ?></a> <?php _e( 'at Google AdSense.', 'adsense' ); ?></span>
 					</div>
 				</div>

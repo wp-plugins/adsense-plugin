@@ -4,7 +4,7 @@ Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10
 Tags: google, adsense, ads, bestwebsoft, google adsense, google plugin, adsense plugin, ads plugin, gogle
 Requires at least: 2.9
 Tested up to: 3.5.1
-Stable tag: 1.13
+Stable tag: 1.14
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -63,6 +63,9 @@ At the page of plugin settings open menu item 'Position & Numbers of Ads' and on
 
 == Changelog ==
 
+= V1.14 - 08.02.2013 =
+* NEW : We added explanations at the settings page of the plugin.
+
 = V1.13 - 31.01.2013 =
 * Bugfix : Bugs in admin menu were fixed.
 * Update : We updated all functionality for wordpress 3.5.1.
@@ -119,6 +122,9 @@ At the page of plugin settings open menu item 'Position & Numbers of Ads' and on
 * Changed : Usability at the settings page of the plugin was improved.
 
 == Upgrade Notice ==
+
+= V1.14 =
+We added explanations at the settings page of the plugin.
 
 = V1.13 =
 Bugs in admin menu were fixed. We updated all functionality for wordpress 3.5.1.
