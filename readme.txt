@@ -4,7 +4,7 @@ Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10
 Tags: google, adsense, ads, bestwebsoft, google adsense, google plugin, adsense plugin, ads plugin, gogle
 Requires at least: 2.9
 Tested up to: 3.5.1
-Stable tag: 1.14
+Stable tag: 1.15
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,7 +29,7 @@ Google AdSense Plugin allows setting of ads displaying parameters, such as forma
 * Dutch (nl_NL) (thanks to Paul Göttgens)
 * Hebrew (he_IL) (thanks to Ahrale)
 * Polish (pl_PL) (thanks to Tomasz Łaziuk)
-* Spanish (es_ES) (thanks to José Fernando De Leon)
+* Spanish (es_ES) (thanks to <a href="mailto:mrjosefernando@gmail.com">José Fernando De Leon</a>)
 * Russian (ru_RU)
 
 If you create your own language pack or update an existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank"> text in PO and MO files</a> for <a href="http://bestwebsoft.com/" target="_blank">BWS</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
@@ -62,6 +62,9 @@ At the page of plugin settings open menu item 'Position & Numbers of Ads' and on
 2. All menu items at the page are unwrapped.
 
 == Changelog ==
+
+= V1.15 - 18.02.2013 =
+* Update : Spanish languages files was updated in the plugin.
 
 = V1.14 - 08.02.2013 =
 * NEW : We added explanations at the settings page of the plugin.
@@ -122,6 +125,9 @@ At the page of plugin settings open menu item 'Position & Numbers of Ads' and on
 * Changed : Usability at the settings page of the plugin was improved.
 
 == Upgrade Notice ==
+
+= V1.15 =
+Spanish languages files was updated in the plugin.
 
 = V1.14 =
 We added explanations at the settings page of the plugin.
