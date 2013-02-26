@@ -27,7 +27,7 @@ Google AdSense Plugin allows setting of ads displaying parameters, such as forma
 
 * Brazilian Portuguese (pt_BR) (thanks Rafael)
 * Dutch (nl_NL) (thanks to Paul Göttgens)
-* German (de_DE) (thanks to <a href="mailto:kontakt@psyflex.de">psyflex</a>)
+* German (de_DE) (thanks to Psyflex)
 * Hebrew (he_IL) (thanks to Ahrale)
 * Polish (pl_PL) (thanks to Tomasz Łaziuk)
 * Spanish (es_ES) (thanks to <a href="mailto:mrjosefernando@gmail.com">José Fernando De Leon</a>)
