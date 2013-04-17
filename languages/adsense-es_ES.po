@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: adsense\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-18 12:33+0300\n"
+"POT-Creation-Date: 2013-04-17 11:55+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Fernando De León <mrjosefernando@gmail.com>\n"
@@ -18,7 +18,8 @@ msgstr ""
 
 #: adsense-plugin.php:34
 #: adsense-plugin.class.php:73
-msgid "AdSense Options"
+#, fuzzy
+msgid "AdSense Settings"
 msgstr "Configuraci&oacute;n de AdSense"
 
 #: adsense-plugin.php:36
@@ -64,7 +65,7 @@ msgid "Install now from wordpress.org"
 msgstr "Instalar ahora desde wordpress.org"
 
 #: adsense-plugin.php:139
-msgid "If you have any questions, please contact us via plugin@bestwebsoft.com or fill in our contact form on our site"
+msgid "If you have any questions, please contact us via plugin@bestwebsoft.com or fill out the contact form on our website"
 msgstr ""
 
 #: adsense-plugin.class.php:90
@@ -76,8 +77,9 @@ msgid "Support"
 msgstr "Soporte"
 
 #: adsense-plugin.class.php:251
-msgid "Options saved."
-msgstr "Configuraci&oacute;n guardad"
+#, fuzzy
+msgid "Settings saved"
+msgstr "Ajustes"
 
 #: adsense-plugin.class.php:374
 msgid "Please enter your Publisher ID."
@@ -92,7 +94,7 @@ msgid "Publisher ID:"
 msgstr "ID de editor"
 
 #: adsense-plugin.class.php:398
-msgid "You must enter only numerals here."
+msgid "You should enter only digits here."
 msgstr ""
 
 #: adsense-plugin.class.php:399
@@ -100,7 +102,8 @@ msgid "(For example: 1234567891234567)"
 msgstr ""
 
 #: adsense-plugin.class.php:400
-msgid "Publisher ID is the unique identifer of"
+#, fuzzy
+msgid "Publisher ID is a unique identifier of"
 msgstr "El ID de editor es &uacute;nico de"
 
 #: adsense-plugin.class.php:400
@@ -108,7 +111,8 @@ msgid "your account"
 msgstr "su cuenta"
 
 #: adsense-plugin.class.php:400
-msgid "at Google AdSense."
+#, fuzzy
+msgid "in Google AdSense."
 msgstr "de Google Adsense"
 
 #: adsense-plugin.class.php:406
@@ -120,8 +124,8 @@ msgid "Type:"
 msgstr "Tipo"
 
 #: adsense-plugin.class.php:413
-msgid "Ad unit"
-msgstr "Bloque de enlace"
+msgid "Ad block"
+msgstr ""
 
 #: adsense-plugin.class.php:416
 msgid "Text and image ads"
@@ -136,15 +140,16 @@ msgid "Image ads only"
 msgstr "Anuncios de im&aacute;genes &uacute;nicamente"
 
 #: adsense-plugin.class.php:422
-msgid "Link unit"
-msgstr "Bloque de enlace"
+msgid "Block of links"
+msgstr ""
 
 #: adsense-plugin.class.php:426
 msgid "Format:"
 msgstr "Formato"
 
 #: adsense-plugin.class.php:490
-msgid "Position &amp; Numbers of Ads"
+#, fuzzy
+msgid "Position &amp; amount of ads"
 msgstr "Posici&oacute;n &amp; n&uacute;mero de anuncios"
 
 #: adsense-plugin.class.php:493
@@ -153,24 +158,27 @@ msgstr "Posici&oacute;n"
 
 #: adsense-plugin.class.php:497
 #, fuzzy
-msgid "After post text (Single post page)"
+msgid "Below the post (Single post page)"
 msgstr "Despu&eacute;s del texto del art&iacute;culo (p&aacute;gina del art&iacute;culo)"
 
 #: adsense-plugin.class.php:498
-msgid "After post text (Home page)"
+#, fuzzy
+msgid "Below the post (Home page)"
 msgstr "Despu&eacute;s del texto del art&iacute;culo (p&aacute;gina de inicio)"
 
 #: adsense-plugin.class.php:499
 #, fuzzy
-msgid "After post text (Single post page and Home page)"
+msgid "Below the post (Single post page and Home page)"
 msgstr "Despu&eacute;s del texto del art&iacute;culo (p&aacute;gina del art&iacute;culo e inicio)"
 
 #: adsense-plugin.class.php:500
-msgid "After comment form"
+#, fuzzy
+msgid "Below the comment form"
 msgstr "Despu&eacute;s del formulario de comentarios"
 
 #: adsense-plugin.class.php:501
-msgid "Before footer"
+#, fuzzy
+msgid "Above the footer"
 msgstr "Antes del pie de p&aacute;gina"
 
 #: adsense-plugin.class.php:506
@@ -178,7 +186,8 @@ msgid "Number of Ads:"
 msgstr "N&uacute;mero de anuncios"
 
 #: adsense-plugin.class.php:516
-msgid "Number of ads after post text on your home page."
+#, fuzzy
+msgid "Number of ads below the posts on the home page."
 msgstr "N&uacute;mero de anuncios Despu&eacute;s del texto de la entrada inicio"
 
 #: adsense-plugin.class.php:521
@@ -186,7 +195,8 @@ msgid "Visualisation"
 msgstr "Visualizaci&oacute;n"
 
 #: adsense-plugin.class.php:524
-msgid "Color:"
+#, fuzzy
+msgid "Colors:"
 msgstr "Color"
 
 #: adsense-plugin.class.php:534
@@ -243,7 +253,8 @@ msgid "Graphite"
 msgstr "Graffiti"
 
 #: adsense-plugin.class.php:600
-msgid "This is a standard Google color palette."
+#, fuzzy
+msgid "These are the standard Google color palettes."
 msgstr "Este es el color est&aacute;ndar del marco"
 
 #: adsense-plugin.class.php:604
@@ -251,7 +262,8 @@ msgid "Corner Style:"
 msgstr "Estilo de las esquinas"
 
 #: adsense-plugin.class.php:608
-msgid "Select corner style"
+#, fuzzy
+msgid "Select a corner style"
 msgstr "escoje un estilo de esquinas"
 
 #: adsense-plugin.class.php:609
@@ -263,30 +275,44 @@ msgid "Slightly rounded corners"
 msgstr "Esquinas ligeramente redondeadas"
 
 #: adsense-plugin.class.php:611
-msgid "Very rounded corners"
+#, fuzzy
+msgid "Rounded corners"
 msgstr "Esquinas muy redondeadas"
 
 #: adsense-plugin.class.php:615
-msgid "Corner style property will help you to make your Ad rounded corners."
+#, fuzzy
+msgid "Corner style property will help you to make your Ad corners rounded."
 msgstr "Esta propiedad le ayudar&aacute; a crear anuncios con las esquinas redondas."
 
 #: adsense-plugin.class.php:620
-msgid "Donate"
+#, fuzzy
+msgid "Donations"
 msgstr "Apoyanos"
 
 #: adsense-plugin.class.php:623
-msgid "Donate us:"
-msgstr "Donanos:"
+#, fuzzy
+msgid "Donate:"
+msgstr "Apoyanos"
 
 #: adsense-plugin.class.php:628
 msgid "Support us by Donating Ad Space."
 msgstr "Apoyanos por hacer este espacio publicitario."
 
 #: adsense-plugin.class.php:630
-msgid "Input percentage of ad slots to share [Default: 0%]."
+#, fuzzy
+msgid "Please enter a percentage value of the ad slots you are ready to share [Default: 0%]."
 msgstr "Porcentaje de espacio publicitario en la entrada para compartir [Por defecto: 0%]."
 
 #: adsense-plugin.class.php:641
 msgid "Save Changes"
 msgstr "Guardar configuraci&oacute;n"
+
+#~ msgid "Options saved."
+#~ msgstr "Configuraci&oacute;n guardad"
+#~ msgid "Ad unit"
+#~ msgstr "Bloque de enlace"
+#~ msgid "Link unit"
+#~ msgstr "Bloque de enlace"
+#~ msgid "Donate us:"
+#~ msgstr "Donanos:"
 

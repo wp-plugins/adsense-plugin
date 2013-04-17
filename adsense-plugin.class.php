@@ -70,7 +70,7 @@ class adsns
 	// Add 'BWS Plugins' menu at the left side in administer panel
 	function adsns_add_admin_menu() {
 		add_menu_page( 'BWS Plugins', 'BWS Plugins', 'manage_options', 'bws_plugins', 'bws_add_menu_render', plugins_url( "images/px.png", __FILE__ ), 1001 ); 
-		add_submenu_page( 'bws_plugins', __( 'AdSense Options', 'adsense'), __( 'AdSense', 'adsense' ), 'manage_options', "adsense-plugin.php", array( $this, 'adsns_settings_page' ) );
+		add_submenu_page( 'bws_plugins', __( 'AdSense Settings', 'adsense'), __( 'AdSense', 'adsense' ), 'manage_options', "adsense-plugin.php", array( $this, 'adsns_settings_page' ) );
 	}
 
 	// Add a link for settings page
@@ -248,7 +248,7 @@ class adsns
 		if ( isset( $_REQUEST['adsns_update'] ) && check_admin_referer( plugin_basename(__FILE__), 'adsns_nonce_name' )  ) { ### if click on Save Changes button
 
 			if ( strlen( $_REQUEST['client_id'] ) > 0 ) {
-				echo "<div class='updated'><p>".__( "Options saved.", 'adsense' )."</p></div>";
+				echo "<div class='updated'><p>".__( "Settings saved", 'adsense' )."</p></div>";
 				if ( isset( $_REQUEST['client_id'] ) ) { ## client
 					$this->adsns_options['clientid'] = $_REQUEST['client_id'];					
 				}
@@ -395,9 +395,9 @@ class adsns
 					<input type="text" id="client_id" name="client_id" class ="positive-integer" size="20" maxlength="16" value="<?php echo $this->adsns_options['clientid'] ?>" />
 					<br />
 					<div style="width: 250px; padding-left: 2px;">
-						<span class="description"><?php _e( 'You must enter only numerals here.', 'adsense' ); ?></span><br/>
+						<span class="description"><?php _e( 'You should enter only digits here.', 'adsense' ); ?></span><br/>
 						<span class="description"><?php _e( '(For example: 1234567891234567)', 'adsense' ); ?></span><br/>
-						<span class="description"><?php _e( 'Publisher ID is the unique identifer of', 'adsense' ); ?> <a href="https://www.google.com/adsense"><?php _e( 'your account', 'adsense' ); ?></a> <?php _e( 'at Google AdSense.', 'adsense' ); ?></span>
+						<span class="description"><?php _e( 'Publisher ID is a unique identifier of', 'adsense' ); ?> <a href="https://www.google.com/adsense"><?php _e( 'your account', 'adsense' ); ?></a> <?php _e( 'in Google AdSense.', 'adsense' ); ?></span>
 					</div>
 				</div>
 			</div>
@@ -410,7 +410,7 @@ class adsns
 				<div class="right">
 					<input type="hidden" id="adtype_val" value="<?php echo $this->adsns_options['adtype'] ?>">
 					<input type="radio" name="adtype" id="ad_type1" value="ad_unit" <?php if( $this->adsns_options['adtype'] == 'ad_unit' || $this->adsns_options['adtype'] == 'adunit') echo 'checked="checked"'; ?>/>
-					<label for="ad_type1"><?php _e( 'Ad unit', 'adsense' ); ?></label>
+					<label for="ad_type1"><?php _e( 'Ad block', 'adsense' ); ?></label>
 					<input type="hidden" id="adtypesel_val" value="<?php echo $this->adsns_options['adtypeselect'] ?>">					
 					<select id="adtypeselect" name ="adtypeselect" style="width: 168px; margin-left: 10px;">
 						<option value="default_image" <?php if( $this->adsns_options['adtypeselect'] == 'default_image' || $this->adsns_options['adtypeselect'] == 'text_image') echo 'selected="selected"'; ?>><?php _e( 'Text and image ads', 'adsense' ); ?></option>
@@ -419,7 +419,7 @@ class adsns
 					</select>
 					<br />
 					<input type="radio" name="adtype" id="ad_type2" value="link_unit" <?php if( $this->adsns_options['adtype'] == 'link_unit' ) echo 'checked="checked"'; ?>/>
-					<label for="ad_type2"><?php _e( 'Link unit', 'adsense' ); ?></label>
+					<label for="ad_type2"><?php _e( 'Block of links', 'adsense' ); ?></label>
 				</div>
 				<br />
 				
@@ -487,18 +487,18 @@ class adsns
 			</div>
 							
 			<div class="settings_head">
-				<label for="position"><?php _e( 'Position &amp; Numbers of Ads', 'adsense' ); ?></label>
+				<label for="position"><?php _e( 'Position &amp; amount of ads', 'adsense' ); ?></label>
 			</div>
 			<div class="settings_body" id="pos_num">
 				<label for="position" class="left"><?php _e( 'Position:', 'adsense' ); ?></label>
 				<div class="right">
 					<input type="hidden" id="position_val" value="<?php echo $this->adsns_options['position'] ?>">
 					<select name="position" id="position">
-						<option value="postend" <?php if( $this->adsns_options['position'] == 'postend' ) echo 'selected="selected"'; ?>><?php _e( 'After post text (Single post page)', 'adsense' ); ?></option>
-						<option value="homepostend" <?php if( $this->adsns_options['position'] == 'homepostend' ) echo 'selected="selected"'; ?>><?php _e( 'After post text (Home page)', 'adsense' ); ?></option>
-						<option value="homeandpostend" <?php if( $this->adsns_options['position'] == 'homeandpostend' ) echo 'selected="selected"'; ?>><?php _e( 'After post text (Single post page and Home page)', 'adsense' ); ?></option>
-						<option value="commentform" <?php if( $this->adsns_options['position'] == 'commentform' ) echo 'selected="selected"'; ?>><?php _e( 'After comment form', 'adsense' ); ?></option>
-						<option value="footer" <?php if( $this->adsns_options['position'] == 'footer' ) echo 'selected="selected"'; ?>><?php _e( 'Before footer', 'adsense' ); ?></option>
+						<option value="postend" <?php if( $this->adsns_options['position'] == 'postend' ) echo 'selected="selected"'; ?>><?php _e( 'Below the post (Single post page)', 'adsense' ); ?></option>
+						<option value="homepostend" <?php if( $this->adsns_options['position'] == 'homepostend' ) echo 'selected="selected"'; ?>><?php _e( 'Below the post (Home page)', 'adsense' ); ?></option>
+						<option value="homeandpostend" <?php if( $this->adsns_options['position'] == 'homeandpostend' ) echo 'selected="selected"'; ?>><?php _e( 'Below the post (Single post page and Home page)', 'adsense' ); ?></option>
+						<option value="commentform" <?php if( $this->adsns_options['position'] == 'commentform' ) echo 'selected="selected"'; ?>><?php _e( 'Below the comment form', 'adsense' ); ?></option>
+						<option value="footer" <?php if( $this->adsns_options['position'] == 'footer' ) echo 'selected="selected"'; ?>><?php _e( 'Above the footer', 'adsense' ); ?></option>
 					</select>
 				</div>
 				<br />
@@ -513,7 +513,7 @@ class adsns
 					</select> 
 				</div>
 				<div style="width: 265px; padding-left: 2px;">
-					<span class="description"><?php _e( 'Number of ads after post text on your home page.', 'adsense' ); ?></span>
+					<span class="description"><?php _e( 'Number of ads below the posts on the home page.', 'adsense' ); ?></span>
 				</div>
 			</div>
 				
@@ -521,7 +521,7 @@ class adsns
 				<label for="color"> <?php _e( 'Visualisation', 'adsense' ); ?> </label>
 			</div>
 			<div class="settings_body" id="visual">
-				<label for="Border" class="left"><?php _e( 'Color:', 'adsense' ); ?></label>
+				<label for="Border" class="left"><?php _e( 'Colors:', 'adsense' ); ?></label>
 				<input type="hidden" id="border_val" value="<?php echo $this->adsns_options['border'] ?>">
 				<input type="hidden" id="title_val" value="<?php echo $this->adsns_options['title'] ?>">
 				<input type="hidden" id="background_val" value="<?php echo $this->adsns_options['background'] ?>">
@@ -597,7 +597,7 @@ class adsns
 					</select>
 				</div>
 				<div style="width: 250px; padding-left: 2px;">
-					<span class="description"><?php _e( 'This is a standard Google color palette.', 'adsense' ); ?></span>
+					<span class="description"><?php _e( 'These are the standard Google color palettes.', 'adsense' ); ?></span>
 				</div>
 				<br />
 				
@@ -605,29 +605,29 @@ class adsns
 				<div class="right">
 					<input type="hidden" id="corner_style_val" value="<?php echo $this->adsns_options['corner_style'] ?>">
 					<select name="corner_style" id="corner_style">
-						<option value="none" <?php if( 'none' == $this->adsns_options['corner_style'] ) echo 'selected="selected"';?>> <?php _e( 'Select corner style', 'adsense' ); ?> </option>
+						<option value="none" <?php if( 'none' == $this->adsns_options['corner_style'] ) echo 'selected="selected"';?>> <?php _e( 'Select a corner style', 'adsense' ); ?> </option>
 						<option value="0" <?php if( '0' == $this->adsns_options['corner_style'] ) echo 'selected="selected"';?>> <?php _e( 'Square corners', 'adsense' ); ?> </option>
 						<option value="6" <?php if( '6' == $this->adsns_options['corner_style'] ) echo 'selected="selected"';?>> <?php _e( 'Slightly rounded corners', 'adsense' ); ?> </option>
-						<option value="10" <?php if( '10' == $this->adsns_options['corner_style'] ) echo 'selected="selected"';?>> <?php _e( 'Very rounded corners', 'adsense' ); ?> </option>
+						<option value="10" <?php if( '10' == $this->adsns_options['corner_style'] ) echo 'selected="selected"';?>> <?php _e( 'Rounded corners', 'adsense' ); ?> </option>
 					</select>
 				</div>
 				<div style="width: 250px; padding-left: 2px;">
-					<span class="description"><?php _e( 'Corner style property will help you to make your Ad rounded corners.', 'adsense' ); ?></span>
+					<span class="description"><?php _e( 'Corner style property will help you to make your Ad corners rounded.', 'adsense' ); ?></span>
 				</div>
 			</div>
 			
 			<div class="settings_head">
-				<label for="position"><?php _e( 'Donate', 'adsense' ); ?></label>
+				<label for="position"><?php _e( 'Donations', 'adsense' ); ?></label>
 			</div>
 			<div class="settings_body" id="donate_menu">
-				<label for="donate" class="left"><?php _e( 'Donate us:', 'adsense' ); ?></label>
+				<label for="donate" class="left"><?php _e( 'Donate:', 'adsense' ); ?></label>
 				<div class="right">
 					<input type="hidden" id="donate_val" value="<?php echo $this->adsns_options['donate'] ?>">
 					<input type="text" id="donate" size="2" maxlength="2" name="donate" style="padding-left: 10px; padding-right: 10px; text-align: center;" value="<?php echo $this->adsns_options['donate'] ?>" />%
 					<br />
 					<span class="description"><?php _e( 'Support us by Donating Ad Space.', 'adsense' ); ?></span>
 					<br />
-					<span class="description"><?php _e( 'Input percentage of ad slots to share [Default: 0%].', 'adsense' ); ?></span>
+					<span class="description"><?php _e( 'Please enter a percentage value of the ad slots you are ready to share [Default: 0%].', 'adsense' ); ?></span>
 				</div>
 			</div>
 
