@@ -4,7 +4,7 @@ Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10
 Tags: google, adsense, ads, bestwebsoft, google adsense, google plugin, adsense plugin, ads plugin, gogle
 Requires at least: 2.9
 Tested up to: 3.5.1
-Stable tag: 1.17
+Stable tag: 1.18
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,6 +27,7 @@ Google AdSense Plugin allows you to set parameters of the ads displaying, such a
 
 * Brazilian Portuguese (pt_BR) (thanks Rafael)
 * Dutch (nl_NL) (thanks to Paul Göttgens)
+* French (fr_FR) (thanks to <a href="mailto:phil.azza@freesbee.fr">Phil Azza</a>)
 * German (de_DE) (thanks to Psyflex)
 * Hebrew (he_IL) (thanks to Ahrale)
 * Polish (pl_PL) (thanks to Tomasz Łaziuk)
@@ -66,6 +67,9 @@ On the plugin settings page open the menu item 'Position & Numbers of Ads' and c
 2. All menu items on the page are unwrapped.
 
 == Changelog ==
+
+= V1.18 - 25.04.2013 =
+* Update : The French language is updated in the plugin.
 
 = V1.17 - 17.04.2013 =
 * Update : The English language is updated in the plugin.
@@ -135,6 +139,9 @@ On the plugin settings page open the menu item 'Position & Numbers of Ads' and c
 * Changed : Usability at the settings page of the plugin was improved.
 
 == Upgrade Notice ==
+
+= V1.18 =
+The French language is updated in the plugin.
 
 = V1.17 =
 The English language is updated in the plugin.
