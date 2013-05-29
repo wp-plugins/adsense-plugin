@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Google AdSense Plugin v1.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-17 11:55+0300\n"
-"PO-Revision-Date: 2013-04-17 11:55+0300\n"
+"POT-Creation-Date: 2013-05-29 11:15+0300\n"
+"PO-Revision-Date: 2013-05-29 11:15+0300\n"
 "Last-Translator: \n"
 "Language-Team: Ahrale <contact@atar4u.com>\n"
 "MIME-Version: 1.0\n"
@@ -32,55 +32,76 @@ msgid "AdSense"
 msgstr "AdSense"
 
 # @ adsense
-#: adsense-plugin.php:119
+#: adsense-plugin.php:140
+#, fuzzy
+msgid "Pro plugins"
+msgstr "תוספים מומלצים"
+
+# @ adsense
+#: adsense-plugin.php:143
+#: adsense-plugin.php:169
 msgid "Activated plugins"
 msgstr "תוספים פעילים"
 
 # @ adsense
-#: adsense-plugin.php:121
-#: adsense-plugin.php:129
-#: adsense-plugin.php:137
+#: adsense-plugin.php:145
+#: adsense-plugin.php:153
+#: adsense-plugin.php:161
+#: adsense-plugin.php:171
+#: adsense-plugin.php:179
+#: adsense-plugin.php:187
 msgid "Read more"
 msgstr "קרא עוד"
 
 # @ adsense
-#: adsense-plugin.php:121
+#: adsense-plugin.php:145
+#: adsense-plugin.php:171
 #: adsense-plugin.class.php:80
 #: adsense-plugin.class.php:89
 msgid "Settings"
 msgstr "הגדרות"
 
 # @ adsense
-#: adsense-plugin.php:127
+#: adsense-plugin.php:151
+#: adsense-plugin.php:177
 msgid "Installed plugins"
 msgstr "תוספים מותקנים"
 
 # @ adsense
-#: adsense-plugin.php:135
+#: adsense-plugin.php:159
+#: adsense-plugin.php:185
 msgid "Recommended plugins"
 msgstr "תוספים מומלצים"
 
+#: adsense-plugin.php:161
+msgid "Purchase"
+msgstr ""
+
 # @ adsense
-#: adsense-plugin.php:137
+#: adsense-plugin.php:166
+#, fuzzy
+msgid "Free plugins"
+msgstr "תוספים מומלצים"
+
+# @ adsense
+#: adsense-plugin.php:187
 msgid "Download"
 msgstr "הורד"
 
 # @ default
-#: adsense-plugin.php:137
+#: adsense-plugin.php:187
 #, php-format
 msgid "Install %s"
 msgstr "התקן %s"
 
 # @ adsense
-#: adsense-plugin.php:137
+#: adsense-plugin.php:187
 msgid "Install now from wordpress.org"
 msgstr "התקן כעת מ wordpress.org"
 
-# @ adsense
-#: adsense-plugin.php:139
-#, fuzzy
-msgid "If you have any questions, please contact us via plugin@bestwebsoft.com or fill out the contact form on our website"
-msgstr "אם יש לך שאלות כלשהן, אנא צור עמנו קשר דרך plugin@bestwebsoft.com או שתמלא את טופס יצירת הקשר באתר שלנו"
+#: adsense-plugin.php:192
+msgid "If you have any questions, please contact us via"
+msgstr ""
 
 # @ adsense
 #: adsense-plugin.class.php:90
@@ -372,4 +393,13 @@ msgstr "אחוז הקלט של המקום המתאים לשיתוף פרסומת
 #: adsense-plugin.class.php:641
 msgid "Save Changes"
 msgstr "שמור שינויים"
+
+# @ adsense
+#, fuzzy
+#~ msgid ""
+#~ "If you have any questions, please contact us via plugin@bestwebsoft.com "
+#~ "or fill out the contact form on our website"
+#~ msgstr ""
+#~ "אם יש לך שאלות כלשהן, אנא צור עמנו קשר דרך plugin@bestwebsoft.com או "
+#~ "שתמלא את טופס יצירת הקשר באתר שלנו"
 

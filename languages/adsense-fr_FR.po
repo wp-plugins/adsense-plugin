@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: adsense\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-25 16:23+0300\n"
+"POT-Creation-Date: 2013-05-29 11:15+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Phil Azza <phil.azza@freesbee.fr>\n"
@@ -26,46 +26,67 @@ msgstr "Réglages Adsence"
 msgid "AdSense"
 msgstr "ADSense"
 
-#: adsense-plugin.php:119
+#: adsense-plugin.php:140
+#, fuzzy
+msgid "Pro plugins"
+msgstr "Extensions recommendées"
+
+#: adsense-plugin.php:143
+#: adsense-plugin.php:169
 msgid "Activated plugins"
 msgstr "Extensions activées"
 
-#: adsense-plugin.php:121
-#: adsense-plugin.php:129
-#: adsense-plugin.php:137
+#: adsense-plugin.php:145
+#: adsense-plugin.php:153
+#: adsense-plugin.php:161
+#: adsense-plugin.php:171
+#: adsense-plugin.php:179
+#: adsense-plugin.php:187
 msgid "Read more"
 msgstr "En savoir plus"
 
-#: adsense-plugin.php:121
+#: adsense-plugin.php:145
+#: adsense-plugin.php:171
 #: adsense-plugin.class.php:80
 #: adsense-plugin.class.php:89
 msgid "Settings"
 msgstr "Réglages"
 
-#: adsense-plugin.php:127
+#: adsense-plugin.php:151
+#: adsense-plugin.php:177
 msgid "Installed plugins"
 msgstr "Extensions intallées"
 
-#: adsense-plugin.php:135
+#: adsense-plugin.php:159
+#: adsense-plugin.php:185
 msgid "Recommended plugins"
 msgstr "Extensions recommendées"
 
-#: adsense-plugin.php:137
+#: adsense-plugin.php:161
+msgid "Purchase"
+msgstr ""
+
+#: adsense-plugin.php:166
+#, fuzzy
+msgid "Free plugins"
+msgstr "Extensions recommendées"
+
+#: adsense-plugin.php:187
 msgid "Download"
 msgstr "Télécharger"
 
-#: adsense-plugin.php:137
+#: adsense-plugin.php:187
 #, php-format
 msgid "Install %s"
 msgstr "Installer %s"
 
-#: adsense-plugin.php:137
+#: adsense-plugin.php:187
 msgid "Install now from wordpress.org"
 msgstr "Installer depuis wordpress.org"
 
-#: adsense-plugin.php:139
-msgid "If you have any questions, please contact us via plugin@bestwebsoft.com or fill out the contact form on our website"
-msgstr "Pour toutes questions, contactez-nous sur plugin@bestwebsoft.com ou via le formulaire de contact sur notre site web s'il vous plaît "
+#: adsense-plugin.php:192
+msgid "If you have any questions, please contact us via"
+msgstr ""
 
 #: adsense-plugin.class.php:90
 msgid "FAQ"
@@ -287,4 +308,11 @@ msgstr "S'il vous plaît entrer une valeur en pourcentage des espaces publicitai
 #: adsense-plugin.class.php:641
 msgid "Save Changes"
 msgstr "Enregister"
+
+#~ msgid ""
+#~ "If you have any questions, please contact us via plugin@bestwebsoft.com "
+#~ "or fill out the contact form on our website"
+#~ msgstr ""
+#~ "Pour toutes questions, contactez-nous sur plugin@bestwebsoft.com ou via "
+#~ "le formulaire de contact sur notre site web s'il vous plaît "
 

@@ -88,7 +88,7 @@ class adsns
 		if ($file == $this_adsns_plugin) {
 			$links[] = '<a href="admin.php?page=adsense-plugin.php">' . __( 'Settings', 'adsense' ) . '</a>';
 			$links[] = '<a href="http://wordpress.org/extend/plugins/adsense-plugin/faq/" target="_blank">' . __( 'FAQ', 'adsense' ) . '</a>';
-			$links[] = '<a href="Mailto:plugin@bestwebsoft.com">' . __( 'Support', 'adsense' ) . '</a>';
+			$links[] = '<a href="http://support.bestwebsoft.com">' . __( 'Support', 'adsense' ) . '</a>';
 		}
 		return $links;
 	}

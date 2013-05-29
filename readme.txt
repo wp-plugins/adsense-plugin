@@ -4,7 +4,7 @@ Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10
 Tags: google, adsense, ads, bestwebsoft, google adsense, google plugin, adsense plugin, ads plugin, gogle
 Requires at least: 2.9
 Tested up to: 3.5.1
-Stable tag: 1.18
+Stable tag: 1.19
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,7 +15,7 @@ This plugin allows Google AdSense implementation into your website.
 Google AdSense Plugin allows you to set parameters of the ads displaying, such as format (text ad, image, text with an image or link), size, color of the elements in the ad block, rounded corners and the ad block position on the website.
 
 <a href="http://wordpress.org/extend/plugins/adsense-plugin/faq/" target="_blank">FAQ</a>
-<a href="http://bestwebsoft.com/plugin/google-adsense-plugin/" target="_blank">Support</a>
+<a href="http://support.bestwebsoft.com" target="_blank">Support</a>
 
 = Features =
 
@@ -34,7 +34,7 @@ Google AdSense Plugin allows you to set parameters of the ads displaying, such a
 * Spanish (es_ES) (thanks to <a href="mailto:mrjosefernando@gmail.com">José Fernando De Leon</a>)
 * Russian (ru_RU)
 
-If you create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text in PO and MO files</a> for <a href="http://bestwebsoft.com/" target="_blank">BWS</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
+If you create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text in PO and MO files</a> for <a href="http://support.bestwebsoft.com" target="_blank">BWS</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
 
 = Technical support =
 
@@ -67,6 +67,9 @@ On the plugin settings page open the menu item 'Position & Numbers of Ads' and c
 2. All menu items on the page are unwrapped.
 
 == Changelog ==
+
+= V1.19 - 29.05.2013 =
+* Update : BWS plugins section is updated.
 
 = V1.18 - 25.04.2013 =
 * Update : The French language is updated in the plugin.
@@ -139,6 +142,9 @@ On the plugin settings page open the menu item 'Position & Numbers of Ads' and c
 * Changed : Usability at the settings page of the plugin was improved.
 
 == Upgrade Notice ==
+
+= V1.19 =
+BWS plugins section is updated.
 
 = V1.18 =
 The French language is updated in the plugin.
