@@ -69,7 +69,7 @@ On the plugin settings page open the menu item 'Position & Numbers of Ads' and c
 == Changelog ==
 
 = V1.19 - 29.05.2013 =
-* Update : BWS plugins section is updated.
+* Update : BWS plugins section is updated. 
 
 = V1.18 - 25.04.2013 =
 * Update : The French language is updated in the plugin.
