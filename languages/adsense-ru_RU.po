@@ -1,0 +1,505 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: adsense\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-18 12:48+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: BestWebSoft <support@bestwebsoft.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru_RU\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: adsense-plugin.php:34
+#: adsense-plugin.class.php:73
+msgid "AdSense Settings"
+msgstr "Опции AdSense"
+
+#: adsense-plugin.php:36
+#: adsense-plugin.class.php:73
+msgid "AdSense"
+msgstr "AdSense"
+
+#: adsense-plugin.php:147
+msgid "Not set"
+msgstr "Не задан"
+
+#: adsense-plugin.php:149
+#: adsense-plugin.php:153
+msgid "On"
+msgstr "Вкл"
+
+#: adsense-plugin.php:151
+#: adsense-plugin.php:155
+msgid "Off"
+msgstr "Выкл"
+
+#: adsense-plugin.php:159
+#: adsense-plugin.php:163
+#: adsense-plugin.php:167
+#: adsense-plugin.php:171
+#: adsense-plugin.php:175
+#: adsense-plugin.php:201
+msgid "N/A"
+msgstr "Неизвестно"
+
+#: adsense-plugin.php:173
+msgid " Mb"
+msgstr " Mb"
+
+#: adsense-plugin.php:177
+#: adsense-plugin.php:181
+#: adsense-plugin.php:185
+#: adsense-plugin.php:196
+msgid "Yes"
+msgstr "Да"
+
+#: adsense-plugin.php:179
+#: adsense-plugin.php:183
+#: adsense-plugin.php:187
+#: adsense-plugin.php:198
+msgid "No"
+msgstr "Нет"
+
+#: adsense-plugin.php:212
+msgid "Operating System"
+msgstr "Операционная система"
+
+#: adsense-plugin.php:213
+msgid "Server"
+msgstr "Тип сервера"
+
+#: adsense-plugin.php:214
+msgid "Memory usage"
+msgstr "Памяти использовано"
+
+#: adsense-plugin.php:215
+msgid "MYSQL Version"
+msgstr "Версия MYSQL"
+
+#: adsense-plugin.php:216
+msgid "SQL Mode"
+msgstr "Режим SQL"
+
+#: adsense-plugin.php:217
+msgid "PHP Version"
+msgstr "Версия PHP"
+
+#: adsense-plugin.php:218
+msgid "PHP Safe Mode"
+msgstr "PHP Safe Mode"
+
+#: adsense-plugin.php:219
+msgid "PHP Allow URL fopen"
+msgstr "PHP Allow URL fopen"
+
+#: adsense-plugin.php:220
+msgid "PHP Memory Limit"
+msgstr "Лимит памяти"
+
+#: adsense-plugin.php:221
+msgid "PHP Max Upload Size"
+msgstr "Макс. размер загружаемого файла"
+
+#: adsense-plugin.php:222
+msgid "PHP Max Post Size"
+msgstr "Макс. размер записи"
+
+#: adsense-plugin.php:223
+msgid "PHP Max Script Execute Time"
+msgstr "Макс. время выполнения сценария"
+
+#: adsense-plugin.php:224
+msgid "PHP Exif support"
+msgstr "Поддержка PHP Exif"
+
+#: adsense-plugin.php:225
+msgid "PHP IPTC support"
+msgstr "Поддержка PHP IPTC"
+
+#: adsense-plugin.php:226
+msgid "PHP XML support"
+msgstr "Поддержка PHP XML"
+
+#: adsense-plugin.php:227
+msgid "Site URL"
+msgstr "Адрес сайта"
+
+#: adsense-plugin.php:228
+msgid "Home URL"
+msgstr "Основной адрес сайта"
+
+#: adsense-plugin.php:229
+msgid "WordPress Version"
+msgstr "Версия WordPress"
+
+#: adsense-plugin.php:230
+msgid "WordPress DB Version"
+msgstr "Версия базы данных WordPress"
+
+#: adsense-plugin.php:231
+msgid "Multisite"
+msgstr "Мультиблог"
+
+#: adsense-plugin.php:232
+msgid "Active Theme"
+msgstr "Текущая тема"
+
+#: adsense-plugin.php:247
+msgid "Please enter a valid email address."
+msgstr "Пожалуйста, введите валидный емайл."
+
+#: adsense-plugin.php:251
+msgid "Email with system info is sent to "
+msgstr "E-mail с системной информацией отправлен на"
+
+#: adsense-plugin.php:255
+msgid "Thank you for contacting us."
+msgstr "Спасибо, что связались с нами."
+
+#: adsense-plugin.php:283
+msgid "Sorry, email message could not be delivered."
+msgstr "Извините, ваш email не может быть отправлен."
+
+#: adsense-plugin.php:291
+msgid "Pro plugins"
+msgstr "Pro плагины"
+
+#: adsense-plugin.php:294
+#: adsense-plugin.php:320
+msgid "Activated plugins"
+msgstr "Активированные плагины"
+
+#: adsense-plugin.php:296
+#: adsense-plugin.php:304
+#: adsense-plugin.php:312
+#: adsense-plugin.php:322
+#: adsense-plugin.php:330
+#: adsense-plugin.php:338
+msgid "Read more"
+msgstr "Подробнее..."
+
+#: adsense-plugin.php:296
+#: adsense-plugin.php:322
+#: adsense-plugin.class.php:80
+#: adsense-plugin.class.php:89
+msgid "Settings"
+msgstr "Настройки"
+
+#: adsense-plugin.php:302
+#: adsense-plugin.php:328
+msgid "Installed plugins"
+msgstr "Установленные плагины"
+
+#: adsense-plugin.php:310
+#: adsense-plugin.php:336
+msgid "Recommended plugins"
+msgstr "Рекомендованные плагины"
+
+#: adsense-plugin.php:312
+msgid "Purchase"
+msgstr "Купить"
+
+#: adsense-plugin.php:317
+msgid "Free plugins"
+msgstr "Бесплатные плагины"
+
+#: adsense-plugin.php:338
+msgid "Download"
+msgstr "Скачать"
+
+#: adsense-plugin.php:338
+#, php-format
+msgid "Install %s"
+msgstr "Установлено %s"
+
+#: adsense-plugin.php:338
+msgid "Install now from wordpress.org"
+msgstr "Установить с wordpress.org"
+
+#: adsense-plugin.php:343
+msgid "If you have any questions, please contact us via"
+msgstr "Если у вас есть вопросы, пожалуйста, свяжитесь с нами через"
+
+#: adsense-plugin.php:350
+msgid "System status"
+msgstr "Системная информация"
+
+#: adsense-plugin.php:354
+msgid "Environment"
+msgstr "Системная среда"
+
+#: adsense-plugin.php:365
+msgid "Active Plugins"
+msgstr "Активированные плагины"
+
+#: adsense-plugin.php:376
+msgid "Inactive Plugins"
+msgstr "Неактивированные плагины"
+
+#: adsense-plugin.php:390
+msgid "Send to support"
+msgstr "Отправить в тех.поддержку"
+
+#: adsense-plugin.php:397
+msgid "Send to custom email &#187;"
+msgstr "Отправить на емейл &#187;"
+
+#: adsense-plugin.class.php:90
+msgid "FAQ"
+msgstr "FAQ"
+
+#: adsense-plugin.class.php:91
+msgid "Support"
+msgstr "Поддержка"
+
+#: adsense-plugin.class.php:251
+msgid "Settings saved"
+msgstr "Опции сохранены"
+
+#: adsense-plugin.class.php:374
+msgid "Please enter your Publisher ID."
+msgstr "Пожалуйста, заполните ваш Publisher ID."
+
+#: adsense-plugin.class.php:389
+msgid "Network"
+msgstr "Сеть"
+
+#: adsense-plugin.class.php:392
+msgid "Publisher ID:"
+msgstr "Publisher  ID:"
+
+#: adsense-plugin.class.php:398
+msgid "You should enter only digits here."
+msgstr "Здесь Вы должны ввести только цифры."
+
+#: adsense-plugin.class.php:399
+msgid "(For example: 1234567891234567)"
+msgstr "(Например: 1234567891234567)"
+
+#: adsense-plugin.class.php:400
+msgid "Publisher ID is a unique identifier of"
+msgstr "Publisher ID является уникальным номером"
+
+#: adsense-plugin.class.php:400
+msgid "your account"
+msgstr "Вашего аккаунта"
+
+#: adsense-plugin.class.php:400
+msgid "in Google AdSense."
+msgstr "в Google AdSense."
+
+#: adsense-plugin.class.php:406
+msgid "Ad Type &amp; Format"
+msgstr "Тип и формат рекламных блоков"
+
+#: adsense-plugin.class.php:409
+msgid "Type:"
+msgstr "Тип:"
+
+#: adsense-plugin.class.php:413
+msgid "Ad block"
+msgstr "Блок рекламы"
+
+#: adsense-plugin.class.php:416
+msgid "Text and image ads"
+msgstr "Text and image ads"
+
+#: adsense-plugin.class.php:417
+msgid "Text ads only (default)"
+msgstr ""
+
+#: adsense-plugin.class.php:418
+msgid "Image ads only"
+msgstr ""
+
+#: adsense-plugin.class.php:422
+msgid "Block of links"
+msgstr "Блок ссылок"
+
+#: adsense-plugin.class.php:426
+msgid "Format:"
+msgstr "Формат:"
+
+#: adsense-plugin.class.php:490
+msgid "Position &amp; amount of ads"
+msgstr "Размещение и количество рекламных блоков"
+
+#: adsense-plugin.class.php:493
+msgid "Position:"
+msgstr "Размещение:"
+
+#: adsense-plugin.class.php:497
+msgid "Below the post (Single post page)"
+msgstr "После поста (на single странице)"
+
+#: adsense-plugin.class.php:498
+msgid "Below the post (Home page)"
+msgstr "После поста (на домашней странице)"
+
+#: adsense-plugin.class.php:499
+msgid "Below the post (Single post page and Home page)"
+msgstr "После поста (на домашней и single странице)"
+
+#: adsense-plugin.class.php:500
+msgid "Below the comment form"
+msgstr "После формы отправки комментария"
+
+#: adsense-plugin.class.php:501
+msgid "Above the footer"
+msgstr "Перед футером"
+
+#: adsense-plugin.class.php:506
+msgid "Number of Ads:"
+msgstr "Количество блоков:"
+
+#: adsense-plugin.class.php:516
+msgid "Number of ads below the posts on the home page."
+msgstr "Количество рекламных блоков после постов на домашней странице."
+
+#: adsense-plugin.class.php:521
+msgid "Visualisation"
+msgstr "Внешний вид"
+
+#: adsense-plugin.class.php:524
+msgid "Colors:"
+msgstr "Цвета:"
+
+#: adsense-plugin.class.php:534
+msgid "Border"
+msgstr "Окантовка"
+
+#: adsense-plugin.class.php:549
+#: adsense-plugin.class.php:731
+msgid "Title"
+msgstr "Заголовок"
+
+#: adsense-plugin.class.php:559
+msgid "Background"
+msgstr "Фон"
+
+#: adsense-plugin.class.php:567
+msgid "Text"
+msgstr "Текст"
+
+#: adsense-plugin.class.php:575
+msgid "URL"
+msgstr "Ссылка"
+
+#: adsense-plugin.class.php:583
+msgid "Palette:"
+msgstr "Палитра:"
+
+#: adsense-plugin.class.php:587
+msgid "Default Google pallete"
+msgstr ""
+
+#: adsense-plugin.class.php:590
+msgid "Open Air"
+msgstr ""
+
+#: adsense-plugin.class.php:591
+msgid "Seaside"
+msgstr ""
+
+#: adsense-plugin.class.php:592
+msgid "Shadow"
+msgstr ""
+
+#: adsense-plugin.class.php:593
+msgid "Blue Mix"
+msgstr ""
+
+#: adsense-plugin.class.php:594
+msgid "Ink"
+msgstr ""
+
+#: adsense-plugin.class.php:595
+msgid "Graphite"
+msgstr ""
+
+#: adsense-plugin.class.php:600
+msgid "These are the standard Google color palettes."
+msgstr "Это стандартные Google палитры."
+
+#: adsense-plugin.class.php:604
+msgid "Corner Style:"
+msgstr "Стиль углов:"
+
+#: adsense-plugin.class.php:608
+msgid "Select a corner style"
+msgstr "Выберите стиль углов"
+
+#: adsense-plugin.class.php:609
+msgid "Square corners"
+msgstr "Углы без закруглений"
+
+#: adsense-plugin.class.php:610
+msgid "Slightly rounded corners"
+msgstr "Слегка закругленные углы"
+
+#: adsense-plugin.class.php:611
+msgid "Rounded corners"
+msgstr "Сильно закругленные углы"
+
+#: adsense-plugin.class.php:615
+msgid "Corner style property will help you to make your Ad corners rounded."
+msgstr "С помощью данного свойства Вы можете закруглить углы Вашего рекламного блока."
+
+#: adsense-plugin.class.php:620
+msgid "Donations"
+msgstr "Пожертвования"
+
+#: adsense-plugin.class.php:623
+msgid "Donate:"
+msgstr "Пожертвуйте нам:"
+
+#: adsense-plugin.class.php:628
+msgid "Support us by Donating Ad Space."
+msgstr "Поддержите наш проект предоставляя рекламное пространство."
+
+#: adsense-plugin.class.php:630
+msgid "Please enter a percentage value of the ad slots you are ready to share [Default: 0%]."
+msgstr "Введите процент от просмотра рекламы, которым вы можете пожертвовать [По умолчанию: 0%]."
+
+#: adsense-plugin.class.php:641
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#~ msgid ""
+#~ "If you have any questions, please contact us via plugin@bestwebsoft.com "
+#~ "or fill out the contact form on our website"
+#~ msgstr ""
+#~ "Если у вас есть вопросы, пожалуйста, свяжитесь с нами через "
+#~ "plugin@bestwebsoft.com или заполните контактную форму на нашем сайте"
+#~ msgid "Options saved."
+#~ msgstr "Опции сохранены."
+#~ msgid "Ad unit"
+#~ msgstr "Блок рекламы"
+#~ msgid "Link unit"
+#~ msgstr "Блок ссылок"
+#~ msgid "Donate us:"
+#~ msgstr "Пожертвуйте нам:"
+#~ msgid "adsense Options"
+#~ msgstr "Опции AdSense"
+#~ msgid "adsense"
+#~ msgstr "AdSense"
+#~ msgid "Install Now"
+#~ msgstr "Установить сейчас"
+#~ msgid "Publisher  ID is the unique identifer of "
+#~ msgstr "Publisher ID является уникальным номером "
+#~ msgid "Pallete:"
+#~ msgstr "Палитра:"
+#~ msgid "This is a standart Google color pallete."
+#~ msgstr "Это стандартные Google палитры."
+#~ msgid "Input percentage of ad slots to share [Default: 5%]."
+#~ msgstr ""
+#~ "Введите процент от просмотра рекламы, которым вы можете пожертвовать [По "
+#~ "умолчанию: 5%]."
+
