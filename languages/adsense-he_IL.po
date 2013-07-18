@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Google AdSense Plugin v1.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-29 11:15+0300\n"
-"PO-Revision-Date: 2013-05-29 11:15+0300\n"
+"POT-Creation-Date: 2013-07-18 12:48+0300\n"
+"PO-Revision-Date: 2013-07-18 12:48+0300\n"
 "Last-Translator: \n"
 "Language-Team: Ahrale <contact@atar4u.com>\n"
 "MIME-Version: 1.0\n"
@@ -31,76 +31,247 @@ msgstr "אפשרויות AdSense"
 msgid "AdSense"
 msgstr "AdSense"
 
+#: adsense-plugin.php:147
+msgid "Not set"
+msgstr ""
+
+#: adsense-plugin.php:149
+#: adsense-plugin.php:153
+msgid "On"
+msgstr ""
+
+#: adsense-plugin.php:151
+#: adsense-plugin.php:155
+msgid "Off"
+msgstr ""
+
+#: adsense-plugin.php:159
+#: adsense-plugin.php:163
+#: adsense-plugin.php:167
+#: adsense-plugin.php:171
+#: adsense-plugin.php:175
+#: adsense-plugin.php:201
+msgid "N/A"
+msgstr ""
+
+#: adsense-plugin.php:173
+msgid " Mb"
+msgstr ""
+
+#: adsense-plugin.php:177
+#: adsense-plugin.php:181
+#: adsense-plugin.php:185
+#: adsense-plugin.php:196
+msgid "Yes"
+msgstr ""
+
+#: adsense-plugin.php:179
+#: adsense-plugin.php:183
+#: adsense-plugin.php:187
+#: adsense-plugin.php:198
+msgid "No"
+msgstr ""
+
+#: adsense-plugin.php:212
+msgid "Operating System"
+msgstr ""
+
+#: adsense-plugin.php:213
+msgid "Server"
+msgstr ""
+
+#: adsense-plugin.php:214
+msgid "Memory usage"
+msgstr ""
+
+#: adsense-plugin.php:215
+msgid "MYSQL Version"
+msgstr ""
+
+#: adsense-plugin.php:216
+msgid "SQL Mode"
+msgstr ""
+
+#: adsense-plugin.php:217
+msgid "PHP Version"
+msgstr ""
+
+#: adsense-plugin.php:218
+msgid "PHP Safe Mode"
+msgstr ""
+
+#: adsense-plugin.php:219
+msgid "PHP Allow URL fopen"
+msgstr ""
+
+#: adsense-plugin.php:220
+msgid "PHP Memory Limit"
+msgstr ""
+
+#: adsense-plugin.php:221
+msgid "PHP Max Upload Size"
+msgstr ""
+
+#: adsense-plugin.php:222
+msgid "PHP Max Post Size"
+msgstr ""
+
+#: adsense-plugin.php:223
+msgid "PHP Max Script Execute Time"
+msgstr ""
+
+#: adsense-plugin.php:224
+msgid "PHP Exif support"
+msgstr ""
+
+#: adsense-plugin.php:225
+msgid "PHP IPTC support"
+msgstr ""
+
+#: adsense-plugin.php:226
+msgid "PHP XML support"
+msgstr ""
+
+#: adsense-plugin.php:227
+msgid "Site URL"
+msgstr ""
+
+#: adsense-plugin.php:228
+msgid "Home URL"
+msgstr ""
+
+#: adsense-plugin.php:229
+msgid "WordPress Version"
+msgstr ""
+
+#: adsense-plugin.php:230
+msgid "WordPress DB Version"
+msgstr ""
+
+#: adsense-plugin.php:231
+msgid "Multisite"
+msgstr ""
+
+#: adsense-plugin.php:232
+msgid "Active Theme"
+msgstr ""
+
+#: adsense-plugin.php:247
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: adsense-plugin.php:251
+msgid "Email with system info is sent to "
+msgstr ""
+
+#: adsense-plugin.php:255
+msgid "Thank you for contacting us."
+msgstr ""
+
+#: adsense-plugin.php:283
+msgid "Sorry, email message could not be delivered."
+msgstr ""
+
 # @ adsense
-#: adsense-plugin.php:140
+#: adsense-plugin.php:291
 #, fuzzy
 msgid "Pro plugins"
 msgstr "תוספים מומלצים"
 
 # @ adsense
-#: adsense-plugin.php:143
-#: adsense-plugin.php:169
+#: adsense-plugin.php:294
+#: adsense-plugin.php:320
 msgid "Activated plugins"
 msgstr "תוספים פעילים"
 
 # @ adsense
-#: adsense-plugin.php:145
-#: adsense-plugin.php:153
-#: adsense-plugin.php:161
-#: adsense-plugin.php:171
-#: adsense-plugin.php:179
-#: adsense-plugin.php:187
+#: adsense-plugin.php:296
+#: adsense-plugin.php:304
+#: adsense-plugin.php:312
+#: adsense-plugin.php:322
+#: adsense-plugin.php:330
+#: adsense-plugin.php:338
 msgid "Read more"
 msgstr "קרא עוד"
 
 # @ adsense
-#: adsense-plugin.php:145
-#: adsense-plugin.php:171
+#: adsense-plugin.php:296
+#: adsense-plugin.php:322
 #: adsense-plugin.class.php:80
 #: adsense-plugin.class.php:89
 msgid "Settings"
 msgstr "הגדרות"
 
 # @ adsense
-#: adsense-plugin.php:151
-#: adsense-plugin.php:177
+#: adsense-plugin.php:302
+#: adsense-plugin.php:328
 msgid "Installed plugins"
 msgstr "תוספים מותקנים"
 
 # @ adsense
-#: adsense-plugin.php:159
-#: adsense-plugin.php:185
+#: adsense-plugin.php:310
+#: adsense-plugin.php:336
 msgid "Recommended plugins"
 msgstr "תוספים מומלצים"
 
-#: adsense-plugin.php:161
+#: adsense-plugin.php:312
 msgid "Purchase"
 msgstr ""
 
 # @ adsense
-#: adsense-plugin.php:166
+#: adsense-plugin.php:317
 #, fuzzy
 msgid "Free plugins"
 msgstr "תוספים מומלצים"
 
 # @ adsense
-#: adsense-plugin.php:187
+#: adsense-plugin.php:338
 msgid "Download"
 msgstr "הורד"
 
 # @ default
-#: adsense-plugin.php:187
+#: adsense-plugin.php:338
 #, php-format
 msgid "Install %s"
 msgstr "התקן %s"
 
 # @ adsense
-#: adsense-plugin.php:187
+#: adsense-plugin.php:338
 msgid "Install now from wordpress.org"
 msgstr "התקן כעת מ wordpress.org"
 
-#: adsense-plugin.php:192
+#: adsense-plugin.php:343
 msgid "If you have any questions, please contact us via"
+msgstr ""
+
+#: adsense-plugin.php:350
+msgid "System status"
+msgstr ""
+
+#: adsense-plugin.php:354
+msgid "Environment"
+msgstr ""
+
+# @ adsense
+#: adsense-plugin.php:365
+#, fuzzy
+msgid "Active Plugins"
+msgstr "תוספים פעילים"
+
+# @ adsense
+#: adsense-plugin.php:376
+#, fuzzy
+msgid "Inactive Plugins"
+msgstr "תוספים פעילים"
+
+# @ adsense
+#: adsense-plugin.php:390
+#, fuzzy
+msgid "Send to support"
+msgstr "תמיכה"
+
+#: adsense-plugin.php:397
+msgid "Send to custom email &#187;"
 msgstr ""
 
 # @ adsense
@@ -268,7 +439,7 @@ msgstr "גבול"
 
 # @ adsense
 #: adsense-plugin.class.php:549
-#: adsense-plugin.class.php:728
+#: adsense-plugin.class.php:731
 msgid "Title"
 msgstr "כותרת"
 

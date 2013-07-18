@@ -638,7 +638,7 @@ class adsns
 				<div id="ads_generate"></div>
 			</div>
 			<div style="margin-top: 25px;" >
-				<input type="submit" class="button-primary" name="adsns_update" id="adsns_update" value="<?php _e('Save Changes') ?>" />
+				<input type="submit" class="button-primary" name="adsns_update" id="adsns_update" value="<?php _e( 'Save Changes', 'adsense' ) ?>" />
 			</div>
 				<?php wp_nonce_field( plugin_basename(__FILE__), 'adsns_nonce_name' ); ?>
 		</form>		
@@ -647,6 +647,9 @@ class adsns
 
 	// Including scripts and stylesheets for admin interface of plugin
 	public function adsns_write_admin_head(){
+		wp_register_style( 'adsnsStylesheet', plugins_url( 'css/style.css' , __FILE__ ) );
+		wp_enqueue_style( 'adsnsStylesheet' );
+
 		if( (is_admin() ) && (isset($_GET['page'])) && ($_GET['page'] == "adsense-plugin.php") ) {
 			wp_register_script( 'adsns_admin_script', plugins_url( 'js/admin.js' , __FILE__ ) );
 			wp_register_script( 'adsns_numeric_script', plugins_url( 'js/numeric.js' , __FILE__ ) );
@@ -657,10 +660,10 @@ class adsns
 			wp_enqueue_script( 'adsns_farbtastic_script' );
 			
 			wp_register_style( 'adsnsFarbtasticStylesheet', plugins_url( 'farbtastic/farbtastic.css' , __FILE__ ) ) ;
-			wp_enqueue_style( 'adsnsFarbtasticStylesheet' );
-			wp_register_style( 'adsnsStylesheet', plugins_url( 'css/style.css' , __FILE__ ) );
-			wp_enqueue_style( 'adsnsStylesheet' );
+			wp_enqueue_style( 'adsnsFarbtasticStylesheet' );			
 		}
+		if ( isset( $_GET['page'] ) && $_GET['page'] == "bws_plugins" )
+			wp_enqueue_script( 'bws_menu_script', plugins_url( 'js/bws_menu.js' , __FILE__ ) );
 	}
 	
 	// Stylesheets for ads
@@ -672,7 +675,7 @@ class adsns
 			text-align: center;		
 			clear: both;
 		}
-		</style>
+		</style>		
 EOF;
 	}
 
