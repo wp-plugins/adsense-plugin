@@ -45,7 +45,8 @@ class adsns
 	function adsns_end_home_post_ad( $content ) {
 		global $adsns_count;
 		if ( $adsns_count < $this->adsns_options[ 'max_ads' ] && $adsns_count < $this->adsns_options['max_homepostads'] ) {
-			if( ! is_feed() && is_home() ) {
+			if( ! is_feed() && ( is_home() || is_front_page() ) ) {
+		//	if( ! is_feed() && is_home() ) {
 				$this->adsns_donate();		// Calling a donate function
 				$content .= '<div class="ads">' . $this->adsns_options['code'] . '</div>';
 				$this->adsns_options['num_show'] ++;  // Counting views
