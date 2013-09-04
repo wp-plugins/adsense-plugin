@@ -1,0 +1,340 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: adsense\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-04 16:50+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Paul Göttgens <paulgottgens@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl_NL\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: adsense-plugin.php:35
+#: adsense-plugin.class.php:72
+#, fuzzy
+msgid "AdSense Settings"
+msgstr "AdSense opties"
+
+#: adsense-plugin.php:37
+#: adsense-plugin.class.php:72
+msgid "AdSense"
+msgstr "AdSense"
+
+#: adsense-plugin.class.php:79
+#: adsense-plugin.class.php:88
+msgid "Settings"
+msgstr "Instellingen"
+
+#: adsense-plugin.class.php:89
+msgid "FAQ"
+msgstr "Veel gestelde vragen"
+
+#: adsense-plugin.class.php:90
+msgid "Support"
+msgstr "Ondersteuning"
+
+#: adsense-plugin.class.php:247
+#, fuzzy
+msgid "Settings saved"
+msgstr "Instellingen"
+
+#: adsense-plugin.class.php:355
+msgid "Please enter your Publisher ID."
+msgstr "Voer je Publisher ID."
+
+#: adsense-plugin.class.php:369
+msgid "Network"
+msgstr "Adsense publisher ID"
+
+#: adsense-plugin.class.php:372
+#, fuzzy
+msgid "Publisher ID:"
+msgstr "Uitgevers-id:"
+
+#: adsense-plugin.class.php:378
+msgid "You should enter only digits here."
+msgstr ""
+
+#: adsense-plugin.class.php:379
+msgid "(For example: 1234567891234567)"
+msgstr ""
+
+#: adsense-plugin.class.php:380
+#, fuzzy
+msgid "Publisher ID is a unique identifier of"
+msgstr "Uitgevers-id is een unieke identificatie van"
+
+#: adsense-plugin.class.php:380
+msgid "your account"
+msgstr "uw account"
+
+#: adsense-plugin.class.php:380
+#, fuzzy
+msgid "in Google AdSense."
+msgstr "bij Google AdSense."
+
+#: adsense-plugin.class.php:386
+msgid "Ad Type &amp; Format"
+msgstr "Advertentie type &amp; formaat"
+
+#: adsense-plugin.class.php:389
+msgid "Type:"
+msgstr "Type:"
+
+#: adsense-plugin.class.php:393
+msgid "Ad block"
+msgstr ""
+
+#: adsense-plugin.class.php:396
+msgid "Text and image ads"
+msgstr "Tekst en afbeelding advertenties"
+
+#: adsense-plugin.class.php:397
+msgid "Text ads only (default)"
+msgstr "Alleen tekst advertenties"
+
+#: adsense-plugin.class.php:398
+msgid "Image ads only"
+msgstr "Alleen afbeelding advertenties"
+
+#: adsense-plugin.class.php:402
+msgid "Block of links"
+msgstr ""
+
+#: adsense-plugin.class.php:406
+msgid "Format:"
+msgstr "Formaat:"
+
+#: adsense-plugin.class.php:470
+#, fuzzy
+msgid "Position &amp; amount of ads"
+msgstr "Positie &amp; Aantal advertenties"
+
+#: adsense-plugin.class.php:473
+msgid "Position:"
+msgstr "Positie:"
+
+#: adsense-plugin.class.php:477
+#, fuzzy
+msgid "Below the post (Single post page)"
+msgstr "Tekst na het bericht (Enkele pagina)"
+
+#: adsense-plugin.class.php:478
+#, fuzzy
+msgid "Below the post (Home page)"
+msgstr "Tekst na het bericht (Startpagina)"
+
+#: adsense-plugin.class.php:479
+#, fuzzy
+msgid "Below the post (Single post page and Home page)"
+msgstr "Tekst na het bericht (Enkele pagina en Startpagina)"
+
+#: adsense-plugin.class.php:480
+#, fuzzy
+msgid "Below the comment form"
+msgstr "Onder de reacties"
+
+#: adsense-plugin.class.php:481
+#, fuzzy
+msgid "Above the footer"
+msgstr "Voor de voettekst"
+
+#: adsense-plugin.class.php:486
+msgid "Number of Ads:"
+msgstr "Aantal advertenties:"
+
+#: adsense-plugin.class.php:496
+#, fuzzy
+msgid "Number of ads below the posts on the home page."
+msgstr "Aantal advertenties achter de teksten op uw berichten pagina."
+
+#: adsense-plugin.class.php:501
+msgid "Visualisation"
+msgstr "Visualisatie"
+
+#: adsense-plugin.class.php:504
+#, fuzzy
+msgid "Colors:"
+msgstr "Kleur:"
+
+#: adsense-plugin.class.php:514
+msgid "Border"
+msgstr "Rand"
+
+#: adsense-plugin.class.php:529
+#: adsense-plugin.class.php:711
+msgid "Title"
+msgstr "Titel"
+
+#: adsense-plugin.class.php:539
+msgid "Background"
+msgstr "Achtergrond"
+
+#: adsense-plugin.class.php:547
+msgid "Text"
+msgstr "Tekst"
+
+#: adsense-plugin.class.php:555
+msgid "URL"
+msgstr "URL"
+
+#: adsense-plugin.class.php:563
+msgid "Palette:"
+msgstr "Palet:"
+
+#: adsense-plugin.class.php:567
+msgid "Default Google pallete"
+msgstr "Standaard Google palette"
+
+#: adsense-plugin.class.php:570
+msgid "Open Air"
+msgstr "Open lucht"
+
+#: adsense-plugin.class.php:571
+msgid "Seaside"
+msgstr "Kust"
+
+#: adsense-plugin.class.php:572
+msgid "Shadow"
+msgstr "Schaduw"
+
+#: adsense-plugin.class.php:573
+msgid "Blue Mix"
+msgstr "Blauwe mix"
+
+#: adsense-plugin.class.php:574
+msgid "Ink"
+msgstr "Inkt"
+
+#: adsense-plugin.class.php:575
+msgid "Graphite"
+msgstr "Grafiet"
+
+#: adsense-plugin.class.php:580
+#, fuzzy
+msgid "These are the standard Google color palettes."
+msgstr "Dit is een standaard Google kleurenpalet."
+
+#: adsense-plugin.class.php:584
+msgid "Corner Style:"
+msgstr "Hoek Stijl:"
+
+#: adsense-plugin.class.php:588
+#, fuzzy
+msgid "Select a corner style"
+msgstr "Selecteer hoek stijl"
+
+#: adsense-plugin.class.php:589
+msgid "Square corners"
+msgstr "Rechte hoeken"
+
+#: adsense-plugin.class.php:590
+msgid "Slightly rounded corners"
+msgstr "Licht afgeronde hoeken"
+
+#: adsense-plugin.class.php:591
+#, fuzzy
+msgid "Rounded corners"
+msgstr "Sterk afgeronde hoeken"
+
+#: adsense-plugin.class.php:595
+#, fuzzy
+msgid "Corner style property will help you to make your Ad corners rounded."
+msgstr "Hoekstijl instelling om afgeronde hoeken te maken."
+
+#: adsense-plugin.class.php:600
+#, fuzzy
+msgid "Donations"
+msgstr "Schenken"
+
+#: adsense-plugin.class.php:603
+#, fuzzy
+msgid "Donate:"
+msgstr "Schenken"
+
+#: adsense-plugin.class.php:608
+msgid "Support us by Donating Ad Space."
+msgstr "Steun ons door het doneren van Ad Space."
+
+#: adsense-plugin.class.php:610
+#, fuzzy
+msgid "Please enter a percentage value of the ad slots you are ready to share [Default: 0%]."
+msgstr "Percentage van de advertentie voor de ontwikkelaar [Standaard: 0%]."
+
+#: adsense-plugin.class.php:621
+msgid "Save Changes"
+msgstr "Instellingen opslaan"
+
+#, fuzzy
+#~ msgid "Pro plugins"
+#~ msgstr "Aanbevolen plugins"
+#~ msgid "Activated plugins"
+#~ msgstr "Geactiveerd plugins"
+#~ msgid "Read more"
+#~ msgstr "Lees meer"
+#~ msgid "Installed plugins"
+#~ msgstr "Geïnstalleerde plugins"
+#~ msgid "Recommended plugins"
+#~ msgstr "Aanbevolen plugins"
+
+#, fuzzy
+#~ msgid "Free plugins"
+#~ msgstr "Aanbevolen plugins"
+#~ msgid "Download"
+#~ msgstr "Download"
+#~ msgid "Install %s"
+#~ msgstr "Installeer %s"
+#~ msgid "Install now from wordpress.org"
+#~ msgstr "Installeer direct van Wordpress.org"
+
+#, fuzzy
+#~ msgid "Active Plugins"
+#~ msgstr "Geactiveerd plugins"
+
+#, fuzzy
+#~ msgid "Inactive Plugins"
+#~ msgstr "Geactiveerd plugins"
+
+#, fuzzy
+#~ msgid "Send to support"
+#~ msgstr "Ondersteuning"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you have any questions, please contact us via plugin@bestwebsoft.com "
+#~ "or fill out the contact form on our website"
+#~ msgstr ""
+#~ "Als u vragen heeft, neem dan contact met ons op via plugin@bestwebsoft."
+#~ "com of door ons contact formulier in te vullen op onze site"
+#~ msgid "Options saved."
+#~ msgstr "Opties opgeslagen."
+#~ msgid "Ad unit"
+#~ msgstr "Advertentie eenheid"
+#~ msgid "Link unit"
+#~ msgstr "Link eenheid"
+#~ msgid "Donate us:"
+#~ msgstr "Doneer ons:"
+#~ msgid "Install Now"
+#~ msgstr "Nu installeren"
+
+#, fuzzy
+#~ msgid "Publisher  ID is the unique identifer of "
+#~ msgstr "Uitgevers-id is een unieke identifier van"
+
+#, fuzzy
+#~ msgid "Pallete:"
+#~ msgstr "Palet:"
+
+#, fuzzy
+#~ msgid "This is a standart Google color pallete."
+#~ msgstr "Dit is een standart Google kleurenpalet."
+#~ msgid "Input percentage of ad slots to share [Default: 5%]."
+#~ msgstr "Input percentage van de advertentie slots te delen [Default: 5%]."
+
