@@ -2,9 +2,9 @@
 Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: google, adsense, ads, bestwebsoft, google adsense, google plugin, adsense plugin, ads plugin, gogle
-Requires at least: 2.9
-Tested up to: 3.5.2
-Stable tag: 1.21
+Requires at least: 3.0
+Tested up to: 3.6
+Stable tag: 1.22
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,6 +67,10 @@ On the plugin settings page open the menu item 'Position & Numbers of Ads' and c
 2. All menu items on the page are unwrapped.
 
 == Changelog ==
+
+= V1.22 - 04.09.2013 =
+* Update : We updated all functionality for wordpress 3.6.
+* Update : Function for displaying BWS plugins section placed in a separate file and has own language files.
 
 = V1.21 - 24.07.2013 =
 * Bugfix : Bugs of not displaying ads on costum frontend page is fixed.
@@ -149,6 +153,9 @@ On the plugin settings page open the menu item 'Position & Numbers of Ads' and c
 * Changed : Usability at the settings page of the plugin was improved.
 
 == Upgrade Notice ==
+
+= V1.22 =
+We updated all functionality for wordpress 3.6. Function for displaying BWS plugins section placed in a separate file and has own language files.
 
 = V1.21 =
 Bugs of not displaying ads on costum frontend page is fixed.
