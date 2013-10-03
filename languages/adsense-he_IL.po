@@ -1,0 +1,385 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Google AdSense Plugin v1.7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-04 16:50+0300\n"
+"PO-Revision-Date: 2013-09-04 16:50+0300\n"
+"Last-Translator: \n"
+"Language-Team: Ahrale <contact@atar4u.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: he_IL\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# @ adsense
+#: adsense-plugin.php:35
+#: adsense-plugin.class.php:72
+#, fuzzy
+msgid "AdSense Settings"
+msgstr "אפשרויות AdSense"
+
+# @ adsense
+#: adsense-plugin.php:37
+#: adsense-plugin.class.php:72
+msgid "AdSense"
+msgstr "AdSense"
+
+# @ adsense
+#: adsense-plugin.class.php:79
+#: adsense-plugin.class.php:88
+msgid "Settings"
+msgstr "הגדרות"
+
+# @ adsense
+#: adsense-plugin.class.php:89
+msgid "FAQ"
+msgstr "שאלות ותשובות"
+
+# @ adsense
+#: adsense-plugin.class.php:90
+msgid "Support"
+msgstr "תמיכה"
+
+# @ adsense
+#: adsense-plugin.class.php:247
+#, fuzzy
+msgid "Settings saved"
+msgstr "הגדרות"
+
+# @ adsense
+#: adsense-plugin.class.php:355
+msgid "Please enter your Publisher ID."
+msgstr "בבקשה הזן את מזהה המפרסם שלך."
+
+# @ adsense
+#: adsense-plugin.class.php:369
+msgid "Network"
+msgstr "רשת"
+
+# @ adsense
+#: adsense-plugin.class.php:372
+#, fuzzy
+msgid "Publisher ID:"
+msgstr "מזהה מפרסם:"
+
+#: adsense-plugin.class.php:378
+msgid "You should enter only digits here."
+msgstr ""
+
+#: adsense-plugin.class.php:379
+msgid "(For example: 1234567891234567)"
+msgstr ""
+
+# @ adsense
+#: adsense-plugin.class.php:380
+#, fuzzy
+msgid "Publisher ID is a unique identifier of"
+msgstr "מזהה המפרסם הוא מזהה ייחודי של"
+
+# @ adsense
+#: adsense-plugin.class.php:380
+msgid "your account"
+msgstr "החשבון שלך"
+
+# @ adsense
+#: adsense-plugin.class.php:380
+#, fuzzy
+msgid "in Google AdSense."
+msgstr "ב Google AdSense."
+
+# @ adsense
+#: adsense-plugin.class.php:386
+msgid "Ad Type &amp; Format"
+msgstr "סוג ופורמט המודעה"
+
+# @ adsense
+#: adsense-plugin.class.php:389
+msgid "Type:"
+msgstr "סוג:"
+
+#: adsense-plugin.class.php:393
+msgid "Ad block"
+msgstr ""
+
+# @ adsense
+#: adsense-plugin.class.php:396
+msgid "Text and image ads"
+msgstr "פרסומות טקסט ותמונה"
+
+# @ adsense
+#: adsense-plugin.class.php:397
+msgid "Text ads only (default)"
+msgstr "פרסומת טקסט בלבד (ברירת המחדל)"
+
+# @ adsense
+#: adsense-plugin.class.php:398
+msgid "Image ads only"
+msgstr "פרסומת תמונה בלבד"
+
+#: adsense-plugin.class.php:402
+msgid "Block of links"
+msgstr ""
+
+# @ adsense
+#: adsense-plugin.class.php:406
+msgid "Format:"
+msgstr "פורמט:"
+
+# @ adsense
+#: adsense-plugin.class.php:470
+#, fuzzy
+msgid "Position &amp; amount of ads"
+msgstr "מיקום ומספרי הפרסומות"
+
+# @ adsense
+#: adsense-plugin.class.php:473
+msgid "Position:"
+msgstr "מיקום:"
+
+# @ adsense
+#: adsense-plugin.class.php:477
+#, fuzzy
+msgid "Below the post (Single post page)"
+msgstr "אחרי טקסט הפוסט (דף יחיד)"
+
+# @ adsense
+#: adsense-plugin.class.php:478
+#, fuzzy
+msgid "Below the post (Home page)"
+msgstr "אחרי טקסט הפוסט (בדף הבית)"
+
+# @ adsense
+#: adsense-plugin.class.php:479
+#, fuzzy
+msgid "Below the post (Single post page and Home page)"
+msgstr "אחרי טקסט הפוסט (בדף יחיד ובדף הבית)"
+
+# @ adsense
+#: adsense-plugin.class.php:480
+#, fuzzy
+msgid "Below the comment form"
+msgstr "אחרי טופס תגובה"
+
+# @ adsense
+#: adsense-plugin.class.php:481
+#, fuzzy
+msgid "Above the footer"
+msgstr "לפני הסרגל התחתון"
+
+# @ adsense
+#: adsense-plugin.class.php:486
+msgid "Number of Ads:"
+msgstr "מספר הפרסומות:"
+
+# @ adsense
+#: adsense-plugin.class.php:496
+#, fuzzy
+msgid "Number of ads below the posts on the home page."
+msgstr "מספר הפרסומות אחרי טקסט פוסט בדף הבית שלך."
+
+# @ adsense
+#: adsense-plugin.class.php:501
+msgid "Visualisation"
+msgstr "ויזואליזציה"
+
+# @ adsense
+#: adsense-plugin.class.php:504
+#, fuzzy
+msgid "Colors:"
+msgstr "צבע:"
+
+# @ adsense
+#: adsense-plugin.class.php:514
+msgid "Border"
+msgstr "גבול"
+
+# @ adsense
+#: adsense-plugin.class.php:529
+#: adsense-plugin.class.php:711
+msgid "Title"
+msgstr "כותרת"
+
+# @ adsense
+#: adsense-plugin.class.php:539
+msgid "Background"
+msgstr "רקע"
+
+# @ adsense
+#: adsense-plugin.class.php:547
+msgid "Text"
+msgstr "טקסט"
+
+# @ adsense
+#: adsense-plugin.class.php:555
+msgid "URL"
+msgstr "URL"
+
+# @ adsense
+#: adsense-plugin.class.php:563
+msgid "Palette:"
+msgstr "צבעים:"
+
+# @ adsense
+#: adsense-plugin.class.php:567
+msgid "Default Google pallete"
+msgstr "צבעי ברירת המחדל של גוגל"
+
+# @ adsense
+#: adsense-plugin.class.php:570
+msgid "Open Air"
+msgstr "אוויר פתוח"
+
+# @ adsense
+#: adsense-plugin.class.php:571
+msgid "Seaside"
+msgstr "חוף הים"
+
+# @ adsense
+#: adsense-plugin.class.php:572
+msgid "Shadow"
+msgstr "צל"
+
+# @ adsense
+#: adsense-plugin.class.php:573
+msgid "Blue Mix"
+msgstr "תערובת כחול"
+
+# @ adsense
+#: adsense-plugin.class.php:574
+msgid "Ink"
+msgstr "דיו"
+
+# @ adsense
+#: adsense-plugin.class.php:575
+msgid "Graphite"
+msgstr "גרפיט"
+
+# @ adsense
+#: adsense-plugin.class.php:580
+#, fuzzy
+msgid "These are the standard Google color palettes."
+msgstr "אלו צבעים רגילים של גוגל:"
+
+# @ adsense
+#: adsense-plugin.class.php:584
+msgid "Corner Style:"
+msgstr "עיצוב פינה:"
+
+# @ adsense
+#: adsense-plugin.class.php:588
+#, fuzzy
+msgid "Select a corner style"
+msgstr "בחר עיצוב פינה:"
+
+# @ adsense
+#: adsense-plugin.class.php:589
+msgid "Square corners"
+msgstr "פינות מרובעות"
+
+# @ adsense
+#: adsense-plugin.class.php:590
+msgid "Slightly rounded corners"
+msgstr "פינות מעוגלות במקצת"
+
+# @ adsense
+#: adsense-plugin.class.php:591
+#, fuzzy
+msgid "Rounded corners"
+msgstr "פינות מעוגלות מאד"
+
+# @ adsense
+#: adsense-plugin.class.php:595
+#, fuzzy
+msgid "Corner style property will help you to make your Ad corners rounded."
+msgstr "מאפיין עיצוב הפינות יעזור לך לעגל את פינות הפרסומות שלך."
+
+# @ adsense
+#: adsense-plugin.class.php:600
+#, fuzzy
+msgid "Donations"
+msgstr "תרום"
+
+# @ adsense
+#: adsense-plugin.class.php:603
+#, fuzzy
+msgid "Donate:"
+msgstr "תרום"
+
+# @ adsense
+#: adsense-plugin.class.php:608
+msgid "Support us by Donating Ad Space."
+msgstr "תמוך בנו על ידי תרומת קוביית פרסום."
+
+# @ adsense
+#: adsense-plugin.class.php:610
+#, fuzzy
+msgid "Please enter a percentage value of the ad slots you are ready to share [Default: 0%]."
+msgstr "אחוז הקלט של המקום המתאים לשיתוף פרסומת [ברירת המחדל 0%]."
+
+# @ default
+#: adsense-plugin.class.php:621
+msgid "Save Changes"
+msgstr "שמור שינויים"
+
+# @ adsense
+#, fuzzy
+#~ msgid "Pro plugins"
+#~ msgstr "תוספים מומלצים"
+
+# @ adsense
+#~ msgid "Activated plugins"
+#~ msgstr "תוספים פעילים"
+# @ adsense
+#~ msgid "Read more"
+#~ msgstr "קרא עוד"
+# @ adsense
+#~ msgid "Installed plugins"
+#~ msgstr "תוספים מותקנים"
+# @ adsense
+#~ msgid "Recommended plugins"
+#~ msgstr "תוספים מומלצים"
+# @ adsense
+#, fuzzy
+#~ msgid "Free plugins"
+#~ msgstr "תוספים מומלצים"
+
+# @ adsense
+#~ msgid "Download"
+#~ msgstr "הורד"
+# @ default
+#~ msgid "Install %s"
+#~ msgstr "התקן %s"
+# @ adsense
+#~ msgid "Install now from wordpress.org"
+#~ msgstr "התקן כעת מ wordpress.org"
+# @ adsense
+#, fuzzy
+#~ msgid "Active Plugins"
+#~ msgstr "תוספים פעילים"
+
+# @ adsense
+#, fuzzy
+#~ msgid "Inactive Plugins"
+#~ msgstr "תוספים פעילים"
+
+# @ adsense
+#, fuzzy
+#~ msgid "Send to support"
+#~ msgstr "תמיכה"
+
+# @ adsense
+#, fuzzy
+#~ msgid ""
+#~ "If you have any questions, please contact us via plugin@bestwebsoft.com "
+#~ "or fill out the contact form on our website"
+#~ msgstr ""
+#~ "אם יש לך שאלות כלשהן, אנא צור עמנו קשר דרך plugin@bestwebsoft.com או "
+#~ "שתמלא את טופס יצירת הקשר באתר שלנו"
+
