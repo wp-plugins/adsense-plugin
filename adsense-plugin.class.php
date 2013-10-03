@@ -94,7 +94,7 @@ class adsns {
 
 	// Creating a default options for showing ads. Starts on plugin activation.
 	function adsns_activate()	{
-		global $adsns_options, $count, $current_count, $adsns_count, $max_ads;		
+		global $wpmu, $adsns_options, $count, $current_count, $adsns_count, $max_ads;		
 		$new_options = array(
 			'num_show' => '0',
 			'donate' => '0',
@@ -131,19 +131,25 @@ class adsns {
 						</script><input type="hidden" value="Version: 1.11" />',
 			'widget_title' => ''
 		);
-		if( ! get_option( 'adsns_settings' ) )
-			add_option( 'adsns_settings', $new_options, '', 'yes' );
 
+		if ( 1 == $wpmu ) {
+			if ( ! get_site_option( 'adsns_settings' ) ) {
+				add_site_option( 'adsns_settings', $new_options, '', 'yes' );
+			}
+		} else {
+			if ( ! get_option( 'adsns_settings' ) )
+				add_option( 'adsns_settings', $new_options, '', 'yes' );
+		}
+		
 		$count = 0; 							//current number of showed ads
 		$current_count = 0; 					// tmp var for storing a number of already showed ads
 		$adsns_count = 0; 						// number of posts on home page
-		if( $adsns_options = get_option( 'adsns_sets' ) ) {
-			unset( $adsns_options['code2'] );
-			add_option( 'adsns_settings', $adsns_options );
-			delete_option( 'adsns_sets' );
-		}
 
-		$adsns_options = get_option( 'adsns_settings' );
+		if ( 1 == $wpmu )
+			$adsns_options = get_site_option( 'adsns_settings' ); 
+		else
+			$adsns_options = get_option( 'adsns_settings' );
+
 		$adsns_options = array_merge( $new_options, $adsns_options );
 		update_option( 'adsns_settings', $adsns_options );
 

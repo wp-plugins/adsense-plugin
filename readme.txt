@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: google, adsense, ads, bestwebsoft, google adsense, google plugin, adsense plugin, ads plugin, gogle
 Requires at least: 3.0
-Tested up to: 3.6
-Stable tag: 1.22
+Tested up to: 3.6.1
+Stable tag: 1.23
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,6 +33,7 @@ Google AdSense Plugin allows you to set parameters of the ads displaying, such a
 * Polish (pl_PL) (thanks to Tomasz Łaziuk)
 * Spanish (es_ES) (thanks to <a href="mailto:mrjosefernando@gmail.com">José Fernando De Leon</a>)
 * Russian (ru_RU)
+* Ukrainian (uk)
 
 If you create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text in PO and MO files</a> for <a href="http://support.bestwebsoft.com" target="_blank">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
 
@@ -67,6 +68,10 @@ On the plugin settings page open the menu item 'Position & Numbers of Ads' and c
 2. All menu items on the page are unwrapped.
 
 == Changelog ==
+
+= V1.23 - 02.10.2013 =
+* Update : We updated all functionality for wordpress 3.6.1.
+* NEW : The Ukrainian language file is added to the plugin.
 
 = V1.22 - 04.09.2013 =
 * Update : We updated all functionality for wordpress 3.6.
@@ -153,6 +158,9 @@ On the plugin settings page open the menu item 'Position & Numbers of Ads' and c
 * Changed : Usability at the settings page of the plugin was improved.
 
 == Upgrade Notice ==
+
+= V1.23 =
+We updated all functionality for wordpress 3.6.1. The Ukrainian language file is added to the plugin.
 
 = V1.22 =
 We updated all functionality for wordpress 3.6. Function for displaying BWS plugins section placed in a separate file and has own language files.
