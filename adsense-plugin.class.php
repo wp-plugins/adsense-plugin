@@ -101,6 +101,7 @@ class adsns {
 			'max_ads' => '3',
 			'max_homepostads' => '1',
 			'clientid' => '',
+			'clientid_prefix' => 'pub',
 			'donate_id' => '1662250046693311',
 			'adtypeselect' => 'text',			
 			'donate_width' => '',
@@ -214,7 +215,7 @@ class adsns {
 			$this->adsns_options['donate_width'] = $dimensions[0];		// Width
 			$this->adsns_options['donate_height'] = $dimensions[1];		// Height
 			$don_code = '<script type="text/javascript">
-					google_ad_client = "pub-' .$this->adsns_options['clientid'] . '";
+					google_ad_client = "'.$this->adsns_options['clientid_prefix'].'-' .$this->adsns_options['clientid'] . '";
 					google_ad_width = ' . $this->adsns_options['donate_width'] . ';
 					google_ad_height = ' . $this->adsns_options['donate_height'] . ';
 					google_ad_format = "' . $format . '";
@@ -251,114 +252,120 @@ class adsns {
 
 			if ( strlen( $_REQUEST['client_id'] ) > 0 ) {
 				echo "<div class='updated'><p>".__( "Settings saved", 'adsense' )."</p></div>";
-				if ( isset( $_REQUEST['client_id'] ) ) { ## client
-					$this->adsns_options['clientid'] = $_REQUEST['client_id'];					
-				}
-				if ( isset( $_REQUEST['mycode'] ) ) { ## ad code
-					$id = stripslashes( $_REQUEST['mycode'] );
-					if ( strlen( $id ) > 0 ) {
-						//$this->adsns_options['code'] = $id;
-					}
-				}	 
-				if ( isset( $_REQUEST['homeAds'] ) ) { ## select
-					$this->adsns_options['max_homepostads'] = $_REQUEST['homeAds'];				
-				}				
-				if ( isset( $_REQUEST['adtypeselect'] ) ) { ## adtypeselect
-					$this->adsns_options['adtypeselect'] = $_REQUEST['adtypeselect'];								
-				} else {
-					$this->adsns_options['adtypeselect'] = '';	
-				}				
-				if ( isset( $_REQUEST['default'] ) ) { ## format
-					$this->adsns_options['default'] = $_REQUEST['default'];		
-				} else {
-					$this->adsns_options['default'] = '';	
-				}
-				if ( isset( $_REQUEST['image_only'] ) ) { ## format
-					$this->adsns_options['image_only'] = $_REQUEST['image_only'];	
-				} else {
-					$this->adsns_options['image_only'] = '';	
-				}				
-				if ( isset( $_REQUEST['link_unit'] ) ) { ## format
-					$this->adsns_options['link_unit'] = $_REQUEST['link_unit'];	
-				} else {
-					$this->adsns_options['link_unit'] = '';	
-				}				
-				if ( isset( $_REQUEST['adtype'] ) ) { ## adtype
-					$this->adsns_options['adtype'] = $_REQUEST['adtype'];		
-				}				
-				if ( isset( $_REQUEST['corner_style'] ) ) { ## corner_style
-					$this->adsns_options['corner_style'] = $_REQUEST['corner_style'];
-				}				
-				if ( isset( $_REQUEST['pallete'] ) ) { ## pallete
-					$this->adsns_options['pallete'] = $_REQUEST['pallete'];	
-				}				
-				if ( isset( $_REQUEST['border'] ) ) { ## border
-					$this->adsns_options['border'] = $_REQUEST['border'];		
-				}
-				if ( isset( $_REQUEST['title'] ) ) { ## title
-					$this->adsns_options['title'] = $_REQUEST['title'];		
-				}
-				if ( isset( $_REQUEST['background'] ) ) { ## background
-					$this->adsns_options['background'] = $_REQUEST['background'];
-				}
-				if ( isset( $_REQUEST['text'] ) ) { ## text
-					$this->adsns_options['text'] = $_REQUEST['text'];		
-				}
-				if ( isset( $_REQUEST['url'] ) ) { ## url
-					$this->adsns_options['url'] = $_REQUEST['url'];		
-				}				
-				if ( isset( $_REQUEST['position'] ) ) { ## position
-					$this->adsns_options['position'] = $_REQUEST['position'];	
-				}
 				
-				if ( isset( $_REQUEST['donate'] ) ) { ## donate
-					$this->adsns_options['donate'] = $_REQUEST['donate'];	
-				}
-				if ( $this->adsns_options['adtype'] == 'ad_unit' ) {
-					if ( $this->adsns_options['adtypeselect'] == 'default_image' )
-						$adtypeselect = 'default';
-					else 
-						$adtypeselect = $this->adsns_options['adtypeselect'];
+				if ( strlen( trim( $_REQUEST['clientid_prefix'] ) ) >= 3 && substr( trim( $_REQUEST['clientid_prefix'] ) , -3, 3 ) == 'pub' ) {
+					$this->adsns_options['clientid_prefix'] = $_REQUEST['clientid_prefix'];					
 
-					$dimensions = explode( "x", $this->adsns_options[ $adtypeselect ] );  // Calculating dimensions of ad block
-					$format = $this->adsns_options[ $adtypeselect ];
-					$format .= '_as';
-					switch($this->adsns_options['adtypeselect']) {
-							case 'image_only':
-								$type = 'google_ad_type = "image";';
-								break;
-							case 'default_image':
-								$type = 'google_ad_type = "text_image";';
-								break;
-							default:
-								$type = 'google_ad_type = "text";';
-								break;
+					if ( isset( $_REQUEST['client_id'] ) ) { ## client
+						$this->adsns_options['clientid'] = $_REQUEST['client_id'];					
 					}
-				} else {
-					$dimensions = explode( "x", $this->adsns_options[ $this->adsns_options['adtype'] ] );  // Calculating dimensions of ad block
-					$format = $this->adsns_options[ $this->adsns_options['adtype'] ];
-					$format .= '_0ads_al';
-					$type = '';
-				}
+					if ( isset( $_REQUEST['mycode'] ) ) { ## ad code
+						$id = stripslashes( $_REQUEST['mycode'] );
+						if ( strlen( $id ) > 0 ) {
+							//$this->adsns_options['code'] = $id;
+						}
+					}	 
+					if ( isset( $_REQUEST['homeAds'] ) ) { ## select
+						$this->adsns_options['max_homepostads'] = $_REQUEST['homeAds'];				
+					}				
+					if ( isset( $_REQUEST['adtypeselect'] ) ) { ## adtypeselect
+						$this->adsns_options['adtypeselect'] = $_REQUEST['adtypeselect'];								
+					} else {
+						$this->adsns_options['adtypeselect'] = '';	
+					}				
+					if ( isset( $_REQUEST['default'] ) ) { ## format
+						$this->adsns_options['default'] = $_REQUEST['default'];		
+					} else {
+						$this->adsns_options['default'] = '';	
+					}
+					if ( isset( $_REQUEST['image_only'] ) ) { ## format
+						$this->adsns_options['image_only'] = $_REQUEST['image_only'];	
+					} else {
+						$this->adsns_options['image_only'] = '';	
+					}				
+					if ( isset( $_REQUEST['link_unit'] ) ) { ## format
+						$this->adsns_options['link_unit'] = $_REQUEST['link_unit'];	
+					} else {
+						$this->adsns_options['link_unit'] = '';	
+					}				
+					if ( isset( $_REQUEST['adtype'] ) ) { ## adtype
+						$this->adsns_options['adtype'] = $_REQUEST['adtype'];		
+					}				
+					if ( isset( $_REQUEST['corner_style'] ) ) { ## corner_style
+						$this->adsns_options['corner_style'] = $_REQUEST['corner_style'];
+					}				
+					if ( isset( $_REQUEST['pallete'] ) ) { ## pallete
+						$this->adsns_options['pallete'] = $_REQUEST['pallete'];	
+					}				
+					if ( isset( $_REQUEST['border'] ) ) { ## border
+						$this->adsns_options['border'] = $_REQUEST['border'];		
+					}
+					if ( isset( $_REQUEST['title'] ) ) { ## title
+						$this->adsns_options['title'] = $_REQUEST['title'];		
+					}
+					if ( isset( $_REQUEST['background'] ) ) { ## background
+						$this->adsns_options['background'] = $_REQUEST['background'];
+					}
+					if ( isset( $_REQUEST['text'] ) ) { ## text
+						$this->adsns_options['text'] = $_REQUEST['text'];		
+					}
+					if ( isset( $_REQUEST['url'] ) ) { ## url
+						$this->adsns_options['url'] = $_REQUEST['url'];		
+					}				
+					if ( isset( $_REQUEST['position'] ) ) { ## position
+						$this->adsns_options['position'] = $_REQUEST['position'];	
+					}
+					
+					if ( isset( $_REQUEST['donate'] ) ) { ## donate
+						$this->adsns_options['donate'] = $_REQUEST['donate'];	
+					}
+					if ( $this->adsns_options['adtype'] == 'ad_unit' ) {
+						if ( $this->adsns_options['adtypeselect'] == 'default_image' )
+							$adtypeselect = 'default';
+						else 
+							$adtypeselect = $this->adsns_options['adtypeselect'];
 
-				$this->adsns_options['donate_width'] = $dimensions[0];		// Width
-				$this->adsns_options['donate_height'] = $dimensions[1];		// Height
-				$don_code = '<script type="text/javascript">
-						google_ad_client = "pub-' .$this->adsns_options['clientid'] . '";
-						google_ad_width = ' . $this->adsns_options['donate_width'] . ';
-						google_ad_height = ' . $this->adsns_options['donate_height'] . ';
-						google_ad_format = "' . $format . '";
-						' . $type . '
-						google_color_border = "' . $this->adsns_options['border'] . '";
-						google_color_bg = "' . $this->adsns_options['background'] . '";
-						google_color_link = "' . $this->adsns_options['title'] . '";
-						google_color_text = "' . $this->adsns_options['text'] . '";
-						google_color_url = "' . $this->adsns_options['url'] . '";
-						</script><script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script><input type="hidden" value="Version: 1.11" />';			
-				$this->adsns_options['code'] = $don_code;
-				update_option( 'adsns_settings', $this->adsns_options );	
-			}
-			else echo "<div class='error'><p>" . __( "Please enter your Publisher ID.", 'adsense' ) . "</p></div>";
+						$dimensions = explode( "x", $this->adsns_options[ $adtypeselect ] );  // Calculating dimensions of ad block
+						$format = $this->adsns_options[ $adtypeselect ];
+						$format .= '_as';
+						switch($this->adsns_options['adtypeselect']) {
+								case 'image_only':
+									$type = 'google_ad_type = "image";';
+									break;
+								case 'default_image':
+									$type = 'google_ad_type = "text_image";';
+									break;
+								default:
+									$type = 'google_ad_type = "text";';
+									break;
+						}
+					} else {
+						$dimensions = explode( "x", $this->adsns_options[ $this->adsns_options['adtype'] ] );  // Calculating dimensions of ad block
+						$format = $this->adsns_options[ $this->adsns_options['adtype'] ];
+						$format .= '_0ads_al';
+						$type = '';
+					}
+
+					$this->adsns_options['donate_width'] = $dimensions[0];		// Width
+					$this->adsns_options['donate_height'] = $dimensions[1];		// Height
+					$don_code = '<script type="text/javascript">
+							google_ad_client = "'.$this->adsns_options['clientid_prefix'].'-' .$this->adsns_options['clientid'] . '";
+							google_ad_width = ' . $this->adsns_options['donate_width'] . ';
+							google_ad_height = ' . $this->adsns_options['donate_height'] . ';
+							google_ad_format = "' . $format . '";
+							' . $type . '
+							google_color_border = "' . $this->adsns_options['border'] . '";
+							google_color_bg = "' . $this->adsns_options['background'] . '";
+							google_color_link = "' . $this->adsns_options['title'] . '";
+							google_color_text = "' . $this->adsns_options['text'] . '";
+							google_color_url = "' . $this->adsns_options['url'] . '";
+							</script><script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script><input type="hidden" value="Version: 1.11" />';			
+					$this->adsns_options['code'] = $don_code;
+					update_option( 'adsns_settings', $this->adsns_options );
+				} else
+					echo "<div class='error'><p>" . __( "Please enter valid Publisher ID.", 'adsense' ) . "</p></div>";
+			} else
+				echo "<div class='error'><p>" . __( "Please enter your Publisher ID.", 'adsense' ) . "</p></div>";
 		} // Click on Save Changes button end	 
 		$this->adsns_view_options_page();	 
 		echo '</div>';
@@ -377,12 +384,12 @@ class adsns {
 			<div class="settings_body" id="network">
 				<label for="client_id" class="left" ><?php _e( 'Publisher ID:', 'adsense' ); ?></label>
 				<div class="right">
-					pub_<input type="hidden" id="client_id_val" name="client_id_val" value="<?php echo $this->adsns_options['clientid'] ?>" />
+					<input type="text" id="clientid_prefix" name="clientid_prefix" size="8" maxlength="10" value="<?php echo $this->adsns_options['clientid_prefix'] ?>" />
+					-
+					<input type="hidden" id="client_id_val" name="client_id_val" value="<?php echo $this->adsns_options['clientid'] ?>" />
 					<input type="text" id="client_id" name="client_id" class ="positive-integer" size="20" maxlength="16" value="<?php echo $this->adsns_options['clientid'] ?>" />
 					<br />
 					<div style="width: 250px; padding-left: 2px;">
-						<span class="description"><?php _e( 'You should enter only digits here.', 'adsense' ); ?></span><br/>
-						<span class="description"><?php _e( '(For example: 1234567891234567)', 'adsense' ); ?></span><br/>
 						<span class="description"><?php _e( 'Publisher ID is a unique identifier of', 'adsense' ); ?> <a href="https://www.google.com/adsense"><?php _e( 'your account', 'adsense' ); ?></a> <?php _e( 'in Google AdSense.', 'adsense' ); ?></span>
 					</div>
 				</div>

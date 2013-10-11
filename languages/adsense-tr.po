@@ -2,24 +2,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: adsense\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-11 16:58+0300\n"
+"POT-Creation-Date: 2013-10-11 17:04+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
-"Language-Team: BestWebSoft <support@bestwebsoft.com>\n"
+"Language-Team: Erhan KOCABUGA <erhankocabuga@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ru_RU\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"Language: tr_TR\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ..\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.5.7\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: adsense-plugin.php:35
 #: adsense-plugin.class.php:72
 msgid "AdSense Settings"
-msgstr "Опции AdSense"
+msgstr "AdSense Ayarları"
 
 #: adsense-plugin.php:37
 #: adsense-plugin.class.php:72
@@ -29,229 +29,230 @@ msgstr "AdSense"
 #: adsense-plugin.class.php:79
 #: adsense-plugin.class.php:88
 msgid "Settings"
-msgstr "Настройки"
+msgstr "Ayarlar"
 
 #: adsense-plugin.class.php:89
 msgid "FAQ"
-msgstr "FAQ"
+msgstr "SSS"
 
 #: adsense-plugin.class.php:90
 msgid "Support"
-msgstr "Поддержка"
+msgstr "Destek"
 
 #: adsense-plugin.class.php:254
 msgid "Settings saved"
-msgstr "Опции сохранены"
+msgstr "Ayarlar kaydedildi"
 
 #: adsense-plugin.class.php:366
+#, fuzzy
 msgid "Please enter valid Publisher ID."
-msgstr "Пожалуйста, заполните валидный Publisher ID."
+msgstr "Lütfen Yayıncı Kimliğinizi giriniz."
 
 #: adsense-plugin.class.php:368
 msgid "Please enter your Publisher ID."
-msgstr "Пожалуйста, заполните ваш Publisher ID."
+msgstr "Lütfen Yayıncı Kimliğinizi giriniz."
 
 #: adsense-plugin.class.php:382
 msgid "Network"
-msgstr "Сеть"
+msgstr "Ağ"
 
 #: adsense-plugin.class.php:385
 msgid "Publisher ID:"
-msgstr "Publisher  ID:"
+msgstr "Yayıncı Kimliği:"
 
 #: adsense-plugin.class.php:393
 msgid "Publisher ID is a unique identifier of"
-msgstr "Publisher ID является уникальным номером"
+msgstr "Yayıncı Kimliği Google AdSense"
 
 #: adsense-plugin.class.php:393
 msgid "your account"
-msgstr "Вашего аккаунта"
+msgstr "hesabınızın"
 
 #: adsense-plugin.class.php:393
 msgid "in Google AdSense."
-msgstr "в Google AdSense."
+msgstr "benzersiz bir tanımlayıcısıdır."
 
 #: adsense-plugin.class.php:399
 msgid "Ad Type &amp; Format"
-msgstr "Тип и формат рекламных блоков"
+msgstr "Reklam Türü &amp; Biçimi"
 
 #: adsense-plugin.class.php:402
 msgid "Type:"
-msgstr "Тип:"
+msgstr "Tür:"
 
 #: adsense-plugin.class.php:406
 msgid "Ad block"
-msgstr "Блок рекламы"
+msgstr "Blok olarak"
 
 #: adsense-plugin.class.php:409
 msgid "Text and image ads"
-msgstr "Text and image ads"
+msgstr "Metin ve görüntülü reklamlar"
 
 #: adsense-plugin.class.php:410
 msgid "Text ads only (default)"
-msgstr ""
+msgstr "Yalnızca metin reklamlar (стандартна установка)"
 
 #: adsense-plugin.class.php:411
 msgid "Image ads only"
-msgstr ""
+msgstr "Sadece görüntülü reklamlar"
 
 #: adsense-plugin.class.php:415
 msgid "Block of links"
-msgstr "Блок ссылок"
+msgstr "Bağlantı bloğu olarak"
 
 #: adsense-plugin.class.php:419
 msgid "Format:"
-msgstr "Формат:"
+msgstr "Biçim:"
 
 #: adsense-plugin.class.php:483
 msgid "Position &amp; amount of ads"
-msgstr "Размещение и количество рекламных блоков"
+msgstr "Pozisyon &amp; reklam sayısı"
 
 #: adsense-plugin.class.php:486
 msgid "Position:"
-msgstr "Размещение:"
+msgstr "Poziyon:"
 
 #: adsense-plugin.class.php:490
 msgid "Below the post (Single post page)"
-msgstr "После поста (на single странице)"
+msgstr "Yazının altında (Tekil yazı sayfası)"
 
 #: adsense-plugin.class.php:491
 msgid "Below the post (Home page)"
-msgstr "После поста (на домашней странице)"
+msgstr "Yazının altında (Ana sayfa)"
 
 #: adsense-plugin.class.php:492
 msgid "Below the post (Single post page and Home page)"
-msgstr "После поста (на домашней и single странице)"
+msgstr "Yazının altında (Tekil yazı sayfası ve Ana sayfa)"
 
 #: adsense-plugin.class.php:493
 msgid "Below the comment form"
-msgstr "После формы отправки комментария"
+msgstr "Yorum formunun altında"
 
 #: adsense-plugin.class.php:494
 msgid "Above the footer"
-msgstr "Перед футером"
+msgstr "Alt kısımın üzerinde"
 
 #: adsense-plugin.class.php:499
 msgid "Number of Ads:"
-msgstr "Количество блоков:"
+msgstr "Reklam sayısı:"
 
 #: adsense-plugin.class.php:509
 msgid "Number of ads below the posts on the home page."
-msgstr "Количество рекламных блоков после постов на домашней странице."
+msgstr "Ana sayfadaki yazıların altında görünecek reklam sayısı"
 
 #: adsense-plugin.class.php:514
 msgid "Visualisation"
-msgstr "Внешний вид"
+msgstr "Görsellik"
 
 #: adsense-plugin.class.php:517
 msgid "Colors:"
-msgstr "Цвета:"
+msgstr "Renkler:"
 
 #: adsense-plugin.class.php:527
 msgid "Border"
-msgstr "Окантовка"
+msgstr "Kenarlık"
 
 #: adsense-plugin.class.php:542
 #: adsense-plugin.class.php:724
 msgid "Title"
-msgstr "Заголовок"
+msgstr "Başlık"
 
 #: adsense-plugin.class.php:552
 msgid "Background"
-msgstr "Фон"
+msgstr "Arka Plan"
 
 #: adsense-plugin.class.php:560
 msgid "Text"
-msgstr "Текст"
+msgstr "Metin"
 
 #: adsense-plugin.class.php:568
 msgid "URL"
-msgstr "Ссылка"
+msgstr "URL"
 
 #: adsense-plugin.class.php:576
 msgid "Palette:"
-msgstr "Палитра:"
+msgstr "Reklam stili"
 
 #: adsense-plugin.class.php:580
 msgid "Default Google pallete"
-msgstr ""
+msgstr "Google varsayılan"
 
 #: adsense-plugin.class.php:583
 msgid "Open Air"
-msgstr ""
+msgstr "Açık Hava"
 
 #: adsense-plugin.class.php:584
 msgid "Seaside"
-msgstr ""
+msgstr "Sahil"
 
 #: adsense-plugin.class.php:585
 msgid "Shadow"
-msgstr ""
+msgstr "Gölge"
 
 #: adsense-plugin.class.php:586
 msgid "Blue Mix"
-msgstr ""
+msgstr "Mavi Karışım"
 
 #: adsense-plugin.class.php:587
 msgid "Ink"
-msgstr ""
+msgstr "Mürekkep"
 
 #: adsense-plugin.class.php:588
 msgid "Graphite"
-msgstr ""
+msgstr "Grafiti"
 
 #: adsense-plugin.class.php:593
 msgid "These are the standard Google color palettes."
-msgstr "Это стандартные Google палитры."
+msgstr "Bunlar standart Google reklam stilleridir."
 
 #: adsense-plugin.class.php:597
 msgid "Corner Style:"
-msgstr "Стиль углов:"
+msgstr "Köşe Stili:"
 
 #: adsense-plugin.class.php:601
 msgid "Select a corner style"
-msgstr "Выберите стиль углов"
+msgstr "Bir köşe stili seçin"
 
 #: adsense-plugin.class.php:602
 msgid "Square corners"
-msgstr "Углы без закруглений"
+msgstr "Kare köşeler"
 
 #: adsense-plugin.class.php:603
 msgid "Slightly rounded corners"
-msgstr "Слегка закругленные углы"
+msgstr "Hafif  yuvarlak köşeler"
 
 #: adsense-plugin.class.php:604
 msgid "Rounded corners"
-msgstr "Сильно закругленные углы"
+msgstr "Yuvarlak köşeler"
 
 #: adsense-plugin.class.php:608
 msgid "Corner style property will help you to make your Ad corners rounded."
-msgstr "С помощью данного свойства Вы можете закруглить углы Вашего рекламного блока."
+msgstr "Köşe stili özelliği reklamlarınızın köşelerini ovalleştirmeye yardımcı olacaktır."
 
 #: adsense-plugin.class.php:613
 msgid "Donations"
-msgstr "Пожертвования"
+msgstr "Bağışlar"
 
 #: adsense-plugin.class.php:616
 msgid "Donate:"
-msgstr "Пожертвуйте нам:"
+msgstr "Bağış yap:"
 
 #: adsense-plugin.class.php:621
 msgid "Support us by Donating Ad Space."
-msgstr "Поддержите наш проект предоставляя рекламное пространство."
+msgstr "Reklam Alanınızı bir kısmını bağış yaparak bizi destekleyin."
 
 #: adsense-plugin.class.php:623
 msgid "Please enter a percentage value of the ad slots you are ready to share [Default: 0%]."
-msgstr "Введите процент от просмотра рекламы, которым вы можете пожертвовать [По умолчанию: 0%]."
+msgstr "Paylaşmaya hazır olduğunuz reklam alanını yüzde cinsinden giriniz [Varsayılan: %0]."
 
 #: adsense-plugin.class.php:634
 msgid "Save Changes"
-msgstr "Сохранить изменения"
+msgstr "Değişiklikleri Kaydet"
 
 #~ msgid "You should enter only digits here."
-#~ msgstr "Здесь Вы должны ввести только цифры."
+#~ msgstr "Buraya sadece rakam girmelisiniz."
 #~ msgid "(For example: 1234567891234567)"
-#~ msgstr "(Например: 1234567891234567)"
+#~ msgstr "(Örneğin: 1234567891234567)"
 #~ msgid "Not set"
 #~ msgstr "Не задан"
 #~ msgid "On"
