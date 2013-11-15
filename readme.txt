@@ -28,7 +28,7 @@ Google AdSense Plugin allows you to set parameters of the ads displaying, such a
 The author of the Google AdSense also recommends the following plugins:
 
 * <a href="http://wordpress.org/plugins/updater/">Updater</a> - This plugin updates WordPress core and the plugins to the recent versions. You can also use the auto mode or manual mode for updating and set email notifications.
-There is also a premium version of the plugin <a href="http://bestwebsoft.com/plugin/updater-pro/?k=9bfbc38d14047beca03dbc74f96cc135">Updater Pro</a> with more useful features available. It allows to update plugins and WordPress core on several websites. It can make backup of all your files and database before updating.
+There is also a premium version of the plugin <a href="http://bestwebsoft.com/plugin/updater-pro/?k=9bfbc38d14047beca03dbc74f96cc135">Updater Pro</a> with more useful features available. It can make backup of all your files and database before updating. Also it can forbid some plugins or WordPress Core update.
 
 = Translation =
 
@@ -80,7 +80,7 @@ On the plugin settings page open the menu item 'Position & Numbers of Ads' and c
 = V1.25 - 12.11.2013 =
 * NEW : Add checking installed wordpress version.
 * Update : We updated all functionality for wordpress 3.7.1.
-* Bugfix : Bug of displaying missing global $adsns_count in adsns_end_footer_ad() function is fixed;
+* Bugfix : Bug of displaying missing global $adsns_count in adsns_end_footer_ad() function is fixed.
 
 = V1.24 - 11.10.2013 =
 * NEW : The Turkish language file is added to the plugin.
@@ -177,7 +177,7 @@ On the plugin settings page open the menu item 'Position & Numbers of Ads' and c
 == Upgrade Notice ==
 
 = V1.25 =
-Add checking installed wordpress version. We updated all functionality for wordpress 3.7.1. Bug missing global $adsns_count in adsns_end_footer_ad() function is fixed;
+Add checking installed wordpress version. We updated all functionality for wordpress 3.7.1. Bug missing global $adsns_count in adsns_end_footer_ad() function is fixed.
 
 = V1.24 =
 The Turkish language file is added to the plugin. Added an ability to use plugin when ad client id doesn't start with 'pub-'.
