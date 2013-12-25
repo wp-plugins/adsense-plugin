@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: google, adsense, ads, bestwebsoft, google adsense, google plugin, adsense plugin, ads plugin, gogle
 Requires at least: 3.0
-Tested up to: 3.7.1
-Stable tag: 1.25
+Tested up to: 3.8
+Stable tag: 1.26
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -37,6 +37,7 @@ There is also a premium version of the plugin <a href="http://bestwebsoft.com/pl
 * French (fr_FR) (thanks to <a href="mailto:phil.azza@freesbee.fr">Phil Azza</a>)
 * German (de_DE) (thanks to Psyflex)
 * Hebrew (he_IL) (thanks to Ahrale)
+* Indonesian (id_ID) (thanks to <a href="mailto:nasrulhaq81@gmail.com">Nasrulhaq Muiz</a>, www.al-badar.net)
 * Polish (pl_PL) (thanks to Tomasz Łaziuk)
 * Russian (ru_RU)
 * Spanish (es_ES) (thanks to <a href="mailto:mrjosefernando@gmail.com">José Fernando De Leon</a>)
@@ -76,6 +77,11 @@ On the plugin settings page open the menu item 'Position & Numbers of Ads' and c
 2. All menu items on the page are unwrapped.
 
 == Changelog ==
+
+= V1.26 - 25.12.2013 =
+* Update : BWS plugins section is updated.
+* Update : We updated all functionality for wordpress 3.8.
+* Update : The Indonesian language file is added to the plugin.
 
 = V1.25 - 12.11.2013 =
 * NEW : Add checking installed wordpress version.
@@ -175,6 +181,9 @@ On the plugin settings page open the menu item 'Position & Numbers of Ads' and c
 * Changed : Usability at the settings page of the plugin was improved.
 
 == Upgrade Notice ==
+
+= V1.26 =
+BWS plugins section is updated. We updated all functionality for wordpress 3.8. The Indonesian language file is added to the plugin.
 
 = V1.25 =
 Add checking installed wordpress version. We updated all functionality for wordpress 3.7.1. Bug missing global $adsns_count in adsns_end_footer_ad() function is fixed.
