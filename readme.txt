@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: google, adsense, ads, bestwebsoft, google adsense, google plugin, adsense plugin, ads plugin, gogle
 Requires at least: 3.0
-Tested up to: 3.8
-Stable tag: 1.26
+Tested up to: 3.8.1
+Stable tag: 1.27
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -54,12 +54,11 @@ If you notice any bugs in the plugins, you can notify us about it and we'll inve
 Moreover we can customize the plugin according to your requirements. It's a paid service (as a rule it costs $40, but the price can vary depending on the amount of the necessary changes and their complexity). Please note that we could also include this or that feature (developed for you) in the next release and share with the other users then. 
 We can fix some things for free for the users who provide translation of our plugin into their native language (this should be a new translation of a certain plugin, you can check available translations on the official plugin page).
 
-
 == Installation ==
 
 1. Upload the folder `adsense-plugin` to the directory `/wp-content/plugins/`.
 2. Activate the plugin via the 'Plugins' menu in WordPress.
-3. The plugin settings are located in "BWS Plugin"->"AdSense".
+3. The plugin settings are located in "BWS Plugins"->"AdSense".
 
 == Frequently Asked Questions ==
 
@@ -71,12 +70,25 @@ Go to the Settings page and change the value of the 'Publisher ID' field.
 
 On the plugin settings page open the menu item 'Position & Numbers of Ads' and choose position from the list.
 
+= I have some problems with the plugin's work. What Information should I provide to receive proper support? =
+
+Please make sure that the problem hasn't been discussed yet on our forum (<a href="http://support.bestwebsoft.com" target="_blank">http://support.bestwebsoft.com</a>). If no, please provide the following data along with your problem's description:
+1. the link to the page where the problem occurs
+2. the name of the plugin and its version. If you are using a pro version - your order number.
+3. the version of your WordPress installation
+4. copy and paste into the message your system status report. Please read more here: <a href="http://bestwebsoft.com/wp-content/uploads/manual/wp_plugin/general/System_Status.pdf" target="_blank">System_Status.pdf</a>
+
 == Screenshots ==
 
-1. AdSense Settings page.
-2. All menu items on the page are unwrapped.
+1. AdSense Settings page main settings.
+2. AdSense Settings page additional settings.
 
 == Changelog ==
+
+= V1.27 - 07.02.2014 =
+* Update : Screenshots are updated.
+* Update : BWS plugins section is updated.
+* Update : We updated all functionality for wordpress 3.8.1.
 
 = V1.26 - 25.12.2013 =
 * Update : BWS plugins section is updated.
@@ -181,6 +193,9 @@ On the plugin settings page open the menu item 'Position & Numbers of Ads' and c
 * Changed : Usability at the settings page of the plugin was improved.
 
 == Upgrade Notice ==
+
+= V1.27 =
+Screenshots are updated. BWS plugins section is updated. We updated all functionality for wordpress 3.8.1.
 
 = V1.26 =
 BWS plugins section is updated. We updated all functionality for wordpress 3.8. The Indonesian language file is added to the plugin.

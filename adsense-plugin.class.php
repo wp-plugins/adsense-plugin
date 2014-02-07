@@ -661,11 +661,11 @@ class adsns {
 		<br />
 		<div class="bws-plugin-reviews">
 			<div class="bws-plugin-reviews-rate">
-			<?php _e( 'If you enjoy our plugin, please give it 5 stars on WordPress', 'adsense' ); ?>:<br/>
+			<?php _e( 'If you enjoy our plugin, please give it 5 stars on WordPress', 'adsense' ); ?>: 
 			<a href="http://wordpress.org/support/view/plugin-reviews/adsense-plugin" target="_blank" title="Google AdSense reviews"><?php _e( 'Rate the plugin', 'adsense' ); ?></a><br/>
 			</div>
 			<div class="bws-plugin-reviews-support">
-			<?php _e( 'If there is something wrong about it, please contact us', 'adsense' ); ?>:<br/>
+			<?php _e( 'If there is something wrong about it, please contact us', 'adsense' ); ?>: 
 			<a href="http://support.bestwebsoft.com">http://support.bestwebsoft.com</a>
 			</div>
 		</div>
@@ -687,8 +687,6 @@ class adsns {
 			wp_register_style( 'adsnsFarbtasticStylesheet', plugins_url( 'farbtastic/farbtastic.css' , __FILE__ ) ) ;
 			wp_enqueue_style( 'adsnsFarbtasticStylesheet' );
 		}
-		if ( isset( $_GET['page'] ) && "bws_plugins" == $_GET['page'] )
-			wp_enqueue_script( 'bws_menu_script', plugins_url( 'js/bws_menu.js' , __FILE__ ) );
 	}
 
 	function adsns_admin_js() {
