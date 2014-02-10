@@ -85,7 +85,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 
 == Changelog ==
 
-= V1.27 - 07.02.2014 =
+= V1.27 - 07.02.2014 = 
 * Update : Screenshots are updated.
 * Update : BWS plugins section is updated.
 * Update : We updated all functionality for wordpress 3.8.1.
