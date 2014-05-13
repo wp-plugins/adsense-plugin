@@ -61,7 +61,6 @@ msgid "Settings saved"
 msgstr "Установки збережено"
 
 #: adsense-plugin.class.php:368
-#, fuzzy
 msgid "Please enter valid Publisher ID."
 msgstr "Будь ласка, заповніть ваш Publisher ID."
 
@@ -71,13 +70,15 @@ msgstr "Будь ласка, заповніть ваш Publisher ID."
 
 #: adsense-plugin.class.php:385
 msgid "Notice:"
-msgstr ""
+msgstr "Зауважте:"
 
 #: adsense-plugin.class.php:385
 msgid ""
 "The plugin's settings have been changed. In order to save them please don't "
 "forget to click the 'Save Changes' button."
 msgstr ""
+"Налаштування плагіну змінено. Будь ласка, натисніть кнопку \"Зберегти\", щоб "
+"зберегти зміни."
 
 #: adsense-plugin.class.php:389
 msgid "Network"
@@ -205,27 +206,27 @@ msgstr "Палітра Google (стандартна установка)"
 
 #: adsense-plugin.class.php:596
 msgid "Open Air"
-msgstr "Атмосфера"
+msgstr "Open Air"
 
 #: adsense-plugin.class.php:597
 msgid "Seaside"
-msgstr "Морське узбережжя"
+msgstr "Seaside"
 
 #: adsense-plugin.class.php:598
 msgid "Shadow"
-msgstr "Тінь"
+msgstr "Shadow"
 
 #: adsense-plugin.class.php:599
 msgid "Blue Mix"
-msgstr "Синева"
+msgstr "Blue Mix"
 
 #: adsense-plugin.class.php:600
 msgid "Ink"
-msgstr "Чорнила"
+msgstr "Ink"
 
 #: adsense-plugin.class.php:601
 msgid "Graphite"
-msgstr "Графіт"
+msgstr "Graphite"
 
 #: adsense-plugin.class.php:605
 msgid "These are the standard Google color palettes."
@@ -283,11 +284,13 @@ msgstr "Зберегти зміни"
 #: adsense-plugin.class.php:658
 msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
 msgstr ""
+"Якщо вам подобається наш плагін, будь ласка, поставте нам п’ять зірочок на "
+"WordPress"
 
 #: adsense-plugin.class.php:659
 msgid "Rate the plugin"
-msgstr ""
+msgstr "Оцініть плагін"
 
 #: adsense-plugin.class.php:662
 msgid "If there is something wrong about it, please contact us"
-msgstr ""
+msgstr "Якщо у вас виникли проблеми, повідомте нам"

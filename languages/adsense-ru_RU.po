@@ -206,27 +206,27 @@ msgstr "Палитра Google (стандартная установка)"
 
 #: adsense-plugin.class.php:596
 msgid "Open Air"
-msgstr ""
+msgstr "Open Air"
 
 #: adsense-plugin.class.php:597
 msgid "Seaside"
-msgstr ""
+msgstr "Seaside"
 
 #: adsense-plugin.class.php:598
 msgid "Shadow"
-msgstr ""
+msgstr "Shadow"
 
 #: adsense-plugin.class.php:599
 msgid "Blue Mix"
-msgstr ""
+msgstr "Blue Mix"
 
 #: adsense-plugin.class.php:600
 msgid "Ink"
-msgstr ""
+msgstr "Ink"
 
 #: adsense-plugin.class.php:601
 msgid "Graphite"
-msgstr ""
+msgstr "Graphite"
 
 #: adsense-plugin.class.php:605
 msgid "These are the standard Google color palettes."

@@ -1,10 +1,10 @@
 === Google AdSense ===
 Contributors: bestwebsoft
-Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
-Tags: google, adsense, ads, bestwebsoft, google adsense, google plugin, adsense plugin, ads plugin, gogle
+Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=1&product_id=94
+Tags: google, adsense, bestwebsoft, google adsense, google plugin, adsense plugin, ads plugin, gogle, ad, ads, adds, ad banner, ad block, ad color, ads display, ad format, ads in widgets, ad links block, add several adds, ads on website, ad parameters, ad type, advertisements, Google ads, Google AdSense, Google AddSense, Goggle AdSense, Gogle AdSense, image, insert ads, insert ads automatically, insert Google ads, text ads, text and image ads. 
 Requires at least: 3.0
-Tested up to: 3.8.2
-Stable tag: 1.28
+Tested up to: 3.9.1
+Stable tag: 1.29
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,10 @@ This plugin allows Google AdSense implementation into your website.
 
 Google AdSense Plugin allows you to set parameters of the ads displaying, such as format (text ad, image, text with an image or link), size, color of the elements in the ad block, rounded corners and the ad block position on the website.
 
+http://www.youtube.com/watch?v=Z4KUyT4puSo
+
 <a href="http://wordpress.org/plugins/adsense-plugin/faq/" target="_blank">FAQ</a>
+
 <a href="http://support.bestwebsoft.com" target="_blank">Support</a>
 
 = Features =
@@ -85,6 +88,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 2. AdSense Settings page additional settings.
 
 == Changelog ==
+
+= V1.29 - 13.05.2014 =
+* Update : The Ukrainian language is updated in the plugin.
+* Update : We updated all functionality for wordpress 3.9.1.
+* Bugfix: Problem with amount of ads on settings page is fixed.
 
 = V1.28 - 11.04.2014 =
 * Update : BWS plugins section is updated.
@@ -200,6 +208,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Changed : Usability at the settings page of the plugin was improved.
 
 == Upgrade Notice ==
+
+= V1.29 =
+The Ukrainian language is updated in the plugin. We updated all functionality for wordpress 3.9.1. Problem with amount of ads on settings page is fixed.
 
 = V1.28 =
 BWS plugins section is updated. The Italian language file is added to the plugin. We updated all functionality for wordpress 3.8.2. Plugin optimization is done.

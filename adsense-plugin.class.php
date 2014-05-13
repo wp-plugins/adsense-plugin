@@ -74,7 +74,8 @@ class adsns {
 	/* Add 'BWS Plugins' menu at the left side in administer panel */
 	function adsns_add_admin_menu() {
 		global $bstwbsftwppdtplgns_options, $wpmu, $bstwbsftwppdtplgns_added_menu;
-		$bws_menu_version = '1.2.6';
+		$bws_menu_version = get_plugin_data( plugin_dir_path( __FILE__ ) . "bws_menu/bws_menu.php" );
+		$bws_menu_version = $bws_menu_version["Version"];
 		$base = plugin_basename( __FILE__ );
 
 		if ( ! isset( $bstwbsftwppdtplgns_options ) ) {
@@ -452,6 +453,10 @@ class adsns {
 		static $sp_nonce_flag = false;
 		?>
 		<div id="adsns_settings_notice" class="updated fade" style="display:none"><p><strong><?php _e( "Notice:", 'adsense' ); ?></strong> <?php _e( "The plugin's settings have been changed. In order to save them please don't forget to click the 'Save Changes' button.", 'adsense' ); ?></p></div>
+		<h2 class="nav-tab-wrapper">
+			<a class="nav-tab nav-tab-active" href="admin.php?page=adsense-plugin.php"><?php _e( 'Settings', 'adsense' ); ?></a>
+			<a class="nav-tab" href="http://bestwebsoft.com/plugin/google-adsense-plugin/#faq" target="_blank"><?php _e( 'FAQ', 'adsense' ); ?></a>
+		</h2>
 		<form id="adsns_settings_form" name="option" action="" method="post">
 			<table id="adsns_main">
 				<tr class="settings_head_1">
@@ -573,9 +578,9 @@ class adsns {
 					<td class="right">
 						<input type="hidden" id="homeads_val" name="homeads_val" value="<?php echo $this->adsns_options['max_homepostads'] ?>" />
 						<select name="homeAds" id="homeAds" style="width: 40px;">
-							<option value="1" <?php if ( isset( $this->adsns_options['homeAds'] ) && '1' == $this->adsns_options['homeAds'] ) echo 'selected="selected"'; ?>>1</option>
-							<option value="2" <?php if ( isset( $this->adsns_options['homeAds'] ) && '2' == $this->adsns_options['homeAds'] ) echo 'selected="selected"'; ?>>2</option>
-							<option value="3" <?php if ( isset( $this->adsns_options['homeAds'] ) && '3' == $this->adsns_options['homeAds'] ) echo 'selected="selected"'; ?>>3</option>
+							<option value="1" <?php if ( isset( $this->adsns_options['max_homepostads'] ) && '1' == $this->adsns_options['max_homepostads'] ) echo 'selected="selected"'; ?>>1</option>
+							<option value="2" <?php if ( isset( $this->adsns_options['max_homepostads'] ) && '2' == $this->adsns_options['max_homepostads'] ) echo 'selected="selected"'; ?>>2</option>
+							<option value="3" <?php if ( isset( $this->adsns_options['max_homepostads'] ) && '3' == $this->adsns_options['max_homepostads'] ) echo 'selected="selected"'; ?>>3</option>
 						</select>
 						<br />
 						<span class="description"><?php _e( 'Number of ads below the posts on the home page.', 'adsense' ); ?></span>
