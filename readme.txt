@@ -99,7 +99,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 1. AdSense Settings page main settings.
 2. AdSense Settings page additional settings.
 
-== Changelog ==
+== Changelog == 
 
 = V1.30 - 08.08.2014 =
 * Bugfix : Security Exploit was fixed.
