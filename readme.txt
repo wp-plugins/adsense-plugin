@@ -66,7 +66,7 @@ We can fix some things for free for the users who provide translation of our plu
 2. Activate the plugin via the 'Plugins' menu in WordPress.
 3. The plugin settings are located in "BWS Plugins"->"AdSense".
 
-<a href="https://docs.google.com/document/d/1P-Jb5oYadIAsJz63wbsppxhOnCX-Z27S3XzE6HNcrbI/edit" target="_blank">View a Step-by-step Instruction on AdSense Installation</a>.
+<a href="https://docs.google.com/document/d/1P-Jb5oYadIAsJz63wbsppxhOnCX-Z27S3XzE6HNcrbI/edit" target="_blank">View a Step-by-step Instruction on Google AdSense Installation</a>.
 
 http://www.youtube.com/watch?v=Nkp267vxZ84
 
