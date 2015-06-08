@@ -111,7 +111,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 == Changelog == 
 
 = V1.34 - 08.06.2015 =
-* NEW : We added functionality for remote reception Publisher ID from Google AdSense.
+* NEW : We added functionality for the remote reception of Publisher ID from the Google AdSense.
 
 = V1.33 - 29.04.2015 =
 * Bugfix : Plugin optimization is done.
@@ -248,7 +248,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 == Upgrade Notice ==
 
 = V1.34 =
-We added functionality for remote reception Publisher ID from Google AdSense.
+We added functionality for the remote reception of Publisher ID from the Google AdSense.
 
 = V1.33 =
 Plugin optimization is done. We updated all functionality for wordpress 4.2.1.
